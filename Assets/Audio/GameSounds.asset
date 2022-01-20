@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c34b894f4362f0c48a6ff57c8e485ab8, type: 3}
   m_Name: GameSounds
   m_EditorClassIdentifier: 
-  puzzleCablesPlugIn: {fileID: 0}
-  puzzleCablesPlugOut: {fileID: 0}
+  puzzleCablesPlugIn: {fileID: 8300000, guid: 1ace5cfa37b1f24469cba332002a59ce, type: 3}
+  puzzleCablesPlugOut: {fileID: 8300000, guid: 1ace5cfa37b1f24469cba332002a59ce, type: 3}
+  puzzlePing0: {fileID: 8300000, guid: 34b0e59e2a2588448a054fd3f079cc78, type: 3}
+  puzzlePing1: {fileID: 8300000, guid: 3bbde562e8f0d884f833fc02b011c6fd, type: 3}

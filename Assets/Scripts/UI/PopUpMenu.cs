@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
@@ -8,13 +9,18 @@ namespace UI
 {
     public class PopUpMenu : MonoBehaviour
     {
-        public Action eventShowed;
-        public Action eventHidden;
-        
+        public UnityEvent eventBeforeShow;
+        public UnityEvent eventBeforeHide;
+        public UnityEvent eventShowed;
+        public UnityEvent eventHidden;
+
         [SerializeField] private Transform menu;
 
+        [SerializeField] private bool hideAtStart;
         [SerializeField] private Vector3 initPosition;
         [SerializeField] private Vector3 endPosition;
+        [SerializeField] private bool relative;
+        [SerializeField] private Transform relativeTo;
         
         [SerializeField] private float timeToShow;
         [SerializeField] private float timeToHide;
@@ -32,7 +38,9 @@ namespace UI
                 if (cancellable)
                     HidePanel();
             };
-            HideImmediately();
+            
+            if (hideAtStart)
+                HideImmediately();
         }
 
         private void OnEnable()
@@ -52,14 +60,17 @@ namespace UI
             if (_moving || alreadyShowing)
                 return;
             menu.gameObject.SetActive(true);
+            
+            eventBeforeShow?.Invoke();
             StartCoroutine(MoveToTarget(
                 initPosition,
                 endPosition,
                 timeToShow, () =>
-            {
-                EventSystem.current.SetSelectedGameObject(gameObject);
-                eventShowed?.Invoke();
-            }));
+                {
+                    EventSystem.current.SetSelectedGameObject(gameObject);
+                    eventShowed?.Invoke();
+                }
+            ));
         }
         
         [NaughtyAttributes.Button]
@@ -68,14 +79,17 @@ namespace UI
             bool alreadyHidden = !menu.gameObject.activeSelf;
             if (_moving || alreadyHidden)
                 return;
+            
+            eventBeforeHide?.Invoke();
             StartCoroutine(MoveToTarget(
                 endPosition, 
                 initPosition, 
                 timeToHide, () =>
-            {
-                HideImmediately();
-                eventHidden?.Invoke();
-            }));
+                {
+                    HideImmediately();
+                    eventHidden?.Invoke();
+                }
+            ));
         }
 
         private void HideImmediately()
@@ -93,6 +107,17 @@ namespace UI
         {
             _moving = true;
 
+            // relative to camera
+            if (relative)
+            {
+                var relativePosition = relativeTo.position;
+                
+                fromPosition.x += relativePosition.x;
+                fromPosition.y += relativePosition.y;
+                targetPosition.x += relativePosition.x;
+                targetPosition.y += relativePosition.y;
+            }
+            
             float startTime = Time.time;
             float endTime = startTime + time;
             while (Time.time <= endTime)

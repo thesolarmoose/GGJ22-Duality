@@ -779,27 +779,11 @@
             ]
         },
         {
-            "name": "PuzzleCables",
+            "name": "PuzzlePing",
             "id": "96aa3f11-c062-4ce7-93ef-7e765f1015b1",
             "actions": [
                 {
-                    "name": "MoveUp",
-                    "type": "Button",
-                    "id": "b375ed4b-d375-4376-bda3-0ce1a701f826",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "MoveDown",
-                    "type": "Button",
-                    "id": "04cb3945-b596-4b00-9e6a-e0290204110d",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Connect",
+                    "name": "Ping0",
                     "type": "Button",
                     "id": "13b75dd3-6dad-4243-a2cf-93dee66d8f2c",
                     "expectedControlType": "Button",
@@ -807,7 +791,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Disconnect",
+                    "name": "Ping1",
                     "type": "Button",
                     "id": "22f27c8c-26f1-4c07-83d2-ac2b7ab8305c",
                     "expectedControlType": "Button",
@@ -818,34 +802,12 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "6d19ee4b-dd4d-49ef-bc87-e02ebe1bdb16",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveUp",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c6ba86d1-c067-45f2-98a2-3762dfc8b535",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "8acd989f-7b27-46fe-8cd1-1414a1e1607d",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Connect",
+                    "action": "Ping0",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -856,7 +818,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Disconnect",
+                    "action": "Ping1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

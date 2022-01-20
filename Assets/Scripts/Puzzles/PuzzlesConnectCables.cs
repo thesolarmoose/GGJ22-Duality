@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using Audio;
 using InputActions;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 namespace Puzzles
 {
     public class PuzzlesConnectCables : MonoBehaviour
     {
+        public UnityEvent eventPuzzleSolved;
+        
         [SerializeField] private new Camera camera;
         [SerializeField] private List<CablePair> cablesPairs;
 
@@ -124,6 +127,7 @@ namespace Puzzles
                 if (win)
                 {
                     Debug.Log("Win");
+                    eventPuzzleSolved?.Invoke();
                 }
             }
         }
@@ -136,6 +140,8 @@ namespace Puzzles
         private void OnDisable()
         {
             _inputActions?.Disable();
+            _clickIsDown = false;
+            _currentDraggingPlug = null;
         }
 
         private void ConnectPlugToSlot(CablePlug plug, CableSlot slot)

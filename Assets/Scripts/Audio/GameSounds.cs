@@ -12,6 +12,11 @@ namespace Audio
         public AudioClip puzzleCablesPlugIn;
         public AudioClip puzzleCablesPlugOut;
         
+        [Space]
+        
+        public AudioClip puzzlePing0;
+        public AudioClip puzzlePing1;
+        
         void OnEnable()
         {
             if (_instance != null) return;

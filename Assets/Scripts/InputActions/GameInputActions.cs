@@ -794,27 +794,11 @@ namespace InputActions
             ]
         },
         {
-            ""name"": ""PuzzleCables"",
+            ""name"": ""PuzzlePing"",
             ""id"": ""96aa3f11-c062-4ce7-93ef-7e765f1015b1"",
             ""actions"": [
                 {
-                    ""name"": ""MoveUp"",
-                    ""type"": ""Button"",
-                    ""id"": ""b375ed4b-d375-4376-bda3-0ce1a701f826"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""MoveDown"",
-                    ""type"": ""Button"",
-                    ""id"": ""04cb3945-b596-4b00-9e6a-e0290204110d"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Connect"",
+                    ""name"": ""Ping0"",
                     ""type"": ""Button"",
                     ""id"": ""13b75dd3-6dad-4243-a2cf-93dee66d8f2c"",
                     ""expectedControlType"": ""Button"",
@@ -822,7 +806,7 @@ namespace InputActions
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Disconnect"",
+                    ""name"": ""Ping1"",
                     ""type"": ""Button"",
                     ""id"": ""22f27c8c-26f1-4c07-83d2-ac2b7ab8305c"",
                     ""expectedControlType"": ""Button"",
@@ -833,34 +817,12 @@ namespace InputActions
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""6d19ee4b-dd4d-49ef-bc87-e02ebe1bdb16"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MoveUp"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c6ba86d1-c067-45f2-98a2-3762dfc8b535"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MoveDown"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""8acd989f-7b27-46fe-8cd1-1414a1e1607d"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Connect"",
+                    ""action"": ""Ping0"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -871,7 +833,7 @@ namespace InputActions
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Disconnect"",
+                    ""action"": ""Ping1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -959,12 +921,10 @@ namespace InputActions
             m_UI_RightClick = m_UI.FindAction("RightClick", throwIfNotFound: true);
             m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
             m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
-            // PuzzleCables
-            m_PuzzleCables = asset.FindActionMap("PuzzleCables", throwIfNotFound: true);
-            m_PuzzleCables_MoveUp = m_PuzzleCables.FindAction("MoveUp", throwIfNotFound: true);
-            m_PuzzleCables_MoveDown = m_PuzzleCables.FindAction("MoveDown", throwIfNotFound: true);
-            m_PuzzleCables_Connect = m_PuzzleCables.FindAction("Connect", throwIfNotFound: true);
-            m_PuzzleCables_Disconnect = m_PuzzleCables.FindAction("Disconnect", throwIfNotFound: true);
+            // PuzzlePing
+            m_PuzzlePing = asset.FindActionMap("PuzzlePing", throwIfNotFound: true);
+            m_PuzzlePing_Ping0 = m_PuzzlePing.FindAction("Ping0", throwIfNotFound: true);
+            m_PuzzlePing_Ping1 = m_PuzzlePing.FindAction("Ping1", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -1173,62 +1133,46 @@ namespace InputActions
         }
         public UIActions @UI => new UIActions(this);
 
-        // PuzzleCables
-        private readonly InputActionMap m_PuzzleCables;
-        private IPuzzleCablesActions m_PuzzleCablesActionsCallbackInterface;
-        private readonly InputAction m_PuzzleCables_MoveUp;
-        private readonly InputAction m_PuzzleCables_MoveDown;
-        private readonly InputAction m_PuzzleCables_Connect;
-        private readonly InputAction m_PuzzleCables_Disconnect;
-        public struct PuzzleCablesActions
+        // PuzzlePing
+        private readonly InputActionMap m_PuzzlePing;
+        private IPuzzlePingActions m_PuzzlePingActionsCallbackInterface;
+        private readonly InputAction m_PuzzlePing_Ping0;
+        private readonly InputAction m_PuzzlePing_Ping1;
+        public struct PuzzlePingActions
         {
             private @GameInputActions m_Wrapper;
-            public PuzzleCablesActions(@GameInputActions wrapper) { m_Wrapper = wrapper; }
-            public InputAction @MoveUp => m_Wrapper.m_PuzzleCables_MoveUp;
-            public InputAction @MoveDown => m_Wrapper.m_PuzzleCables_MoveDown;
-            public InputAction @Connect => m_Wrapper.m_PuzzleCables_Connect;
-            public InputAction @Disconnect => m_Wrapper.m_PuzzleCables_Disconnect;
-            public InputActionMap Get() { return m_Wrapper.m_PuzzleCables; }
+            public PuzzlePingActions(@GameInputActions wrapper) { m_Wrapper = wrapper; }
+            public InputAction @Ping0 => m_Wrapper.m_PuzzlePing_Ping0;
+            public InputAction @Ping1 => m_Wrapper.m_PuzzlePing_Ping1;
+            public InputActionMap Get() { return m_Wrapper.m_PuzzlePing; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
             public bool enabled => Get().enabled;
-            public static implicit operator InputActionMap(PuzzleCablesActions set) { return set.Get(); }
-            public void SetCallbacks(IPuzzleCablesActions instance)
+            public static implicit operator InputActionMap(PuzzlePingActions set) { return set.Get(); }
+            public void SetCallbacks(IPuzzlePingActions instance)
             {
-                if (m_Wrapper.m_PuzzleCablesActionsCallbackInterface != null)
+                if (m_Wrapper.m_PuzzlePingActionsCallbackInterface != null)
                 {
-                    @MoveUp.started -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnMoveUp;
-                    @MoveUp.performed -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnMoveUp;
-                    @MoveUp.canceled -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnMoveUp;
-                    @MoveDown.started -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnMoveDown;
-                    @MoveDown.performed -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnMoveDown;
-                    @MoveDown.canceled -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnMoveDown;
-                    @Connect.started -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnConnect;
-                    @Connect.performed -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnConnect;
-                    @Connect.canceled -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnConnect;
-                    @Disconnect.started -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnDisconnect;
-                    @Disconnect.performed -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnDisconnect;
-                    @Disconnect.canceled -= m_Wrapper.m_PuzzleCablesActionsCallbackInterface.OnDisconnect;
+                    @Ping0.started -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing0;
+                    @Ping0.performed -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing0;
+                    @Ping0.canceled -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing0;
+                    @Ping1.started -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing1;
+                    @Ping1.performed -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing1;
+                    @Ping1.canceled -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing1;
                 }
-                m_Wrapper.m_PuzzleCablesActionsCallbackInterface = instance;
+                m_Wrapper.m_PuzzlePingActionsCallbackInterface = instance;
                 if (instance != null)
                 {
-                    @MoveUp.started += instance.OnMoveUp;
-                    @MoveUp.performed += instance.OnMoveUp;
-                    @MoveUp.canceled += instance.OnMoveUp;
-                    @MoveDown.started += instance.OnMoveDown;
-                    @MoveDown.performed += instance.OnMoveDown;
-                    @MoveDown.canceled += instance.OnMoveDown;
-                    @Connect.started += instance.OnConnect;
-                    @Connect.performed += instance.OnConnect;
-                    @Connect.canceled += instance.OnConnect;
-                    @Disconnect.started += instance.OnDisconnect;
-                    @Disconnect.performed += instance.OnDisconnect;
-                    @Disconnect.canceled += instance.OnDisconnect;
+                    @Ping0.started += instance.OnPing0;
+                    @Ping0.performed += instance.OnPing0;
+                    @Ping0.canceled += instance.OnPing0;
+                    @Ping1.started += instance.OnPing1;
+                    @Ping1.performed += instance.OnPing1;
+                    @Ping1.canceled += instance.OnPing1;
                 }
             }
         }
-        public PuzzleCablesActions @PuzzleCables => new PuzzleCablesActions(this);
+        public PuzzlePingActions @PuzzlePing => new PuzzlePingActions(this);
         private int m_KeyboardMouseSchemeIndex = -1;
         public InputControlScheme KeyboardMouseScheme
         {
@@ -1294,12 +1238,10 @@ namespace InputActions
             void OnTrackedDevicePosition(InputAction.CallbackContext context);
             void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
         }
-        public interface IPuzzleCablesActions
+        public interface IPuzzlePingActions
         {
-            void OnMoveUp(InputAction.CallbackContext context);
-            void OnMoveDown(InputAction.CallbackContext context);
-            void OnConnect(InputAction.CallbackContext context);
-            void OnDisconnect(InputAction.CallbackContext context);
+            void OnPing0(InputAction.CallbackContext context);
+            void OnPing1(InputAction.CallbackContext context);
         }
     }
 }
