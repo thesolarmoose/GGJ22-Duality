@@ -127,10 +127,12 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1.0
+  bundleVersion: 0.1.2
   preloadedAssets:
   - {fileID: 11400000, guid: 2a139319d742d53458c9f90b88645631, type: 2}
   - {fileID: 11400000, guid: 3e593a40be97dd6459fcb62ba0384cee, type: 2}
+  - {fileID: 11400000, guid: 301dbea5d08bf5e4e8c2da8f400502f8, type: 2}
+  - {fileID: 11400000, guid: 91d4836185323eb4d95ea31ca40445c7, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -150,7 +152,7 @@ PlayerSettings:
   applicationIdentifier:
     Standalone: com.TheSolarMoose.GGJ22
   buildNumber:
-    Standalone: 0.3.16
+    Standalone: 0.1.2
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0

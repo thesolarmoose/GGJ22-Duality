@@ -10,22 +10,27 @@ using Utils;
 
 namespace Puzzles
 {
-    public class PuzzlesConnectCables : MonoBehaviour
+    public class PuzzleWeld : MonoBehaviour
     {
         public UnityEvent eventPuzzleSolved;
         
         [SerializeField] private new Camera camera;
+        [SerializeField] private Transform robotHand;
+        
         [SerializeField] private List<CablePair> cablesPairs;
-
-        [SerializeField] private float distanceToSnap;
-        [SerializeField] private Vector3 connectSlotOffset;
+        [SerializeField] private float distanceToWeldCable;
+        [SerializeField] private float distanceToCutCable;
+        [SerializeField] private float timeToWeld;
         
         private GameInputActions _inputActions;
-
+        
         private bool _clickIsDown;
         private CablePlug _currentDraggingPlug;
         private Dictionary<CablePlug, CableSlot> _connectedPlugs;
-            
+        private bool _isWelding;
+        private float _startWeldingTime;
+        private (CablePlug, CableSlot, bool) _currentWeldingPair;
+        
         private bool IsDragging => _currentDraggingPlug != null;
         
         private void Start()
@@ -36,6 +41,31 @@ namespace Puzzles
             _inputActions.Enable();
             _inputActions.UI.Click.performed += OnClick;
             _inputActions.UI.Point.performed += OnPointerMove;
+            _inputActions.Player.Interaction.performed += StartWeld;
+            _inputActions.Player.Interaction.canceled += StopWeld;
+        }
+
+        private void OnEnable()
+        {
+            _inputActions?.Enable();
+            Reset();
+        }
+
+        private void OnDisable()
+        {
+            _inputActions?.Disable();
+        }
+
+        private void Reset()
+        {
+            var position = Vector3.zero;
+            position.z = robotHand.localPosition.z;
+            robotHand.localPosition = position;
+            
+            _clickIsDown = false;
+            _currentDraggingPlug = null;
+            _isWelding = false;
+            _currentWeldingPair = (default, default, false);
         }
 
         private void OnClick(InputAction.CallbackContext context)
@@ -65,37 +95,64 @@ namespace Puzzles
             if (_clickIsDown && IsDragging)
             {
                 var position = GetPointerToWorldPosition();
-                var (closesSlot, distance) = GetClosesSlot(position);
-                bool isCloseEnough = distance <= distanceToSnap;
-                bool isConnected = IsSlotConnected(closesSlot);
-                bool isSamePlug = false;
-                if (isConnected)
+                var (closesSlot, distance) = GetClosestSlot(position);
+                bool isFarEnough = distance > distanceToCutCable;
+                bool isConnected = IsPlugConnected(_currentDraggingPlug);
+                if (isConnected && isFarEnough)
                 {
-                    var connectedPlug = GetPlugAtSlot(closesSlot);
-                    isSamePlug = connectedPlug == _currentDraggingPlug;
+                    DisconnectPlug(_currentDraggingPlug);
                 }
-                
-                if (isCloseEnough && !isConnected)
-                {
-                    if (IsPlugConnected(_currentDraggingPlug))
-                    {
-                        var connectedSlot = _connectedPlugs[_currentDraggingPlug];
-                        if (connectedSlot != closesSlot)
-                            DisconnectPlug(_currentDraggingPlug);
-                    }
-                    
-                    ConnectPlugToSlot(_currentDraggingPlug, closesSlot);
 
-                    CheckSolveCondition();
-                }
-                else if (!isCloseEnough || !isSamePlug)
+                if (!isConnected || isFarEnough)
                 {
-                    if (IsPlugConnected(_currentDraggingPlug))
-                    {
-                        DisconnectPlug(_currentDraggingPlug);
-                    }
-
                     SetPlugPosition(_currentDraggingPlug, position);
+                }
+            }
+        }
+        
+        private void StartWeld(InputAction.CallbackContext context)
+        {
+            Debug.Log("start welding");
+            _isWelding = true;
+        }
+        
+        private void StopWeld(InputAction.CallbackContext context)
+        {
+            Debug.Log("stop welding");
+            _isWelding = false;
+            _currentWeldingPair = (default, default, false);
+        }
+
+        private void Update()
+        {
+            if (_isWelding)
+            {
+                var position = robotHand.transform.position;
+                var (plug, slot, exists) = GetWeldablePairAtPosition(position);
+                bool isWeldingTheSame = false;
+                if (exists)
+                {
+                    Debug.Log("Exists plug and slot");
+                    var (previousPlug, previousSlot, existsPrevious) = _currentWeldingPair;
+                    bool isSame = previousPlug == plug && previousSlot == slot;
+                    isWeldingTheSame = existsPrevious && isSame;
+                    if (isWeldingTheSame)
+                    {
+                        float elapsed = Time.time - _startWeldingTime;
+                        bool isConnected = IsPlugConnected(plug);
+                        if (elapsed >= timeToWeld && !isConnected)
+                        {
+                            Debug.Log("connect");
+                            ConnectPlugToSlot(plug, slot);
+                            CheckSolveCondition();
+                        }
+                    }
+                }
+
+                if (!isWeldingTheSame)
+                {
+                    _startWeldingTime = Time.time;
+                    _currentWeldingPair = (plug, slot, exists);
                 }
             }
         }
@@ -137,21 +194,9 @@ namespace Puzzles
             }
         }
 
-        private void OnEnable()
-        {
-            _inputActions?.Enable();
-        }
-
-        private void OnDisable()
-        {
-            _inputActions?.Disable();
-            _clickIsDown = false;
-            _currentDraggingPlug = null;
-        }
-
         private void ConnectPlugToSlot(CablePlug plug, CableSlot slot)
         {
-            var connectPosition = slot.transform.position + connectSlotOffset;
+            var connectPosition = slot.transform.position;
             SetPlugPosition(plug, connectPosition);
             _connectedPlugs.Add(plug, slot);
             AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzleCablesPlugIn, Vector3.zero);
@@ -216,7 +261,25 @@ namespace Puzzles
             throw new ArgumentException($"Slot {slot} does not exists");
         }
 
-        private (CableSlot, float) GetClosesSlot(Vector3 position)
+        private (CablePlug, CableSlot, bool) GetWeldablePairAtPosition(Vector3 position)
+        {
+            var (plug, plugDistance) = GetClosestPlug(position);
+            var (slot, slotDistance) = GetClosestSlot(position);
+            if (plugDistance < distanceToWeldCable && slotDistance < distanceToWeldCable)
+            {
+                var plugPosition = plug.transform.position;
+                var slotPosition = slot.transform.position;
+                float distanceBetween = Vector3.Distance(plugPosition, slotPosition);
+                if (distanceBetween < distanceToWeldCable)
+                {
+                    return (plug, slot, true);
+                }
+            }
+            
+            return (default, default, false);
+        } 
+        
+        private (CableSlot, float) GetClosestSlot(Vector3 position)
         {
             float distance = Single.MaxValue;
             CableSlot closestSlot = default;
@@ -235,12 +298,25 @@ namespace Puzzles
 
             return (closestSlot, distance);
         }
-    }
+        
+        private (CablePlug, float) GetClosestPlug(Vector3 position)
+        {
+            float distance = Single.MaxValue;
+            CablePlug closestPlug = default;
+            foreach (var cablePair in cablesPairs)
+            {
+                var plug = cablePair.cablePlug;
+                var plugPosition = plug.transform.position;
+                position.z = plugPosition.z;
+                float dist = (position - plugPosition).magnitude;
+                if (dist < distance)
+                {
+                    distance = dist;
+                    closestPlug = plug;
+                }
+            }
 
-    [Serializable]
-    public struct CablePair
-    {
-        public CablePlug cablePlug;
-        public CableSlot cableSlot;
+            return (closestPlug, distance);
+        }
     }
 }

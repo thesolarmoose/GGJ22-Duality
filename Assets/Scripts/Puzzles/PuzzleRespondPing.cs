@@ -142,7 +142,6 @@ namespace Puzzles
         {
             _responsesInARow = 0;
             eventFailed?.Invoke();
-            Debug.Log("Fail");
         }
 
         private void ClearSprite()
