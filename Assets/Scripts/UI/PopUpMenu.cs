@@ -26,12 +26,23 @@ namespace UI
         
         private void Start()
         {
-            HideImmediately();
+            cancelAction.Enable();
             cancelAction.performed += context =>
             {
                 if (cancellable)
                     HidePanel();
             };
+            HideImmediately();
+        }
+
+        private void OnEnable()
+        {
+            cancelAction?.Enable();
+        }
+
+        private void OnDisable()
+        {
+            cancelAction?.Disable();
         }
 
         [NaughtyAttributes.Button]
