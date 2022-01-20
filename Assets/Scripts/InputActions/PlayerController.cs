@@ -1,7 +1,5 @@
-﻿using System;
-using Character;
+﻿using Character;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace InputActions
 {
