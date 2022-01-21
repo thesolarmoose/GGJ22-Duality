@@ -10,21 +10,20 @@ namespace Puzzles
     {
         public UnityEvent<string> eventClicked;    
         
-        [SerializeField] private string digit;
         [SerializeField] private Button button;
         [SerializeField] private TextMeshProUGUI text;
-
-        public string Digit => digit;
+        
+        private string _digit;
 
         private void Start()
         {
-            text.text = digit;
+            _digit = text.text;
             button.onClick.AddListener(OnClick);
         }
 
         private void OnClick()
         {
-            eventClicked?.Invoke(digit);
+            eventClicked?.Invoke(_digit);
         }
     }
 }

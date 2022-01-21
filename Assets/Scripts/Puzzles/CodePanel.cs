@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Events;
 
 namespace Puzzles
 {
     public class CodePanel : MonoBehaviour
     {
+        public UnityEvent<string> eventCodeChanged;
+        
         [SerializeField] private TextMeshProUGUI codeText;
         [SerializeField] private List<PanelButton> buttons;
         [SerializeField] private int maxDigits;
@@ -18,6 +20,7 @@ namespace Puzzles
         
         private void Start()
         {
+            UpdateText();
             foreach (var button in buttons)
             {
                 button.eventClicked.AddListener(OnButtonClicked);
@@ -31,19 +34,30 @@ namespace Puzzles
 
         private void AddDigit(string digit)
         {
-//            if ()
-            _currentString += digit;
-            CheckSolveCondition();
+            if (!IsAtMax)
+            {
+                SetText(_currentString + digit, true);
+            }
         }
 
-        private void CheckSolveCondition()
+        private void SetText(string text, bool notifyEvent)
         {
-            
+            _currentString = text;
+            UpdateText();
+            if (notifyEvent)
+            {
+                eventCodeChanged?.Invoke(_currentString);
+            }
         }
 
         private void UpdateText()
         {
-            codeText.text = _currentString.PadRight(maxDigits);
+            codeText.text = _currentString.PadRight(maxDigits, '_');
+        }
+
+        public void Clear()
+        {
+            SetText("", false);
         }
     }
 }

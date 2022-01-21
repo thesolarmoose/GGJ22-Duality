@@ -1,29 +1,25 @@
 ﻿using System;
+using System.ComponentModel;
 using InputActions;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace Puzzles
 {
-    public class MouseHandCursor : MonoBehaviour
+    public class MouseHandCursor : HandCursor
     {
         [SerializeField] private new Camera camera;
-        [SerializeField] private Sprite idleSprite;
-        [SerializeField] private Sprite clickSprite;
-            
-        private SpriteRenderer _spriteRenderer;
 
         private GameInputActions _inputActions;
         
         private void Start()
         {
-            _spriteRenderer = GetComponent<SpriteRenderer>();
+            Initialize();
             _inputActions = new GameInputActions();
             _inputActions.Enable();
             _inputActions.UI.Click.performed += OnClick;
 
             Cursor.visible = false;
-            _spriteRenderer.sprite = idleSprite;
         }
 
         private void OnClick(InputAction.CallbackContext context)
@@ -32,11 +28,11 @@ namespace Puzzles
             bool isClicked = value > 0.5f;
             if (isClicked)
             {
-                _spriteRenderer.sprite = clickSprite;
+                Press();
             }
             else
             {
-                _spriteRenderer.sprite = idleSprite;
+                Release();
             }
         }
 

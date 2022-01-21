@@ -4,25 +4,19 @@ using UnityEngine.InputSystem;
 
 namespace Puzzles
 {
-    public class KeyboardHandCursor : MonoBehaviour
+    public class KeyboardHandCursor : HandCursor
     {
-        [SerializeField] private Sprite idleSprite;
-        [SerializeField] private Sprite clickSprite;
-
         [SerializeField] private float moveSpeed;
             
-        private SpriteRenderer _spriteRenderer;
-
         private GameInputActions _inputActions;
         
         private void Start()
         {
-            _spriteRenderer = GetComponent<SpriteRenderer>();
+            Initialize();
             _inputActions = new GameInputActions();
             _inputActions.Enable();
-            _inputActions.Player.Interaction.performed += ctxt => _spriteRenderer.sprite = clickSprite;
-            _inputActions.Player.Interaction.canceled += ctxt => _spriteRenderer.sprite = idleSprite;
-            _spriteRenderer.sprite = idleSprite;
+            _inputActions.Player.Interaction.performed += ctxt => Press();
+            _inputActions.Player.Interaction.canceled += ctxt => Release();
         }
 
         private void OnEnable()
@@ -33,8 +27,7 @@ namespace Puzzles
         private void OnDisable()
         {
             _inputActions?.Disable();
-            if (_spriteRenderer)
-                _spriteRenderer.sprite = idleSprite;
+            Reset();
         }
 
         private void Update()
