@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using Audio;
 using InputActions;
 using UnityEngine;
@@ -40,12 +41,14 @@ namespace Puzzles
 
         private Dictionary<int, (SpriteRenderer, Color, Color, AudioClip)> _indexMap;
         
-        private void Start()
+        private IEnumerator Start()
         {
             _inputActions = new GameInputActions();
             _inputActions.Enable();
             _inputActions.PuzzlePing.Ping0.performed += context => HandleResponse(0);
             _inputActions.PuzzlePing.Ping1.performed += context => HandleResponse(1);
+
+            yield return null;
             
             _indexMap = new Dictionary<int, (SpriteRenderer, Color, Color, AudioClip)>
             {

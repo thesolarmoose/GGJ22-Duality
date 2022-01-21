@@ -33,7 +33,8 @@ namespace Puzzles
         private void OnDisable()
         {
             _inputActions?.Disable();
-            _spriteRenderer.sprite = idleSprite;
+            if (_spriteRenderer)
+                _spriteRenderer.sprite = idleSprite;
         }
 
         private void Update()
