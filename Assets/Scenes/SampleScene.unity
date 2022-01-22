@@ -3465,6 +3465,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1102463230}
   speed: 0.1
+  bounds:
+    serializedVersion: 2
+    x: -15
+    y: 0
+    width: 30
+    height: 2
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
