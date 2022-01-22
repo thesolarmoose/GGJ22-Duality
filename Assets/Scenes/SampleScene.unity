@@ -4667,7 +4667,7 @@ Animator:
   m_GameObject: {fileID: 1102463229}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cb08a9b7018c0254eb964e2a360ff278, type: 2}
+  m_Controller: {fileID: 22100000, guid: ec9c10398f380b14c99d083471556859, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4717,12 +4717,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5047622619391938473, guid: dbb771c113e39dd408a78472e0385276, type: 3}
+  m_Sprite: {fileID: -2439780877505322183, guid: b9c57ab3c575b584f8466ddbc2462c18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.3333334, y: 1.3333334}
+  m_Size: {x: 1.03125, y: 1.40625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4755,7 +4755,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1102463234}
   animator: {fileID: 1102463233}
-  speed: 2
+  leftAnimatorController: {fileID: 9100000, guid: cb08a9b7018c0254eb964e2a360ff278, type: 2}
+  rightAnimatorController: {fileID: 22100000, guid: ec9c10398f380b14c99d083471556859, type: 2}
+  speed: 3
 --- !u!1 &1108366502
 GameObject:
   m_ObjectHideFlags: 0
@@ -8038,6 +8040,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1295642832137802577, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d83abad882d114b42b3c7075d1354b9a, type: 3}
     - target: {fileID: 1295642832137802577, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: m_DrawMode
       value: 1

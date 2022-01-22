@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor.Animations;
+using UnityEngine;
 
 namespace Character
 {
@@ -8,6 +9,8 @@ namespace Character
 
         [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private Animator animator;
+        [SerializeField] private AnimatorController leftAnimatorController;
+        [SerializeField] private AnimatorOverrideController rightAnimatorController;
     
         [SerializeField] private float speed;
     
@@ -28,10 +31,10 @@ namespace Character
 
             if (dir.x < 0)
             {
-                spriteRenderer.flipX = false;
+                animator.runtimeAnimatorController = leftAnimatorController;
             } else if (dir.x > 0)
             {
-                spriteRenderer.flipX = true;
+                animator.runtimeAnimatorController = rightAnimatorController;
             }
         }
         
