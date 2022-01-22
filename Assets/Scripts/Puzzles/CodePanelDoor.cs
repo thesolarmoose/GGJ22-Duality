@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Codice.Client.Commands.TransformerRule;
 using UnityEngine;
 
 namespace Puzzles
@@ -7,24 +8,22 @@ namespace Puzzles
     public class CodePanelDoor : MonoBehaviour
     {
         [SerializeField] private List<HandCursor> cursors;
-        [SerializeField] private float minX;
-        [SerializeField] private float maxX;
-        [SerializeField] private Rect handleBounds;
-
+        [SerializeField] private Transform handle;
+        [SerializeField] private float maxDisplacement;
         [SerializeField] private float closeAccel;
         [SerializeField] private float maxVel;
-        [SerializeField] private float closePosition;
-        [SerializeField] private float arriveThreshold;
 
+        private float _minX;
+        private float _maxX;
         private HandCursor _currentCursor;
         private float _currentOffsetX;
-
-        private float _currentVelocity;
 
         private IEnumerator _closeCoroutine;
         
         private void Start()
         {
+            _minX = transform.localPosition.x;
+            _maxX = _minX + maxDisplacement;
             foreach (var cursor in cursors)
             {
                 cursor.eventPressed.AddListener(() => OnCursorPressed(cursor));
@@ -42,11 +41,10 @@ namespace Puzzles
                 var cursorPosition = _currentCursor.GetPosition();
                 position.x = cursorPosition.x + _currentOffsetX;
                 trans.position = position;
+                var localPosition = trans.localPosition;
+                localPosition.x = Mathf.Clamp(localPosition.x, _minX, _maxX);
+                trans.localPosition = localPosition;
             }
-//            else if ()  // close door
-//            {
-//                
-//            }
         }
 
         private void OnCursorPressed(HandCursor cursor)
@@ -58,7 +56,8 @@ namespace Puzzles
             if (!IsInsideHandle(position))
                 return;
             
-            StopCoroutine(_closeCoroutine);
+            if (_closeCoroutine != null)
+                StopCoroutine(_closeCoroutine);
             _currentCursor = cursor;
             _currentOffsetX = transform.position.x - position.x;
         }
@@ -68,8 +67,6 @@ namespace Puzzles
             if (cursor == _currentCursor)
             {
                 _currentCursor = null;
-                _currentVelocity = closeAccel;
-
                 _closeCoroutine = CloseCoroutine();
                 StartCoroutine(_closeCoroutine);
             }
@@ -77,31 +74,33 @@ namespace Puzzles
 
         private bool IsInsideHandle(Vector2 position)
         {
-            return position.x >= handleBounds.xMin &&
-                   position.x <= handleBounds.xMax &&
-                   position.y >= handleBounds.yMin &&
-                   position.y <= handleBounds.yMax;
+            var hit = Physics2D.Raycast(position, Vector2.zero);
+            bool inside = hit.transform == handle;
+            return inside;
         }
 
         private IEnumerator CloseCoroutine()
         {
-            var position = transform.position;
-            float dir = Mathf.Sign(closePosition - position.x);
-            float vel = closeAccel * dir;
+            var position = transform.localPosition;
+            int dir = (int) Mathf.Sign(_minX - position.x);
+            float accel = dir * closeAccel;
+            float vel = accel;
             bool arrived = false;
             while (!arrived)
             {
+                vel = Mathf.Min(maxVel, vel + accel);
                 position.x += vel;
-                transform.position = position;
+                transform.localPosition = position;
 
-                float diff = closePosition - position.x;
-                arrived = Mathf.Abs(diff) <= arriveThreshold;
+                float diff = position.x - _minX;
+                int diffSign = (int) Mathf.Sign(diff);
+                arrived = diffSign == dir;
                 
                 yield return null;
             }
 
-            position.x = closePosition;
-            transform.position = position;
+            position.x = _minX;
+            transform.localPosition = position;
         }
     }
 }
