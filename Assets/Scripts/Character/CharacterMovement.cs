@@ -28,10 +28,10 @@ namespace Character
 
             if (dir.x < 0)
             {
-                spriteRenderer.flipX = true;
+                spriteRenderer.flipX = false;
             } else if (dir.x > 0)
             {
-                spriteRenderer.flipX = false;
+                spriteRenderer.flipX = true;
             }
         }
         
