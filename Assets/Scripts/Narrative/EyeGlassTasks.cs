@@ -17,20 +17,27 @@ namespace Narrative
         [SerializeField] private float delayToStart;
         [SerializeField] private float delayToHide;
 
+        [SerializeField] private LocalizedString pingTask;
+            
         private bool _started;
         
         private IEnumerator Start()
         {
             yield return new WaitForSeconds(delayToStart);
-            menu.ShowPanel();
-            string tasksText = GetDayTasks();
+            var tasksText = GetDayTasks();
             ShowText(tasksText);
         }
 
-        public void ShowText(string textToShow)
+        public void ShowText(LocalizedString textToShow)
         {
-            text.PutText(textToShow);
+            menu.ShowPanel();
+            text.PutText(textToShow.GetLocalizedString());
             _started = true;
+        }
+
+        public void ShowPingTask()
+        {
+            ShowText(pingTask);
         }
 
         private void Update()
@@ -51,18 +58,18 @@ namespace Narrative
             _started = false;
         }
 
-        private string GetDayTasks()
+        private LocalizedString GetDayTasks()
         {
             var day = DayData.Instance.Day;
             foreach (var task in tasks)
             {
                 if (task.day == day)
                 {
-                    return task.tasksText.GetLocalizedString();
+                    return task.tasksText;
                 }
             }
 
-            return tasks[0].tasksText.GetLocalizedString();
+            return tasks[0].tasksText;
         }
     }
 
