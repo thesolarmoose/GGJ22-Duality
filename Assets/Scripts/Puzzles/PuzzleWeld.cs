@@ -21,6 +21,8 @@ namespace Puzzles
         [SerializeField] private float distanceToWeldCable;
         [SerializeField] private float distanceToCutCable;
         [SerializeField] private float timeToWeld;
+
+        [SerializeField] private AudioSource audioSource;
         
         private GameInputActions _inputActions;
         
@@ -43,6 +45,8 @@ namespace Puzzles
             _inputActions.UI.Point.performed += OnPointerMove;
             _inputActions.Player.Interaction.performed += StartWeld;
             _inputActions.Player.Interaction.canceled += StopWeld;
+
+            audioSource.clip = GameSounds.Instance.puzzle2Weld;
         }
 
         private void OnEnable()
@@ -65,6 +69,7 @@ namespace Puzzles
             _clickIsDown = false;
             _currentDraggingPlug = null;
             _isWelding = false;
+            audioSource.Stop();
             _currentWeldingPair = (default, default, false);
         }
 
@@ -101,6 +106,8 @@ namespace Puzzles
                 if (isConnected && isFarEnough)
                 {
                     DisconnectPlug(_currentDraggingPlug);
+                    var sounds = GameSounds.Instance;
+                    sounds.PlaySound(sounds.puzzle2CutCable);
                 }
 
                 if (!isConnected || isFarEnough)
@@ -114,12 +121,14 @@ namespace Puzzles
         {
             Debug.Log("start welding");
             _isWelding = true;
+            audioSource.Play();
         }
         
         private void StopWeld(InputAction.CallbackContext context)
         {
             Debug.Log("stop welding");
             _isWelding = false;
+            audioSource.Stop();
             _currentWeldingPair = (default, default, false);
         }
 
@@ -199,13 +208,13 @@ namespace Puzzles
             var connectPosition = slot.transform.position;
             SetPlugPosition(plug, connectPosition);
             _connectedPlugs.Add(plug, slot);
-            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzleCablesPlugIn, Vector3.zero);
+            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzle1CablesPlugIn, Vector3.zero);
         }
 
         private void DisconnectPlug(CablePlug plug)
         {
             _connectedPlugs.Remove(plug);
-            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzleCablesPlugOut, Vector3.zero);
+            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzle1CablesPlugOut, Vector3.zero);
         }
 
         private bool IsSlotConnected(CableSlot slot)

@@ -52,8 +52,8 @@ namespace Puzzles
             
             _indexMap = new Dictionary<int, (SpriteRenderer, Color, Color, AudioClip)>
             {
-                [0] = (lightARenderer, lightAColor, lightAColorPressed, GameSounds.Instance.puzzlePing0),
-                [1] = (lightBRenderer, lightBColor, lightBColorPressed, GameSounds.Instance.puzzlePing1)
+                [0] = (lightARenderer, lightAColor, lightAColorPressed, GameSounds.Instance.puzzle1Ping0),
+                [1] = (lightBRenderer, lightBColor, lightBColorPressed, GameSounds.Instance.puzzle1Ping1)
             };
         }
         

@@ -22,7 +22,6 @@ namespace Puzzles
             var (interactable, injectedEvent) = GetInteractable(typeof(IPointerDownHandler));
             if (interactable)
             {
-                print($"release {interactable}");
                 ExecuteEvents.Execute(interactable.gameObject, injectedEvent, ExecuteEvents.pointerDownHandler);
             }
             
@@ -33,7 +32,6 @@ namespace Puzzles
             var (interactable, injectedEvent) = GetInteractable(typeof(IPointerUpHandler));
             if (interactable)
             {
-                print($"release {interactable}");
                 ExecuteEvents.Execute(interactable.gameObject, injectedEvent, ExecuteEvents.pointerClickHandler);
                 ExecuteEvents.Execute(interactable.gameObject, injectedEvent, ExecuteEvents.pointerUpHandler);
             }

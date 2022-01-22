@@ -154,13 +154,13 @@ namespace Puzzles
             var connectPosition = slot.transform.position + connectSlotOffset;
             SetPlugPosition(plug, connectPosition);
             _connectedPlugs.Add(plug, slot);
-            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzleCablesPlugIn, Vector3.zero);
+            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzle1CablesPlugIn, Vector3.zero);
         }
 
         private void DisconnectPlug(CablePlug plug)
         {
             _connectedPlugs.Remove(plug);
-            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzleCablesPlugOut, Vector3.zero);
+            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzle1CablesPlugOut, Vector3.zero);
         }
 
         private bool IsSlotConnected(CableSlot slot)

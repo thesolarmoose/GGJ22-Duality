@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Audio;
 using Codice.Client.Commands.TransformerRule;
 using UnityEngine;
 
@@ -60,6 +61,9 @@ namespace Puzzles
                 StopCoroutine(_closeCoroutine);
             _currentCursor = cursor;
             _currentOffsetX = transform.position.x - position.x;
+            
+            var sounds = GameSounds.Instance;
+            sounds.PlaySound(sounds.puzzle3OpenDoor);
         }
 
         private void OnCursorReleased(HandCursor cursor)
@@ -81,6 +85,9 @@ namespace Puzzles
 
         private IEnumerator CloseCoroutine()
         {
+            var sounds = GameSounds.Instance;
+            sounds.PlaySound(sounds.puzzle3CloseDoor);
+            
             var position = transform.localPosition;
             int dir = (int) Mathf.Sign(_minX - position.x);
             float accel = dir * closeAccel;

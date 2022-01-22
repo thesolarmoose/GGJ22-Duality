@@ -9,18 +9,35 @@ namespace Audio
 
         public static GameSounds Instance => _instance;
 
-        public AudioClip puzzleCablesPlugIn;
-        public AudioClip puzzleCablesPlugOut;
+        public AudioClip puzzle1CablesPlugIn;
+        public AudioClip puzzle1CablesPlugOut;
+        public AudioClip puzzle1Ping0;
+        public AudioClip puzzle1Ping1;
+        public AudioClip puzzle1DoorCloses;
+        public AudioClip puzzle1DoorOpens;
+
+        [Space]
+        
+        public AudioClip puzzle2CutCable;
+        public AudioClip puzzle2Weld;
         
         [Space]
         
-        public AudioClip puzzlePing0;
-        public AudioClip puzzlePing1;
-        
+        public AudioClip puzzle3OpenDoor;
+        public AudioClip puzzle3CloseDoor;
+
         void OnEnable()
         {
             if (_instance != null) return;
             _instance = this;
+        }
+
+        public void PlaySound(AudioClip clip)
+        {
+            if (clip)
+            {
+                AudioSource.PlayClipAtPoint(clip, Vector3.zero);
+            }
         }
     }
 }
