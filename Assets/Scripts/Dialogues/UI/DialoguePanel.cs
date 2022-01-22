@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using TMPro;
-using UI;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Dialogues.UI
 {

@@ -1,6 +1,5 @@
 ﻿using InputActions;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Puzzles
 {

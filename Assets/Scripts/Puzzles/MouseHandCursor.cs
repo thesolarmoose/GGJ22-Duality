@@ -1,6 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-using InputActions;
+﻿using InputActions;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
