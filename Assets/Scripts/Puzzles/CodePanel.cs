@@ -14,7 +14,7 @@ namespace Puzzles
         [SerializeField] private List<PanelButton> buttons;
         [SerializeField] private int maxDigits;
 
-        private string _currentString;
+        private string _currentString = "";
 
         private bool IsAtMax => _currentString.Length >= maxDigits;
         
