@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace DaysSystem
@@ -34,6 +35,11 @@ namespace DaysSystem
         {
             if (_instance != null) return;
             _instance = this;
+        }
+
+        private void Reset()
+        {
+            day = 0;
         }
     }
 }
