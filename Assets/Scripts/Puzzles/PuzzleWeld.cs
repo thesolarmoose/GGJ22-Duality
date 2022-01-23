@@ -17,11 +17,17 @@ namespace Puzzles
         [SerializeField] private new Camera camera;
         [SerializeField] private Transform robotHand;
         
-        [SerializeField] private List<CablePair> cablesPairs;
+        [SerializeField] private List<CablePair> leftCablesPairs;
+        [SerializeField] private List<CablePair> rightCablesPairs;
+
+        [SerializeField] private Rect leftBounds;
+        [SerializeField] private Rect rightBounds;
+        
         [SerializeField] private float distanceToWeldCable;
         [SerializeField] private float distanceToCutCable;
         [SerializeField] private float timeToWeld;
 
+        [SerializeField] private GameObject sparks;
         [SerializeField] private AudioSource audioSource;
 
         [SerializeField] private LayerMask cablesMask;
@@ -49,6 +55,7 @@ namespace Puzzles
             _inputActions.Player.Interaction.canceled += StopWeld;
 
             audioSource.clip = GameSounds.Instance.puzzle2Weld;
+            sparks.SetActive(false);
         }
 
         private void OnEnable()
@@ -132,6 +139,8 @@ namespace Puzzles
             _isWelding = false;
             audioSource.Stop();
             _currentWeldingPair = (default, default, false);
+            
+            sparks.SetActive(false);
         }
 
         private void Update()
@@ -158,6 +167,12 @@ namespace Puzzles
                             CheckSolveCondition();
                         }
                     }
+                    
+                    sparks.SetActive(true);
+                }
+                else
+                {
+                    sparks.SetActive(false);
                 }
 
                 if (!isWeldingTheSame)
@@ -168,19 +183,39 @@ namespace Puzzles
             }
         }
 
+        private List<CablePair> GetAllCablePairs()
+        {
+            var cablesPairs = new List<CablePair>();
+            cablesPairs.AddRange(leftCablesPairs);
+            cablesPairs.AddRange(rightCablesPairs);
+            return cablesPairs;
+        }
+        
         private void SetPlugPosition(CablePlug plug, Vector3 position)
         {
+            var bounds = GetPlugBounds(plug);
+            var panelPosition = transform.position;
             var transf = plug.transform;
             position.z = transf.position.z;
+            position.x = Mathf.Clamp(
+                position.x,
+                bounds.xMin + panelPosition.x,
+                bounds.xMax + panelPosition.x);
+            position.y = Mathf.Clamp(
+                position.y,
+                bounds.yMin + panelPosition.y,
+                bounds.yMax + panelPosition.y);
             transf.position = position;
         }
         
         private void CheckSolveCondition()
         {
-            bool sameCount = _connectedPlugs.Count == cablesPairs.Count;
+//            bool sameCount = _connectedPlugs.Count == cablesPairs.Count;
+            bool sameCount = _connectedPlugs.Count == leftCablesPairs.Count + rightCablesPairs.Count;
             if (sameCount)
             {
                 bool win = true;
+                var cablesPairs = GetAllCablePairs();
                 for (int i = 0; i < cablesPairs.Count && win; i++)
                 {
                     var cablePair = cablesPairs[i];
@@ -266,17 +301,6 @@ namespace Puzzles
             return worldPosition;
         }
 
-        private CablePair GetSlotsPair(CableSlot slot)
-        {
-            foreach (var cablePair in cablesPairs)
-            {
-                if (cablePair.cableSlot == slot)
-                    return cablePair;
-            }
-            
-            throw new ArgumentException($"Slot {slot} does not exists");
-        }
-
         private (CablePlug, CableSlot, bool) GetWeldablePairAtPosition(Vector3 position)
         {
             var (plug, plugDistance) = GetClosestPlug(position);
@@ -299,6 +323,7 @@ namespace Puzzles
         {
             float distance = Single.MaxValue;
             CableSlot closestSlot = default;
+            var cablesPairs = GetAllCablePairs();
             foreach (var cablePair in cablesPairs)
             {
                 var slot = cablePair.cableSlot;
@@ -319,6 +344,7 @@ namespace Puzzles
         {
             float distance = Single.MaxValue;
             CablePlug closestPlug = default;
+            var cablesPairs = GetAllCablePairs();
             foreach (var cablePair in cablesPairs)
             {
                 var plug = cablePair.cablePlug;
@@ -333,6 +359,31 @@ namespace Puzzles
             }
 
             return (closestPlug, distance);
+        }
+
+        private bool IsPlugInPairsList(CablePlug plug, List<CablePair> pairs)
+        {
+            foreach (var pair in pairs)
+            {
+                if (pair.cablePlug == plug)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private Rect GetPlugBounds(CablePlug plug)
+        {
+            if (IsPlugInPairsList(plug, leftCablesPairs))
+            {
+                return leftBounds;
+            }
+            else
+            {
+                return rightBounds;
+            }
         }
     }
 }

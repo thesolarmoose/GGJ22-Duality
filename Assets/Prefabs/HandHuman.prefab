@@ -50,8 +50,8 @@ MonoBehaviour:
   eventReleased:
     m_PersistentCalls:
       m_Calls: []
-  idleSprite: {fileID: 21300000, guid: 3a5bd65f3de4f724fb5c0f7e95a1a25a, type: 3}
-  clickSprite: {fileID: 21300000, guid: 6ffc99e5154b0be45b15cb0ff65a343a, type: 3}
+  idleSprite: {fileID: 21300000, guid: a4e0f3553f78a0443b19c63e670924dd, type: 3}
+  clickSprite: {fileID: 21300000, guid: 30f32bcaf9e351449ba97562173d11e2, type: 3}
   camera: {fileID: 0}
 --- !u!212 &4785076140215042788
 SpriteRenderer:
@@ -94,14 +94,14 @@ SpriteRenderer:
   m_SortingLayerID: -1794549875
   m_SortingLayer: 1
   m_SortingOrder: 5
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a4e0f3553f78a0443b19c63e670924dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2.53125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1

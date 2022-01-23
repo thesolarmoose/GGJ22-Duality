@@ -359,19 +359,20 @@ MonoBehaviour:
         m_CallState: 2
   camera: {fileID: 0}
   robotHand: {fileID: 8016511812866373588}
-  cablesPairs:
-  - cablePlug: {fileID: 8016511812583286435}
-    cableSlot: {fileID: 8016511812892508842}
-  - cablePlug: {fileID: 8016511813584130069}
-    cableSlot: {fileID: 8016511813469080900}
-  - cablePlug: {fileID: 8016511813507315203}
-    cableSlot: {fileID: 8016511812913986900}
+  leftCablesPairs:
   - cablePlug: {fileID: 8016511812876313276}
     cableSlot: {fileID: 8016511812589440609}
   - cablePlug: {fileID: 8016511812549668257}
     cableSlot: {fileID: 8016511812727792324}
   - cablePlug: {fileID: 8016511812872982555}
     cableSlot: {fileID: 8016511813819404373}
+  rightCablesPairs:
+  - cablePlug: {fileID: 8016511812583286435}
+    cableSlot: {fileID: 8016511812892508842}
+  - cablePlug: {fileID: 8016511813584130069}
+    cableSlot: {fileID: 8016511813469080900}
+  - cablePlug: {fileID: 8016511813507315203}
+    cableSlot: {fileID: 8016511812913986900}
   distanceToWeldCable: 0.5
   distanceToCutCable: 1
   timeToWeld: 2

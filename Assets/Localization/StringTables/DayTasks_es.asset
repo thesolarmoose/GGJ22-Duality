@@ -39,5 +39,9 @@ MonoBehaviour:
       D: ping agudo'
     m_Metadata:
       m_Items: []
+  - m_Id: 79491393871872
+    m_Localized: Activa los colores secundarios
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

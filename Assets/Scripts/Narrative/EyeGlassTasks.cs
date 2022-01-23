@@ -18,6 +18,7 @@ namespace Narrative
         [SerializeField] private float delayToHide;
 
         [SerializeField] private LocalizedString pingTask;
+        [SerializeField] private LocalizedString weldTask;
             
         private bool _started;
         
@@ -38,6 +39,11 @@ namespace Narrative
         public void ShowPingTask()
         {
             ShowText(pingTask);
+        }
+        
+        public void ShowWeldTask()
+        {
+            ShowText(weldTask);
         }
 
         private void Update()

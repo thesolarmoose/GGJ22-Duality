@@ -31,6 +31,10 @@ MonoBehaviour:
     m_Key: ping_task
     m_Metadata:
       m_Items: []
+  - m_Id: 79491393871872
+    m_Key: weld_task
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
