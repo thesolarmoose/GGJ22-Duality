@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using DaysSystem;
 using Dialogues.UI;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Localization;
 
 namespace Dialogues
 {
@@ -10,9 +12,26 @@ namespace Dialogues
     {
         [SerializeField] private List<DayDialogue> dialogues;
 
+        [SerializeField] private bool pushOnStart;
+        
+        public UnityEvent eventOnDialogueEnds;
+
+        private void Start()
+        {
+            if (pushOnStart)
+                Push();
+        }
+        
         public void Push()
         {
             DialoguePanel.Instance.PushDialogueSequence(GetDayDialogue());
+            DialoguePanel.Instance.eventAllDialoguesProcessed += OnDialoguesProcessed;
+        }
+
+        private void OnDialoguesProcessed()
+        {
+            eventOnDialogueEnds?.Invoke();
+            DialoguePanel.Instance.eventAllDialoguesProcessed -= OnDialoguesProcessed;
         }
 
         private List<string> GetDayDialogue()
@@ -21,7 +40,7 @@ namespace Dialogues
             {
                 if (dayDialogue.day == DayData.Instance.Day)
                 {
-                    return dayDialogue.dialogues;
+                    return dayDialogue.dialogues.ConvertAll(d => d.GetLocalizedString());
                 }
             }
             
@@ -33,6 +52,6 @@ namespace Dialogues
     public struct DayDialogue
     {
         public int day;
-        public List<string> dialogues;
+        public List<LocalizedString> dialogues;
     }
 }

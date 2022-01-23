@@ -19,6 +19,8 @@ namespace Narrative
 
         [SerializeField] private LocalizedString pingTask;
         [SerializeField] private LocalizedString weldTask;
+        [SerializeField] private LocalizedString screenCheck;
+        [SerializeField] private LocalizedString screenCheckSolved;
             
         private bool _started;
         
@@ -44,6 +46,16 @@ namespace Narrative
         public void ShowWeldTask()
         {
             ShowText(weldTask);
+        }
+        
+        public void ShowScreenCheck()
+        {
+            ShowText(screenCheck);
+        }
+        
+        public void ShowScreenCheckSolved()
+        {
+            ShowText(screenCheckSolved);
         }
 
         private void Update()

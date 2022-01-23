@@ -19,34 +19,48 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 118552748032
-    m_Localized: 'Day 645.
+    m_Localized: 'Day 645
 
 
       Keep energy unit and solar panels running.'
     m_Metadata:
       m_Items: []
   - m_Id: 87917551616
-    m_Localized: 'Day 644.
+    m_Localized: 'Day 644
 
 
       Keep energy unit and solar panels running.'
     m_Metadata:
       m_Items: []
   - m_Id: 67050889216
-    m_Localized: 'Day 643.
+    m_Localized: 'Day 643
 
 
       Keep energy unit and solar panels running.'
     m_Metadata:
       m_Items: []
   - m_Id: 7100051447808
-    m_Localized: 'A: low ping
+    m_Localized: 'A: low ping.
 
-      D: high ping'
+      D: high ping.'
     m_Metadata:
       m_Items: []
   - m_Id: 79491393871872
-    m_Localized: Activate secondary colors
+    m_Localized: 'Activate secondary colors.
+
+      Use spacebar to weld.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174750610186240
+    m_Localized: 'Solar panels: Disconnected
+
+      Energy cells: Disconnected'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174956932194304
+    m_Localized: 'Solar panels: Connected
+
+      Energy cells: Connected'
     m_Metadata:
       m_Items: []
   references:

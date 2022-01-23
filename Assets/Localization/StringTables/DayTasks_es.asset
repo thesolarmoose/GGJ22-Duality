@@ -19,28 +19,39 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 67050889216
-    m_Localized: "D\xEDa 643.\n\nMantener unidad de energ\xEDa y paneles solares
-      en funcionamiento."
+    m_Localized: "D\xEDa 643\n\nMantener unidad de energ\xEDa y paneles solares en
+      funcionamiento."
     m_Metadata:
       m_Items: []
   - m_Id: 87917551616
-    m_Localized: "D\xEDa 644.\n\nMantener unidad de energ\xEDa y paneles solares
-      en funcionamiento."
+    m_Localized: "D\xEDa 644\n\nMantener unidad de energ\xEDa y paneles solares en
+      funcionamiento."
     m_Metadata:
       m_Items: []
   - m_Id: 118552748032
-    m_Localized: "D\xEDa 645.\n\nMantener unidad de energ\xEDa y paneles solares
-      en funcionamiento."
+    m_Localized: "D\xEDa 645\n\nMantener unidad de energ\xEDa y paneles solares en
+      funcionamiento."
     m_Metadata:
       m_Items: []
   - m_Id: 7100051447808
-    m_Localized: 'A: ping grave
+    m_Localized: 'A: ping grave.
 
-      D: ping agudo'
+      D: ping agudo.'
     m_Metadata:
       m_Items: []
   - m_Id: 79491393871872
-    m_Localized: Activa los colores secundarios
+    m_Localized: 'Activa los colores secundarios.
+
+      Usa la barra espaciadora
+      para soldar.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174750610186240
+    m_Localized: "Paneles Solares: Desconectados\nC\xE9lulas de Energ\xEDa: Desconectados"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174956932194304
+    m_Localized: "Paneles Solares: Conectados\nC\xE9lulas de Energ\xEDa: Conectados"
     m_Metadata:
       m_Items: []
   references:
