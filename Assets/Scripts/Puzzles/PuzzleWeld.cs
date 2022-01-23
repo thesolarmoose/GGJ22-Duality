@@ -16,9 +16,10 @@ namespace Puzzles
         
         [SerializeField] private new Camera camera;
         [SerializeField] private Transform robotHand;
-        
-        [SerializeField] private List<CablePair> leftCablesPairs;
-        [SerializeField] private List<CablePair> rightCablesPairs;
+
+        [SerializeField] private List<SlotPair> slotPairs;
+        [SerializeField] private List<CablePlugId> leftCablesPlugs;
+        [SerializeField] private List<CablePlugId> rightCablesPlugs;
 
         [SerializeField] private Rect leftBounds;
         [SerializeField] private Rect rightBounds;
@@ -183,12 +184,24 @@ namespace Puzzles
             }
         }
 
-        private List<CablePair> GetAllCablePairs()
+        private List<CablePlugId> GetAllCablePlugs()
         {
-            var cablesPairs = new List<CablePair>();
-            cablesPairs.AddRange(leftCablesPairs);
-            cablesPairs.AddRange(rightCablesPairs);
+            var cablesPairs = new List<CablePlugId>();
+            cablesPairs.AddRange(leftCablesPlugs);
+            cablesPairs.AddRange(rightCablesPlugs);
             return cablesPairs;
+        }
+
+        private List<CableSlot> GetAllSlots()
+        {
+            var slots = new List<CableSlot>();
+            foreach (var slotPair in slotPairs)
+            {
+                slots.Add(slotPair.leftSlot);
+                slots.Add(slotPair.rightSlot);
+            }
+
+            return slots;
         }
         
         private void SetPlugPosition(CablePlug plug, Vector3 position)
@@ -210,23 +223,22 @@ namespace Puzzles
         
         private void CheckSolveCondition()
         {
-//            bool sameCount = _connectedPlugs.Count == cablesPairs.Count;
-            bool sameCount = _connectedPlugs.Count == leftCablesPairs.Count + rightCablesPairs.Count;
+            bool sameCount = _connectedPlugs.Count == leftCablesPlugs.Count + rightCablesPlugs.Count;
             if (sameCount)
             {
                 bool win = true;
-                var cablesPairs = GetAllCablePairs();
-                for (int i = 0; i < cablesPairs.Count && win; i++)
+                for (int i = 0; i < slotPairs.Count && win; i++)
                 {
-                    var cablePair = cablesPairs[i];
-                    var plug = cablePair.cablePlug;
-                    var slot = cablePair.cableSlot;
+                    var slotPair = slotPairs[i];
+                    var leftPlug = GetPlugAtSlot(slotPair.leftSlot);
+                    var rightPlug = GetPlugAtSlot(slotPair.rightSlot);
 
-                    var connectedSlot = _connectedPlugs[plug];
-                    if (slot != connectedSlot)
-                    {
-                        win = false;
-                    }
+                    int leftId = GetPlugId(leftPlug);
+                    int rightId = GetPlugId(rightPlug);
+
+                    bool firstAlternative = (leftId == slotPair.idA && rightId == slotPair.idB);
+                    bool secondAlternative = (leftId == slotPair.idB && rightId == slotPair.idA);
+                    win = firstAlternative || secondAlternative;
                 }
 
                 if (win)
@@ -323,10 +335,9 @@ namespace Puzzles
         {
             float distance = Single.MaxValue;
             CableSlot closestSlot = default;
-            var cablesPairs = GetAllCablePairs();
-            foreach (var cablePair in cablesPairs)
+            var cablesPairs = GetAllCablePlugs();
+            foreach (var slot in GetAllSlots())
             {
-                var slot = cablePair.cableSlot;
                 var slotPosition = slot.transform.position;
                 position.z = slotPosition.z;
                 float dist = (position - slotPosition).magnitude;
@@ -344,10 +355,10 @@ namespace Puzzles
         {
             float distance = Single.MaxValue;
             CablePlug closestPlug = default;
-            var cablesPairs = GetAllCablePairs();
-            foreach (var cablePair in cablesPairs)
+            var plugsIds = GetAllCablePlugs();
+            foreach (var plugId in plugsIds)
             {
-                var plug = cablePair.cablePlug;
+                var plug = plugId.plug;
                 var plugPosition = plug.transform.position;
                 position.z = plugPosition.z;
                 float dist = (position - plugPosition).magnitude;
@@ -361,11 +372,11 @@ namespace Puzzles
             return (closestPlug, distance);
         }
 
-        private bool IsPlugInPairsList(CablePlug plug, List<CablePair> pairs)
+        private bool IsPlugInPairsList(CablePlug plug, List<CablePlugId> pairs)
         {
             foreach (var pair in pairs)
             {
-                if (pair.cablePlug == plug)
+                if (pair.plug == plug)
                 {
                     return true;
                 }
@@ -376,7 +387,7 @@ namespace Puzzles
 
         private Rect GetPlugBounds(CablePlug plug)
         {
-            if (IsPlugInPairsList(plug, leftCablesPairs))
+            if (IsPlugInPairsList(plug, leftCablesPlugs))
             {
                 return leftBounds;
             }
@@ -385,5 +396,33 @@ namespace Puzzles
                 return rightBounds;
             }
         }
+
+        private int GetPlugId(CablePlug plug)
+        {
+            var plugs = GetAllCablePlugs();
+            foreach (var plugId in plugs)
+            {
+                if (plugId.plug == plug)
+                    return plugId.id;
+            }
+            
+            throw new ArgumentException("$Plug {plug} does not exists");
+        }
+    }
+
+    [Serializable]
+    public struct CablePlugId
+    {
+        public CablePlug plug;
+        public int id;
+    }
+
+    [Serializable]
+    public struct SlotPair
+    {
+        public CableSlot leftSlot;
+        public CableSlot rightSlot;
+        public int idA;
+        public int idB;
     }
 }

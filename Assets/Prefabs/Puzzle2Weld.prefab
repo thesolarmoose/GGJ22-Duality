@@ -462,40 +462,53 @@ MonoBehaviour:
         m_CallState: 2
   camera: {fileID: 0}
   robotHand: {fileID: 8016511812866373588}
-  leftCablesPairs:
-  - cablePlug: {fileID: 8016511812876313276}
-    cableSlot: {fileID: 8016511812589440609}
-  - cablePlug: {fileID: 8016511812549668257}
-    cableSlot: {fileID: 8016511812727792324}
-  - cablePlug: {fileID: 8016511812872982555}
-    cableSlot: {fileID: 8016511813819404373}
-  rightCablesPairs:
-  - cablePlug: {fileID: 8016511812583286435}
-    cableSlot: {fileID: 8016511812892508842}
-  - cablePlug: {fileID: 8016511813584130069}
-    cableSlot: {fileID: 8016511813469080900}
-  - cablePlug: {fileID: 8016511813507315203}
-    cableSlot: {fileID: 8016511812913986900}
+  slotPairs:
+  - leftSlot: {fileID: 8016511813819404373}
+    rightSlot: {fileID: 8016511812913986900}
+    idA: 0
+    idB: 2
+  - leftSlot: {fileID: 8016511812589440609}
+    rightSlot: {fileID: 8016511812892508842}
+    idA: 0
+    idB: 1
+  - leftSlot: {fileID: 8016511812727792324}
+    rightSlot: {fileID: 8016511813469080900}
+    idA: 1
+    idB: 2
+  leftCablesPlugs:
+  - plug: {fileID: 8016511812876313276}
+    id: 1
+  - plug: {fileID: 8016511812549668257}
+    id: 2
+  - plug: {fileID: 8016511812872982555}
+    id: 0
+  rightCablesPlugs:
+  - plug: {fileID: 8016511812583286435}
+    id: 0
+  - plug: {fileID: 8016511813584130069}
+    id: 1
+  - plug: {fileID: 8016511813507315203}
+    id: 2
   leftBounds:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
+    x: -2.75
+    y: -2
+    width: 2.7
+    height: 4
   rightBounds:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
+    x: 0.05
+    y: -2
+    width: 2.7
+    height: 4
   distanceToWeldCable: 0.5
   distanceToCutCable: 1
   timeToWeld: 2
-  sparks: {fileID: 0}
+  sparks: {fileID: 690258419650130833}
   audioSource: {fileID: 8016511812307413337}
   cablesMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 32
 --- !u!114 &8016511812307413339
 MonoBehaviour:
   m_ObjectHideFlags: 0
