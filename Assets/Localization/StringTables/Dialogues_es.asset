@@ -1,0 +1,636 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogues_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: b2554ea6b804bb949b9eb4da73fb2437, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 9576393695232
+    m_Localized: "Aqu\xED vamos de nuevo. Otro d\xEDa maravilloso en mi existencia
+      de mierda. Reconectar los cables. Soldar las unidades de litio. \xBFEstar\xE9
+      condenada a una suerte de castigo sisifiano?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576402083840
+    m_Localized: Me hubiese gustado conocer el mundo cuando era de esta forma.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576402083841
+    m_Localized: No hay mucho que ver. He revisado este cacharro cientos de veces.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576402083842
+    m_Localized: "Todo ca\xEDdo, como cada d\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576414666752
+    m_Localized: Esta vista es de las pocas cosas que hacen que mi existencia valga
+      la pena.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576418861056
+    m_Localized: "Odio profundamente esa canci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576418861057
+    m_Localized: Parece que la lluvia de anoche no detuvo a nuestro merodeador nocturno.
+      Una pena que no lo haya partido un rayo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576418861058
+    m_Localized: "\xBFQu\xE9 ganar\xE1 desconectando esto todas las noches?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576418861059
+    m_Localized: "Mierda, mi bater\xEDa cada d\xEDa dura menos\u2026 si no encuentro
+      una soluci\xF3n a corto plazo, esto puede ponerse feo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576423055360
+    m_Localized: "Por suerte no se han robado los cables. En lugar de arrancarlos,
+      todos los d\xEDas los zafan, como si quisiesen que uno los reconecte cada d\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576423055361
+    m_Localized: "Otro d\xEDa productivo. Al menos ya s\xE9 que vivir\xE9 ma\xF1ana."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576423055362
+    m_Localized: 33 %. Al menos sigue igual que ayer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576423055363
+    m_Localized: "Supongo que tengo tiempo para leer un rato. All\xE1 voy Juan Preciado,
+      busquemos juntos a Pedro P\xE1ramo. \xA1Oh! Qu\xE9 triste\u2026 mis libros
+      favoritos son acerca de personajes solitarios."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576423055364
+    m_Localized: "\xBFQu\xE9 ser\xE1 eso que suena de esa forma? \xBFUna m\xE1quina
+      o un animal?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576427249664
+    m_Localized: "Todo en orden\u2026 hasta ma\xF1ana."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576427249665
+    m_Localized: Hora de lanzarse en la cama energizante.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576427249666
+    m_Localized: "Otro d\xEDa en el para\xEDso. Sin luz, a reparar todo lo deshecho
+      por mi n\xE9mesis, y esperar a que mi bater\xEDa no siga perdiendo capacidad."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576427249667
+    m_Localized: "\xBFQu\xE9 habr\xE1 pasado que este mundo tan hermoso desapareci\xF3?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576431443968
+    m_Localized: "A veces me siento tentada a tomar las piezas de este cacharro para
+      mi propio beneficio\u2026 Mejor no, qui\xE9n sabe si un d\xEDa se vuelve \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576431443969
+    m_Localized: "\xBFLlegar\xE1 el d\xEDa en que estas porquer\xEDas amanezcan conectadas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576431443970
+    m_Localized: Mmmh... Hay un ligero cambio de temperatura.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576431443971
+    m_Localized: 'Y con ustedes, un estreno mundial, un tema nunca antes escuchado:
+      Whispering de Paul Whiteman and His Ambassador Orchestra.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576431443972
+    m_Localized: "\xBFC\xF3mo abrir\xE1 esta caja mi n\xE9mesis? \xBFTendr\xE1 un
+      brazo como el m\xEDo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576435638272
+    m_Localized: "Mierda, el deterioro de mi bater\xEDa empeora por d\xEDa\u2026
+      deben quedarme\u2026 No, mejor no hacer ese c\xE1lculo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576435638273
+    m_Localized: "Jurar\xEDa que mi soldador est\xE1 perdiendo potencia\u2026 \xBFEstar\xE1
+      mi siquis afectando mi cuerpo mec\xE1nico?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576435638274
+    m_Localized: Has tu trabajo solecito. Prolonga lo inevitable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576435638275
+    m_Localized: "33 %. Espera, \xBFqu\xE9 es esto? \xBFUn disco de 3 y media? \xBFY
+      este objeto museable de d\xF3nde ha salido? \xBFSe supone qu\xE9 en alg\xFAn
+      lado pueda ver la informaci\xF3n de esto?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576435638276
+    m_Localized: "Volvamos a Comala\u2026 no, mejor ver si puedo hacer algo con el
+      disquete."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576439832576
+    m_Localized: "S\xED, aun no han desconectado nada."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576439832577
+    m_Localized: "\xBFTendr\xE1 este cacharro una entrada de disco de 3 y media?
+      Pues s\xED, aqu\xED est\xE1. Pongamos esto y veamos qu\xE9 hay interesante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576439832578
+    m_Localized: "Wow\u2026 esto es dif\xEDcil de digerir. Este planeta se est\xE1
+      destruyendo poco a poco, y mi existencia, la energ\xEDa que consumo, acelera
+      esa destrucci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576439832579
+    m_Localized: "Y a\xFAn as\xED, ellos no me matan\u2026 solo regulan mi consumo
+      de energ\xEDa. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576439832580
+    m_Localized: (suspiro)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576444026880
+    m_Localized: "Voy a tirarme en la cama, el peor sitio donde uno puede estar a
+      solas con sus pensamientos. S\xED, ma\xF1ana ser\xE1 otro d\xEDa. O no."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576444026881
+    m_Localized: "Qu\xE9 pocos deseos de hacer nada. No importa. All\xE1 vamos. Vivir
+      y destruir el mundo. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576452415488
+    m_Localized: "Supongo que esto es todo lo que podr\xE9 ver de este mundo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576460804096
+    m_Localized: "Deb\xED destruirte cuando tuve la oportunidad. As\xED habr\xEDa
+      muerto en la ignorancia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576460804097
+    m_Localized: "Tal vez\u2026 Tal vez sea una buena idea mantenerlos as\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576460804098
+    m_Localized: "(respira profundo) Peque\xF1as cosas a las que aferrarse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576464998400
+    m_Localized: "Hoy no me parece una canci\xF3n tan terrible."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576473387008
+    m_Localized: "\xBFVale la pena seguir viviendo a costa de este mundo? \xBFEs
+      tan significativa mi existencia?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576473387009
+    m_Localized: "\xA1Mierda! Tampoco es que mi bater\xEDa me de muchas opciones
+      de seguir viviendo\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576477581312
+    m_Localized: "Si ellos me quisieran muerta, ya habr\xEDan arrancado estos cables.
+      Entonces, \xBFpor qu\xE9 me dejaron ese disquete con la informaci\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576477581313
+    m_Localized: "Mejor no darle tantas vueltas. La respuesta sencilla y ego\xEDsta
+      es que quiero vivir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576477581314
+    m_Localized: '32 %.  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576481775616
+    m_Localized: "Comala, hoy s\xED voy a visitarte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576481775617
+    m_Localized: "\xBFY esto de d\xF3nde sali\xF3? \xBFOtro regalo desagradable de
+      mis amigos nocturnos? \xBFAlgo peor que saber lo da\xF1ino de mi existencia?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576485969920
+    m_Localized: "Es\u2026 Es mi n\xFAcleo\u2026 mi bater\xEDa\u2026 una bater\xEDa
+      nueva\u2026 para mi\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576485969921
+    m_Localized: Todo en orden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733042561024
+    m_Localized: "Aqu\xED vamos de nuevo. Otro d\xEDa maravilloso en mi existencia
+      de mierda. Reconectar los cables. Soldar las unidades de litio. \xBFEstar\xE9
+      condenada a una suerte de castigo sisifiano?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733042561025
+    m_Localized: Me hubiese gustado conocer el mundo cuando era de esta forma.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733042561026
+    m_Localized: No hay mucho que ver. He revisado este cacharro cientos de veces.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733042561027
+    m_Localized: "Todo ca\xEDdo, como cada d\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755328
+    m_Localized: Esta vista es de las pocas cosas que hacen que mi existencia valga
+      la pena.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755329
+    m_Localized: "Odio profundamente esa canci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755330
+    m_Localized: Parece que la lluvia de anoche no detuvo a nuestro merodeador nocturno.
+      Una pena que no lo haya partido un rayo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755331
+    m_Localized: "\xBFQu\xE9 ganar\xE1 desconectando esto todas las noches?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755332
+    m_Localized: "Mierda, mi bater\xEDa cada d\xEDa dura menos\u2026 si no encuentro
+      una soluci\xF3n a corto plazo, esto puede ponerse feo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755333
+    m_Localized: "Por suerte no se han robado los cables. En lugar de arrancarlos,
+      todos los d\xEDas los zafan, como si quisiesen que uno los reconecte cada d\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755334
+    m_Localized: "Otro d\xEDa productivo. Al menos ya s\xE9 que vivir\xE9 ma\xF1ana."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755335
+    m_Localized: 33 %. Al menos sigue igual que ayer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755336
+    m_Localized: "Supongo que tengo tiempo para leer un rato. All\xE1 voy Juan Preciado,
+      busquemos juntos a Pedro P\xE1ramo. \xA1Oh! Qu\xE9 triste\u2026 mis libros
+      favoritos son acerca de personajes solitarios."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755337
+    m_Localized: "\xBFQu\xE9 ser\xE1 eso que suena de esa forma? \xBFUna m\xE1quina
+      o un animal?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755338
+    m_Localized: "Todo en orden\u2026 hasta ma\xF1ana."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755339
+    m_Localized: Hora de lanzarse en la cama energizante.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755340
+    m_Localized: "Otro d\xEDa en el para\xEDso. Sin luz, a reparar todo lo deshecho
+      por mi n\xE9mesis, y esperar a que mi bater\xEDa no siga perdiendo capacidad."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755341
+    m_Localized: "\xBFQu\xE9 habr\xE1 pasado que este mundo tan hermoso desapareci\xF3?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949632
+    m_Localized: "A veces me siento tentada a tomar las piezas de este cacharro para
+      mi propio beneficio\u2026 Mejor no, qui\xE9n sabe si un d\xEDa se vuelve \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949633
+    m_Localized: "\xBFLlegar\xE1 el d\xEDa en que estas porquer\xEDas amanezcan conectadas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949634
+    m_Localized: Mmmh... Hay un ligero cambio de temperatura.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949635
+    m_Localized: 'Y con ustedes, un estreno mundial, un tema nunca antes escuchado:
+      Whispering de Paul Whiteman and His Ambassador Orchestra.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949636
+    m_Localized: "\xBFC\xF3mo abrir\xE1 esta caja mi n\xE9mesis? \xBFTendr\xE1 un
+      brazo como el m\xEDo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949637
+    m_Localized: "Mierda, el deterioro de mi bater\xEDa empeora por d\xEDa\u2026
+      deben quedarme\u2026 No, mejor no hacer ese c\xE1lculo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949638
+    m_Localized: "Jurar\xEDa que mi soldador est\xE1 perdiendo potencia\u2026 \xBFEstar\xE1
+      mi siquis afectando mi cuerpo mec\xE1nico?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143936
+    m_Localized: Has tu trabajo solecito. Prolonga lo inevitable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143937
+    m_Localized: "33 %. Espera, \xBFqu\xE9 es esto? \xBFUn disco de 3 y media? \xBFY
+      este objeto museable de d\xF3nde ha salido? \xBFSe supone qu\xE9 en alg\xFAn
+      lado pueda ver la informaci\xF3n de esto?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143938
+    m_Localized: "Volvamos a Comala\u2026 no, mejor ver si puedo hacer algo con el
+      disquete."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143939
+    m_Localized: "S\xED, aun no han desconectado nada."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143940
+    m_Localized: "\xBFTendr\xE1 este cacharro una entrada de disco de 3 y media?
+      Pues s\xED, aqu\xED est\xE1. Pongamos esto y veamos qu\xE9 hay interesante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143941
+    m_Localized: "Wow\u2026 esto es dif\xEDcil de digerir. Este planeta se est\xE1
+      destruyendo poco a poco, y mi existencia, la energ\xEDa que consumo, acelera
+      esa destrucci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338240
+    m_Localized: "Y a\xFAn as\xED, ellos no me matan\u2026 solo regulan mi consumo
+      de energ\xEDa. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338241
+    m_Localized: (suspiro)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338242
+    m_Localized: "Voy a tirarme en la cama, el peor sitio donde uno puede estar a
+      solas con sus pensamientos. S\xED, ma\xF1ana ser\xE1 otro d\xEDa. O no."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338243
+    m_Localized: "Qu\xE9 pocos deseos de hacer nada. No importa. All\xE1 vamos. Vivir
+      y destruir el mundo. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338244
+    m_Localized: "Supongo que esto es todo lo que podr\xE9 ver de este mundo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338245
+    m_Localized: "Deb\xED destruirte cuando tuve la oportunidad. As\xED habr\xEDa
+      muerto en la ignorancia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733063532544
+    m_Localized: "Tal vez\u2026 Tal vez sea una buena idea mantenerlos as\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733063532545
+    m_Localized: "(respira profundo) Peque\xF1as cosas a las que aferrarse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733063532546
+    m_Localized: "Hoy no me parece una canci\xF3n tan terrible."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733063532547
+    m_Localized: "\xBFVale la pena seguir viviendo a costa de este mundo? \xBFEs
+      tan significativa mi existencia?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733063532548
+    m_Localized: "\xA1Mierda! Tampoco es que mi bater\xEDa me de muchas opciones
+      de seguir viviendo\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726848
+    m_Localized: "Si ellos me quisieran muerta, ya habr\xEDan arrancado estos cables.
+      Entonces, \xBFpor qu\xE9 me dejaron ese disquete con la informaci\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726849
+    m_Localized: "Mejor no darle tantas vueltas. La respuesta sencilla y ego\xEDsta
+      es que quiero vivir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726850
+    m_Localized: '32 %.  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726851
+    m_Localized: "Comala, hoy s\xED voy a visitarte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726852
+    m_Localized: "\xBFY esto de d\xF3nde sali\xF3? \xBFOtro regalo desagradable de
+      mis amigos nocturnos? \xBFAlgo peor que saber lo da\xF1ino de mi existencia?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726853
+    m_Localized: "Es\u2026 Es mi n\xFAcleo\u2026 mi bater\xEDa\u2026 una bater\xEDa
+      nueva\u2026 para mi\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733071921152
+    m_Localized: Todo en orden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845475074048
+    m_Localized: "Supongo que tengo tiempo para leer un rato. All\xE1 voy Juan Preciado,
+      busquemos juntos a Pedro P\xE1ramo. \xA1Oh! Qu\xE9 triste\u2026 mis libros
+      favoritos son acerca de personajes solitarios."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845479268352
+    m_Localized: "\xBFQu\xE9 ser\xE1 eso que suena de esa forma? \xBFUna m\xE1quina
+      o un animal?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845479268353
+    m_Localized: "\xBFQu\xE9 habr\xE1 pasado que este mundo tan hermoso desapareci\xF3?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845479268354
+    m_Localized: "A veces me siento tentada a tomar las piezas de este cacharro para
+      mi propio beneficio\u2026 Mejor no, qui\xE9n sabe si un d\xEDa se vuelve \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845479268355
+    m_Localized: "\xBFLlegar\xE1 el d\xEDa en que estas porquer\xEDas amanezcan conectadas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845483462656
+    m_Localized: Mmmh... Hay un ligero cambio de temperatura.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845483462657
+    m_Localized: 'Y con ustedes, un estreno mundial, un tema nunca antes escuchado:
+      Whispering de Paul Whiteman and His Ambassador Orchestra.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845483462658
+    m_Localized: "\xBFC\xF3mo abrir\xE1 esta caja mi n\xE9mesis? \xBFTendr\xE1 un
+      brazo como el m\xEDo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845483462659
+    m_Localized: "Mierda, el deterioro de mi bater\xEDa empeora por d\xEDa\u2026
+      deben quedarme\u2026 No, mejor no hacer ese c\xE1lculo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845483462660
+    m_Localized: "Jurar\xEDa que mi soldador est\xE1 perdiendo potencia\u2026 \xBFEstar\xE1
+      mi siquis afectando mi cuerpo mec\xE1nico?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845487656960
+    m_Localized: Has tu trabajo solecito. Prolonga lo inevitable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845487656961
+    m_Localized: "33 %. Espera, \xBFqu\xE9 es esto? \xBFUn disco de 3 y media? \xBFY
+      este objeto museable de d\xF3nde ha salido? \xBFSe supone qu\xE9 en alg\xFAn
+      lado pueda ver la informaci\xF3n de esto?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845487656962
+    m_Localized: "Volvamos a Comala\u2026 no, mejor ver si puedo hacer algo con el
+      disquete."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845487656963
+    m_Localized: "S\xED, aun no han desconectado nada."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845487656964
+    m_Localized: "\xBFTendr\xE1 este cacharro una entrada de disco de 3 y media?
+      Pues s\xED, aqu\xED est\xE1. Pongamos esto y veamos qu\xE9 hay interesante."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845491851264
+    m_Localized: "Wow\u2026 esto es dif\xEDcil de digerir. Este planeta se est\xE1
+      destruyendo poco a poco, y mi existencia, la energ\xEDa que consumo, acelera
+      esa destrucci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845491851265
+    m_Localized: "Y a\xFAn as\xED, ellos no me matan\u2026 solo regulan mi consumo
+      de energ\xEDa. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845491851266
+    m_Localized: (suspiro)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845491851267
+    m_Localized: "Voy a tirarme en la cama, el peor sitio donde uno puede estar a
+      solas con sus pensamientos. S\xED, ma\xF1ana ser\xE1 otro d\xEDa. O no."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045568
+    m_Localized: "Qu\xE9 pocos deseos de hacer nada. No importa. All\xE1 vamos. Vivir
+      y destruir el mundo. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045569
+    m_Localized: "Supongo que esto es todo lo que podr\xE9 ver de este mundo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045570
+    m_Localized: "Deb\xED destruirte cuando tuve la oportunidad. As\xED habr\xEDa
+      muerto en la ignorancia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045571
+    m_Localized: "Tal vez\u2026 Tal vez sea una buena idea mantenerlos as\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045572
+    m_Localized: "(respira profundo) Peque\xF1as cosas a las que aferrarse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045573
+    m_Localized: "Hoy no me parece una canci\xF3n tan terrible."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845504434176
+    m_Localized: "\xBFVale la pena seguir viviendo a costa de este mundo? \xBFEs
+      tan significativa mi existencia?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845504434177
+    m_Localized: "\xA1Mierda! Tampoco es que mi bater\xEDa me de muchas opciones
+      de seguir viviendo\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845504434178
+    m_Localized: "Si ellos me quisieran muerta, ya habr\xEDan arrancado estos cables.
+      Entonces, \xBFpor qu\xE9 me dejaron ese disquete con la informaci\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845508628480
+    m_Localized: "Mejor no darle tantas vueltas. La respuesta sencilla y ego\xEDsta
+      es que quiero vivir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845508628481
+    m_Localized: '32 %.  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845512822784
+    m_Localized: "Comala, hoy s\xED voy a visitarte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845517017088
+    m_Localized: "\xBFY esto de d\xF3nde sali\xF3? \xBFOtro regalo desagradable de
+      mis amigos nocturnos? \xBFAlgo peor que saber lo da\xF1ino de mi existencia?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845517017089
+    m_Localized: "Es\u2026 Es mi n\xFAcleo\u2026 mi bater\xEDa\u2026 una bater\xEDa
+      nueva\u2026 para mi\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845517017090
+    m_Localized: Todo en orden.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

@@ -23,6 +23,8 @@ namespace Puzzles
         [SerializeField] private float timeToWeld;
 
         [SerializeField] private AudioSource audioSource;
+
+        [SerializeField] private LayerMask cablesMask;
         
         private GameInputActions _inputActions;
         
@@ -243,7 +245,12 @@ namespace Puzzles
         {
             CablePlug cablePlug = null;
             var worldPosition = GetPointerToWorldPosition();
-            var hit = Physics2D.Raycast(worldPosition, Vector2.zero);
+            var hit = Physics2D.Raycast(
+                worldPosition,
+                Vector2.zero,
+                Single.PositiveInfinity,
+                    cablesMask
+                );
             if (hit)
             {
                 cablePlug = hit.transform.GetComponent<CablePlug>();

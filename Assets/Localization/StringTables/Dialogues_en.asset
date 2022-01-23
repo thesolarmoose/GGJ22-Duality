@@ -1,0 +1,622 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogues_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: b2554ea6b804bb949b9eb4da73fb2437, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 9576393695232
+    m_Localized: Here we go again. Another great day of my shitty existence. Connecting
+      de wires, welding the lithium units. Is this some kind of Sisyphos' punishment?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576402083840
+    m_Localized: I would have liked to know the world when it was like this.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576402083841
+    m_Localized: 'There is not much to search for. I have checked this clunker hundreds
+      of times. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576402083842
+    m_Localized: Everything is disconnected, like every day.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576414666752
+    m_Localized: This landscape is one of the few things that make my existence meaningful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576418861056
+    m_Localized: I really hate that song.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576418861057
+    m_Localized: It looks like the rain didn't stop our night crawler. Too bad he
+      wasn't struck by lightning.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576418861058
+    m_Localized: What's the point of disconnecting this every night?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576418861059
+    m_Localized: Shit, my battery lasts less every day... if I don't find a short-term
+      solution, this could get ugly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576423055360
+    m_Localized: Shit, my battery's duration is worst every day. If I don't find
+      a short-term solution, this could get really ugly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576423055361
+    m_Localized: Another great day. At least I know  I will live tomorrow.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576423055362
+    m_Localized: 33 %. It is just like yesterday.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576423055363
+    m_Localized: "I guess I have time to read for a bit. Here I go, Juan Preciado.
+      Let's look for Pedro P\xE1ramo together. Oh! This is sad. My favorite books
+      are about lonely characters."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576423055364
+    m_Localized: What is that sound? A machine or an animal?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576427249664
+    m_Localized: "Everything is okay\u2026 until tomorrow."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576427249665
+    m_Localized: Time to get on the energizer bed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576427249666
+    m_Localized: Another day in paradise. I am ready to repair everything my nemesis
+      has undone and waiting for my battery to die.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576427249667
+    m_Localized: What happens that this beautiful world has disappeared?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576431443968
+    m_Localized: "Sometimes I feel tempted to take the pieces of this pileup for
+      my benefit\u2026 Better not. Who knows if one day it will come in handy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576431443969
+    m_Localized: I hope someday I wake up and all these things are already connected.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576431443970
+    m_Localized: "Mmmh\u2026 it feels a little cooler."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576431443971
+    m_Localized: 'And now, a world premiere, a song never heard before: Whispering
+      by Paul Whiteman and His Ambassador Orchestra.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576431443972
+    m_Localized: How does my nemesis open this box? Does he have an arm like this
+      one?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576435638272
+    m_Localized: "Shit, my battery is getting even worse\u2026 I must have\u2026
+      No, better not do that calculation. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576435638273
+    m_Localized: "I could swear my welder is losing power\u2026 Is my psyche affecting
+      my mechanical body?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576435638274
+    m_Localized: Do your job my dear sun. Prolong the inevitable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576435638275
+    m_Localized: 33%. Wait, what is this? A floppy disc? And where did this museum
+      object come from? Am I supposed to read this somewhere?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576435638276
+    m_Localized: I am not visiting Comala today. Let's see if I can do something
+      with the floppy disk.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576439832576
+    m_Localized: Yeah, they haven't turned anything off yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576439832577
+    m_Localized: Will this clunker have a floppy disk input? Who would guess? Here
+      it is. Let's put this on and see what's interesting.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576439832578
+    m_Localized: "Wow\u2026 this is hard. This planet is being destroyed slowly,
+      and my existence, the energy I consume, accelerates that destruction."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576439832579
+    m_Localized: "And yet, they don't kill me\u2026 they just... regulate my energy
+      consumption."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576439832580
+    m_Localized: (sigh)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576444026880
+    m_Localized: I'm going to get on the bed, the worst place to be alone with your
+      thoughts. Yes, tomorrow will be another day. Or not.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576444026881
+    m_Localized: I don't want to do anything. It doesn't matter. Here I go. To live
+      and destroy the world.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576452415488
+    m_Localized: I guess this is all I'll ever see of this world.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576460804096
+    m_Localized: I should destroy you when I had the chance. At least I would have
+      died in ignorance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576460804097
+    m_Localized: "Maybe\u2026 Maybe it's a good idea to keep them disconnected."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576460804098
+    m_Localized: (deep breath) The little things to hold on to.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576464998400
+    m_Localized: Today it doesn't seem like such a terrible song.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576473387008
+    m_Localized: Is it worth continuing with my life at the expense of this world?
+      Is my existence so significant?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576473387009
+    m_Localized: Shit! It's not like my battery gives me many options to continue
+      living...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576477581312
+    m_Localized: If they wanted me dead, they would have ripped these cables out
+      by now. So why did they leave me that diskette with the information?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576477581313
+    m_Localized: If they wanted me dead, they would have ripped these cables out
+      by now. So... why did they leave me that diskette with the information?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576477581314
+    m_Localized: 32 %.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576481775616
+    m_Localized: Comala, today I'm going to visit you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576481775617
+    m_Localized: And where did this come from? Another nasty treat from my late-night
+      friends? Anything worse than knowing how harmful my existence is?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576485969920
+    m_Localized: It's... It's my core... my battery... a new battery... for me...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9576485969921
+    m_Localized: Everything looks fine.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733042561024
+    m_Localized: Here we go again. Another great day of my shitty existence. Connecting
+      de wires, welding the lithium units. Is this some kind of Sisyphos' punishment?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733042561025
+    m_Localized: I would have liked to know the world when it was like this.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733042561026
+    m_Localized: 'There is not much to search for. I have checked this clunker hundreds
+      of times. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733042561027
+    m_Localized: Everything is disconnected, like every day.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755328
+    m_Localized: This landscape is one of the few things that make my existence meaningful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755329
+    m_Localized: I really hate that song.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755330
+    m_Localized: It looks like the rain didn't stop our night crawler. Too bad he
+      wasn't struck by lightning.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755331
+    m_Localized: What's the point of disconnecting this every night?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755332
+    m_Localized: Shit, my battery lasts less every day... if I don't find a short-term
+      solution, this could get ugly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755333
+    m_Localized: Shit, my battery's duration is worst every day. If I don't find
+      a short-term solution, this could get really ugly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755334
+    m_Localized: Another great day. At least I know  I will live tomorrow.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755335
+    m_Localized: 33 %. It is just like yesterday.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755336
+    m_Localized: "I guess I have time to read for a bit. Here I go, Juan Preciado.
+      Let's look for Pedro P\xE1ramo together. Oh! This is sad. My favorite books
+      are about lonely characters."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755337
+    m_Localized: What is that sound? A machine or an animal?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755338
+    m_Localized: "Everything is okay\u2026 until tomorrow."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755339
+    m_Localized: Time to get on the energizer bed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755340
+    m_Localized: Another day in paradise. I am ready to repair everything my nemesis
+      has undone and waiting for my battery to die.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733046755341
+    m_Localized: What happens that this beautiful world has disappeared?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949632
+    m_Localized: "Sometimes I feel tempted to take the pieces of this pileup for
+      my benefit\u2026 Better not. Who knows if one day it will come in handy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949633
+    m_Localized: I hope someday I wake up and all these things are already connected.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949634
+    m_Localized: "Mmmh\u2026 it feels a little cooler."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949635
+    m_Localized: 'And now, a world premiere, a song never heard before: Whispering
+      by Paul Whiteman and His Ambassador Orchestra.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949636
+    m_Localized: How does my nemesis open this box? Does he have an arm like this
+      one?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949637
+    m_Localized: "Shit, my battery is getting even worse\u2026 I must have\u2026
+      No, better not do that calculation. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733050949638
+    m_Localized: "I could swear my welder is losing power\u2026 Is my psyche affecting
+      my mechanical body?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143936
+    m_Localized: Do your job my dear sun. Prolong the inevitable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143937
+    m_Localized: 33%. Wait, what is this? A floppy disc? And where did this museum
+      object come from? Am I supposed to read this somewhere?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143938
+    m_Localized: I am not visiting Comala today. Let's see if I can do something
+      with the floppy disk.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143939
+    m_Localized: Yeah, they haven't turned anything off yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143940
+    m_Localized: Will this clunker have a floppy disk input? Who would guess? Here
+      it is. Let's put this on and see what's interesting.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733055143941
+    m_Localized: "Wow\u2026 this is hard. This planet is being destroyed slowly,
+      and my existence, the energy I consume, accelerates that destruction."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338240
+    m_Localized: "And yet, they don't kill me\u2026 they just... regulate my energy
+      consumption."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338241
+    m_Localized: (sigh)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338242
+    m_Localized: I'm going to get on the bed, the worst place to be alone with your
+      thoughts. Yes, tomorrow will be another day. Or not.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338243
+    m_Localized: I don't want to do anything. It doesn't matter. Here I go. To live
+      and destroy the world.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338244
+    m_Localized: I guess this is all I'll ever see of this world.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733059338245
+    m_Localized: I should destroy you when I had the chance. At least I would have
+      died in ignorance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733063532544
+    m_Localized: "Maybe\u2026 Maybe it's a good idea to keep them disconnected."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733063532545
+    m_Localized: (deep breath) The little things to hold on to.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733063532546
+    m_Localized: Today it doesn't seem like such a terrible song.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733063532547
+    m_Localized: Is it worth continuing with my life at the expense of this world?
+      Is my existence so significant?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733063532548
+    m_Localized: Shit! It's not like my battery gives me many options to continue
+      living...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726848
+    m_Localized: If they wanted me dead, they would have ripped these cables out
+      by now. So why did they leave me that diskette with the information?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726849
+    m_Localized: If they wanted me dead, they would have ripped these cables out
+      by now. So... why did they leave me that diskette with the information?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726850
+    m_Localized: 32 %.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726851
+    m_Localized: Comala, today I'm going to visit you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726852
+    m_Localized: And where did this come from? Another nasty treat from my late-night
+      friends? Anything worse than knowing how harmful my existence is?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733067726853
+    m_Localized: It's... It's my core... my battery... a new battery... for me...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9733071921152
+    m_Localized: Everything looks fine.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845475074048
+    m_Localized: "I guess I have time to read for a bit. Here I go, Juan Preciado.
+      Let's look for Pedro P\xE1ramo together. Oh! This is sad. My favorite books
+      are about lonely characters."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845479268352
+    m_Localized: What is that sound? A machine or an animal?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845479268353
+    m_Localized: What happens that this beautiful world has disappeared?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845479268354
+    m_Localized: "Sometimes I feel tempted to take the pieces of this pileup for
+      my benefit\u2026 Better not. Who knows if one day it will come in handy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845479268355
+    m_Localized: I hope someday I wake up and all these things are already connected.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845483462656
+    m_Localized: "Mmmh\u2026 it feels a little cooler."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845483462657
+    m_Localized: 'And now, a world premiere, a song never heard before: Whispering
+      by Paul Whiteman and His Ambassador Orchestra.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845483462658
+    m_Localized: How does my nemesis open this box? Does he have an arm like this
+      one?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845483462659
+    m_Localized: "Shit, my battery is getting even worse\u2026 I must have\u2026
+      No, better not do that calculation. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845483462660
+    m_Localized: "I could swear my welder is losing power\u2026 Is my psyche affecting
+      my mechanical body?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845487656960
+    m_Localized: Do your job my dear sun. Prolong the inevitable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845487656961
+    m_Localized: 33%. Wait, what is this? A floppy disc? And where did this museum
+      object come from? Am I supposed to read this somewhere?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845487656962
+    m_Localized: I am not visiting Comala today. Let's see if I can do something
+      with the floppy disk.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845487656963
+    m_Localized: Yeah, they haven't turned anything off yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845487656964
+    m_Localized: Will this clunker have a floppy disk input? Who would guess? Here
+      it is. Let's put this on and see what's interesting.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845491851264
+    m_Localized: "Wow\u2026 this is hard. This planet is being destroyed slowly,
+      and my existence, the energy I consume, accelerates that destruction."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845491851265
+    m_Localized: "And yet, they don't kill me\u2026 they just... regulate my energy
+      consumption."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845491851266
+    m_Localized: (sigh)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845491851267
+    m_Localized: I'm going to get on the bed, the worst place to be alone with your
+      thoughts. Yes, tomorrow will be another day. Or not.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045568
+    m_Localized: I don't want to do anything. It doesn't matter. Here I go. To live
+      and destroy the world.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045569
+    m_Localized: I guess this is all I'll ever see of this world.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045570
+    m_Localized: I should destroy you when I had the chance. At least I would have
+      died in ignorance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045571
+    m_Localized: "Maybe\u2026 Maybe it's a good idea to keep them disconnected."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045572
+    m_Localized: (deep breath) The little things to hold on to.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845496045573
+    m_Localized: Today it doesn't seem like such a terrible song.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845504434176
+    m_Localized: Is it worth continuing with my life at the expense of this world?
+      Is my existence so significant?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845504434177
+    m_Localized: Shit! It's not like my battery gives me many options to continue
+      living...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845504434178
+    m_Localized: If they wanted me dead, they would have ripped these cables out
+      by now. So why did they leave me that diskette with the information?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845508628480
+    m_Localized: If they wanted me dead, they would have ripped these cables out
+      by now. So... why did they leave me that diskette with the information?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845508628481
+    m_Localized: 32 %.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845512822784
+    m_Localized: Comala, today I'm going to visit you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845517017088
+    m_Localized: And where did this come from? Another nasty treat from my late-night
+      friends? Anything worse than knowing how harmful my existence is?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845517017089
+    m_Localized: It's... It's my core... my battery... a new battery... for me...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9845517017090
+    m_Localized: Everything looks fine.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
