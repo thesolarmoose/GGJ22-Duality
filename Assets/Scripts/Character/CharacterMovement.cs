@@ -1,16 +1,14 @@
-﻿using UnityEditor.Animations;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Character
 {
     public class CharacterMovement : MonoBehaviour
     {
         public static int SpeedHashId = Animator.StringToHash("speed");
+        public static int DirHashId = Animator.StringToHash("dir");
 
         [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private Animator animator;
-        [SerializeField] private AnimatorController leftAnimatorController;
-        [SerializeField] private AnimatorOverrideController rightAnimatorController;
     
         [SerializeField] private float speed;
     
@@ -29,13 +27,13 @@ namespace Character
                 return;
             _rb.velocity = dir.normalized * speed;
 
-            if (dir.x < 0)
-            {
-                animator.runtimeAnimatorController = leftAnimatorController;
-            } else if (dir.x > 0)
-            {
-                animator.runtimeAnimatorController = rightAnimatorController;
-            }
+            animator.SetInteger(DirHashId, (int) dir.x);
+//            if (dir.x < 0)
+//            {
+//            } else if (dir.x > 0)
+//            {
+//                animator.SetLayerWeight(1, 1);
+//            }
         }
         
         public void Stop()
