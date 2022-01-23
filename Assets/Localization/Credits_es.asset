@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Credits_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: d7e9b651e488c3f4785a01d305e34ace, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6216704000
+    m_Localized: "<size=150%><b><#7f7fe6><link=\"https://twitter.com/thesolarmoose\">The
+      Solar Moose</link></color></b></size>\n\n<b>Dise\xF1o de videojuego</b>\n<size=60%>Javier
+      Montenegro <#7f7fe6><link=\"https://twitter.com/XaviLomaprieta\">@XaviLomaprieta</link></color></size>\n<size=60%>Miguel
+      Nicol\xE1s <#7f7fe6><link=\"https://twitter.com/MiguelCokTSM\">@MiguelCokTSM</link></color></size>\n<size=60%>Rafael
+      Fuentes  <#7f7fe6><link=\"https://twitter.com/Rafux1\">@Rafux1</link></color>
+      <#7f7fe6><link=\"https://pixeljoint.com/p/179992.htm\">pixeljoint</link></color></size>\n<size=60%>Alejandro
+      Hern\xE1ndez  <#7f7fe6><link=\"https://twitter.com/alejandrogiubel\">@alejandrogiubel</link></color></size>\n\n<b>Textos</b>\n<size=60%>Javier
+      Montenegro</size>\n\n<b>Arte 2D</b>\n<size=60%>Rafael Fuentes</size>\n<size=60%>Alejandro
+      Hern\xE1ndez</size>\n\n<b>Programaci\xF3n</b>\n<size=60%>Miguel Nicol\xE1s</size>\n\n<size=60%>M\xFAsica
+      y sonidos descargados bajo licencia creative commons</size>"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
