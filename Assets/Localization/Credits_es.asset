@@ -16,20 +16,19 @@ MonoBehaviour:
     m_Code: es
   m_SharedData: {fileID: 11400000, guid: d7e9b651e488c3f4785a01d305e34ace, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - id: 0
   m_TableData:
   - m_Id: 6216704000
-    m_Localized: "<size=150%><b><#7f7fe6><link=\"https://twitter.com/thesolarmoose\">The
-      Solar Moose</link></color></b></size>\n\n<b>Dise\xF1o de videojuego</b>\n<size=60%>Javier
-      Montenegro <#7f7fe6><link=\"https://twitter.com/XaviLomaprieta\">@XaviLomaprieta</link></color></size>\n<size=60%>Miguel
-      Nicol\xE1s <#7f7fe6><link=\"https://twitter.com/MiguelCokTSM\">@MiguelCokTSM</link></color></size>\n<size=60%>Rafael
-      Fuentes  <#7f7fe6><link=\"https://twitter.com/Rafux1\">@Rafux1</link></color>
-      <#7f7fe6><link=\"https://pixeljoint.com/p/179992.htm\">pixeljoint</link></color></size>\n<size=60%>Alejandro
-      Hern\xE1ndez  <#7f7fe6><link=\"https://twitter.com/alejandrogiubel\">@alejandrogiubel</link></color></size>\n\n<b>Textos</b>\n<size=60%>Javier
-      Montenegro</size>\n\n<b>Arte 2D</b>\n<size=60%>Rafael Fuentes</size>\n<size=60%>Alejandro
-      Hern\xE1ndez</size>\n\n<b>Programaci\xF3n</b>\n<size=60%>Miguel Nicol\xE1s</size>\n\n<size=60%>M\xFAsica
-      y sonidos descargados bajo licencia creative commons</size>"
+    m_Localized: "{studio}\n\n<b>Dise\xF1o de videojuego</b>\n{javier}\n\n<b>Arte
+      2D</b>\n{rafa}\n\n<b>Interfaz de usuario de los puzzles</b>\n{ale}\n\n<b>Programaci\xF3n</b>\n{miguel}\n\n<size=60%>M\xFAsica
+      y sonidos descargados bajo licencia creative commons 0</size>"
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 0
   references:
     version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00608b7201000000

@@ -17465,16 +17465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<size=150%><b><#7f7fe6><link=\"https://twitter.com/thesolarmoose\">The
-    Solar Moose</link></color></b></size>\n\n<b>Dise\xF1adores</b>\n<size=60%>Javier
-    Montenegro <#7f7fe6><link=\"https://twitter.com/XaviLomaprieta\">@XaviLomaprieta</link></color></size>\n<size=60%>Miguel
-    Nicol\xE1s <#7f7fe6><link=\"https://twitter.com/MiguelCokTSM\">@MiguelCokTSM</link></color></size>\n<size=60%>Rafael
-    Fuentes  <#7f7fe6><link=\"https://twitter.com/Rafux1\">@Rafux1</link></color>
-    <#7f7fe6><link=\"https://pixeljoint.com/p/179992.htm\">pixeljoint</link></color></size>\n<size=60%>Alejandro
-    Hern\xE1ndez  <#7f7fe6><link=\"https://twitter.com/alejandrogiubel\">@alejandrogiubel</link></color></size>\n\n<b>Textos</b>\n<size=60%>Javier
-    Montenegro</size>\n\n<b>Arte 2D</b>\n<size=60%>Rafael Fuentes</size>\n<size=60%>Alejandro
-    Hern\xE1ndez</size>\n\n<b>Programaci\xF3n</b>\n<size=60%>Miguel Nicol\xE1s</size>\n\n<size=60%>M\xFAsica
-    y sonidos descargados bajo licencia creative commons</size>"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9661acff1ba514740bb7a96134bff277, type: 2}
   m_sharedMaterial: {fileID: -335160893500453996, guid: 9661acff1ba514740bb7a96134bff277, type: 2}
@@ -17570,14 +17561,63 @@ MonoBehaviour:
       m_KeyId: 6216704000
       m_Key: 
     m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+    m_WaitForCompletion: 1
+    m_LocalVariables:
+    - name: studio
+      variable:
+        id: 0
+    - name: javier
+      variable:
+        id: 1
+    - name: rafa
+      variable:
+        id: 2
+    - name: ale
+      variable:
+        id: 3
+    - name: miguel
+      variable:
+        id: 4
   m_FormatArguments: []
   m_UpdateString:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2033330477}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 1
+    00000000:
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: <size=150%><b><#7f7fe6><link="https://twitter.com/thesolarmoose">The
+          Solar Moose</link></color></b></size>
+    00000001:
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: <size=60%>Javier Montenegro <#7f7fe6><link="https://twitter.com/XaviLomaprieta">@XaviLomaprieta</link></color></size>
+    00000002:
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: <size=60%>Rafael Fuentes  <#7f7fe6><link="https://twitter.com/Rafux1">@Rafux1</link></color>
+          <#7f7fe6><link="https://pixeljoint.com/p/179992.htm">pixeljoint</link></color></size>
+    00000003:
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: "<size=60%>Alejandro Hern\xE1ndez  <#7f7fe6><link=\"https://twitter.com/alejandrogiubel\">@alejandrogiubel</link></color></size>"
+    00000004:
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: "<size=60%>Miguel Nicol\xE1s <#7f7fe6><link=\"https://twitter.com/MiguelCokTSM\">@MiguelCokTSM</link></color></size>"
 --- !u!114 &2033330480
 MonoBehaviour:
   m_ObjectHideFlags: 0
