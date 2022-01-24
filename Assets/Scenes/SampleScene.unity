@@ -17732,11 +17732,11 @@ MonoBehaviour:
   textMessage: {fileID: 2033330477}
   normalLinkColor:
     serializedVersion: 2
-    rgba: 15105919
+    rgba: 4293295999
   highlightedLinkColor:
     serializedVersion: 2
-    rgba: 15093840
-  mainCamera: {fileID: 519420031}
+    rgba: 4293283920
+  mainCamera: {fileID: 0}
 --- !u!1 &2035961262
 GameObject:
   m_ObjectHideFlags: 0
