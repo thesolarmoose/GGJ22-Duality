@@ -9,7 +9,10 @@ namespace Character
 
         [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private Animator animator;
-    
+
+        [SerializeField] private AudioSource audioSource;
+        [SerializeField] private AudioClip stepClip;
+        
         [SerializeField] private float speed;
     
         private Rigidbody2D _rb;
@@ -46,5 +49,9 @@ namespace Character
             animator.SetFloat(SpeedHashId, _rb.velocity.magnitude);
         }
 
+        public void PlayStepSound()
+        {
+            audioSource.PlayOneShot(stepClip);
+        }
     }
 }
