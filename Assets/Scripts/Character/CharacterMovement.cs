@@ -27,7 +27,7 @@ namespace Character
                 return;
             _rb.velocity = dir.normalized * speed;
 
-            animator.SetInteger(DirHashId, (int) dir.x);
+            animator.SetFloat(DirHashId, dir.x);
 //            if (dir.x < 0)
 //            {
 //            } else if (dir.x > 0)
