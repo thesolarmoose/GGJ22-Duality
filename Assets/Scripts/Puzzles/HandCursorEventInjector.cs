@@ -45,17 +45,22 @@ namespace Puzzles
             injectedEvent.position = screenPosition;
             var results = new List<RaycastResult>();
             EventSystem.current.RaycastAll(injectedEvent, results);
-
-            foreach (var result in results)
-            {
-                var interactable = result.gameObject.GetComponent(type);
-                if (interactable)
-                {
-                    return (result.gameObject, injectedEvent);
-                }
-            }
-            
-            return (null, null);
+            var result = FindFirstRaycast(results);
+            return (result.gameObject, injectedEvent);
         }
+        
+        protected static RaycastResult FindFirstRaycast(List<RaycastResult> candidates)
+        {
+            var candidatesCount = candidates.Count;
+            for (var i = 0; i < candidatesCount; ++i)
+            {
+                if (candidates[i].gameObject == null)
+                    continue;
+
+                return candidates[i];
+            }
+            return new RaycastResult();
+        }
+        
     }
 }
