@@ -10,9 +10,9 @@ namespace DaysSystem
         private static DayData _instance;
         public static DayData Instance => _instance;
 
-        private int day;
+        [SerializeField] private int day;
 
-        [NaughtyAttributes.ShowNativeProperty]
+//        [NaughtyAttributes.ShowNativeProperty]
         public int Day => day;
 
         public void AddDay()
