@@ -5685,9 +5685,9 @@ MonoBehaviour:
   speed: 0.1
   bounds:
     serializedVersion: 2
-    x: -15
-    y: 0
-    width: 30
+    x: -7.48
+    y: -2.5
+    width: 15
     height: 20
 --- !u!20 &519420031
 Camera:
@@ -20395,7 +20395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.35, y: 1.62}
+  m_AnchoredPosition: {x: -0.35, y: 0.72}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3476612876878694990
@@ -20434,7 +20434,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1794549875
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!4 &3578977580855973192
