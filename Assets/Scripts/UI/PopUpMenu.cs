@@ -29,7 +29,9 @@ namespace UI
         [SerializeField] private bool cancellable;
 
         private bool _moving;
-        
+
+        public bool IsShowing { get; private set; }
+
         private void Start()
         {
             cancelAction.Enable();
@@ -60,7 +62,8 @@ namespace UI
             if (_moving || alreadyShowing)
                 return;
             menu.gameObject.SetActive(true);
-            
+            IsShowing = true;
+
             eventBeforeShow?.Invoke();
             StartCoroutine(MoveToTarget(
                 initPosition,
@@ -96,6 +99,7 @@ namespace UI
         {
             menu.localPosition = endPosition;
             menu.gameObject.SetActive(false);
+            IsShowing = false;
         }
         
         public void HidePanel(float time)

@@ -6,6 +6,7 @@ using Dialogues.UI;
 using UI;
 using UnityEngine;
 using UnityEngine.Localization;
+using Utils;
 
 namespace Narrative
 {
@@ -65,14 +66,22 @@ namespace Narrative
                 if (!text.IsRunning)
                 {
                     // finished
-                    Invoke(nameof(Hide), delayToHide);
+                    StartCoroutine(CoroutineUtils.CoroutineSequence(new List<IEnumerator>
+                    {
+                        CoroutineUtils.WaitTimeCoroutine(delayToHide),
+                        Hide()
+                    }));
                 }
             }
         }
 
-        private void Hide()
+        private IEnumerator Hide()
         {
             menu.HidePanel();
+            while (menu.IsShowing)
+            {
+                yield return null;
+            }
             _started = false;
         }
 
