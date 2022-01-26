@@ -7,6 +7,7 @@ public class CameraFollow : MonoBehaviour
 
     [Range(0.0f, 1.0f)]
     [SerializeField] private float speed;
+    [SerializeField] private bool bounded;
     [SerializeField] private Rect bounds;
 
     private Camera _camera;
@@ -24,14 +25,17 @@ public class CameraFollow : MonoBehaviour
 
     private void MoveTowards()
     {
-        ComputePositionBounds();
         var targetPosition = target.position;
         var selfPosition = transform.position;
 
         Vector3 newPosition = Vector2.Lerp(selfPosition, targetPosition, speed);
         newPosition.z = selfPosition.z;
-        newPosition.x = Mathf.Clamp(newPosition.x, _positionBounds.xMin, _positionBounds.xMax);
-        newPosition.y = Mathf.Clamp(newPosition.y, _positionBounds.yMin, _positionBounds.yMax);
+        if (bounded)
+        {
+            ComputePositionBounds();
+            newPosition.x = Mathf.Clamp(newPosition.x, _positionBounds.xMin, _positionBounds.xMax);
+            newPosition.y = Mathf.Clamp(newPosition.y, _positionBounds.yMin, _positionBounds.yMax);
+        }
         transform.position = newPosition;
     }
 
