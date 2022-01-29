@@ -5683,6 +5683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1102463230}
   speed: 0.1
+  bounded: 0
   bounds:
     serializedVersion: 2
     x: -7.48
@@ -21829,6 +21830,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8016511812589440608, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8016511812589440611, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: m_Name
       value: SlotOrangeIzq
@@ -21844,6 +21849,10 @@ PrefabInstance:
     - target: {fileID: 8016511812724587711, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.804
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511812727792327, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: 8016511812866373589, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: m_Size.x
@@ -21900,6 +21909,14 @@ PrefabInstance:
     - target: {fileID: 8016511812892508836, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: m_Name
       value: SlotOrangeDer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511812892508837, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511812913986903, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 8016511812994951754, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -21985,6 +22002,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 2.835
       objectReference: {fileID: 0}
+    - target: {fileID: 8016511813469080903, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: characterMask.m_Bits
       value: 8
@@ -22064,6 +22085,10 @@ PrefabInstance:
     - target: {fileID: 8016511813584130071, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511813819404372, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: 8016511813863994601, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: m_LocalPosition.x

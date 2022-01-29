@@ -47,11 +47,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 174750610186240
-    m_Localized: "Paneles Solares: Desconectados\nC\xE9lulas de Energ\xEDa: Desconectados"
+    m_Localized: "Paneles Solares: Desconectados\nC\xE9lulas de Energ\xEDa: Desconectadas"
     m_Metadata:
       m_Items: []
   - m_Id: 174956932194304
-    m_Localized: "Paneles Solares: Conectados\nC\xE9lulas de Energ\xEDa: Conectados"
+    m_Localized: "Paneles Solares: Conectados\nC\xE9lulas de Energ\xEDa: Conectadas"
     m_Metadata:
       m_Items: []
   references:
