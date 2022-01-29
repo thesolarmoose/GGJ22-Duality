@@ -5468,7 +5468,7 @@ MonoBehaviour:
       m_LocalVariables: []
   text: {fileID: 420824170}
   delayToStart: 1
-  delayToHide: 1
+  delayToHide: 2
   pingTask:
     m_TableReference:
       m_TableCollectionName: GUID:6255798352ccc824eaee14ed2356c317
@@ -16451,7 +16451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0, y: 0.64}
+  m_AnchoredPosition: {x: -0.381, y: 0.402}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855435397
@@ -16512,7 +16512,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1794549875
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1 &1862613341
