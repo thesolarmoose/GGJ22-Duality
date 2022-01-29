@@ -19,6 +19,7 @@ namespace Audio
         [Space]
         
         public AudioClip puzzle2CutCable;
+        public AudioClip puzzle2ConnectCable;
         public AudioClip puzzle2Weld;
         
         [Space]

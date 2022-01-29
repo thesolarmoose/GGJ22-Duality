@@ -116,8 +116,6 @@ namespace Puzzles
                 if (isConnected && isFarEnough)
                 {
                     DisconnectPlug(_currentDraggingPlug);
-                    var sounds = GameSounds.Instance;
-                    sounds.PlaySound(sounds.puzzle2CutCable);
                 }
 
                 if (!isConnected || isFarEnough)
@@ -257,13 +255,15 @@ namespace Puzzles
             var connectPosition = slot.transform.position;
             SetPlugPosition(plug, connectPosition);
             _connectedPlugs.Add(plug, slot);
-            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzle1CablesPlugIn, Vector3.zero);
+            var sounds = GameSounds.Instance;
+            sounds.PlaySound(sounds.puzzle2ConnectCable);
         }
 
         private void DisconnectPlug(CablePlug plug)
         {
             _connectedPlugs.Remove(plug);
-            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzle1CablesPlugOut, Vector3.zero);
+            var sounds = GameSounds.Instance;
+            sounds.PlaySound(sounds.puzzle2CutCable);
         }
 
         private bool IsSlotConnected(CableSlot slot)
