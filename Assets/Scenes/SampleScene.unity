@@ -17523,6 +17523,7 @@ GameObject:
   - component: {fileID: 2033330477}
   - component: {fileID: 2033330479}
   - component: {fileID: 2033330480}
+  - component: {fileID: 2033330481}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -17742,6 +17743,34 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4293283920
   mainCamera: {fileID: 0}
+--- !u!114 &2033330481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033330475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62ebfd98c78ff1499624c4f356795d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closeButton:
+    m_Name: Close Button
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 4fcd0a00-eb5f-4545-81f5-cca0c0114251
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 13cfe001-4ab3-46f5-8404-ea798ec129fe
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Close Button
+      m_Flags: 0
 --- !u!1 &2035961262
 GameObject:
   m_ObjectHideFlags: 0
