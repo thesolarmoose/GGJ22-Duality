@@ -154,8 +154,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576444026880
-    m_Localized: I'm going to get on the bed, the worst place to be alone with your
-      thoughts. Yes, tomorrow will be another day. Or not.
+    m_Localized: 'I''m going to get on the bed, the worst place to be alone with
+      your thoughts. Yes, tomorrow will be another day.
+
+      Or not.'
     m_Metadata:
       m_Items: []
   - m_Id: 9576444026881
