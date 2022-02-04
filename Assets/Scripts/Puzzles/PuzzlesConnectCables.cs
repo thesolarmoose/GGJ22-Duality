@@ -133,7 +133,12 @@ namespace Puzzles
                     StartCoroutine(CoroutineUtils.CoroutineSequence(new List<IEnumerator>
                     {
                         CoroutineUtils.WaitTimeCoroutine(0.5f),
-                        CoroutineUtils.ActionCoroutine(() => eventPuzzleSolved?.Invoke())
+                        CoroutineUtils.ActionCoroutine(() =>
+                        {
+                            var sounds = GameSounds.Instance;
+                            sounds.PlaySound(sounds.puzzle1Solved);
+                        }),
+                        CoroutineUtils.ActionCoroutine(() => eventPuzzleSolved?.Invoke()),
                     }));
                 }
             }

@@ -127,14 +127,12 @@ namespace Puzzles
         
         private void StartWeld(InputAction.CallbackContext context)
         {
-            Debug.Log("start welding");
             _isWelding = true;
             audioSource.Play();
         }
         
         private void StopWeld(InputAction.CallbackContext context)
         {
-            Debug.Log("stop welding");
             _isWelding = false;
             audioSource.Stop();
             _currentWeldingPair = (default, default, false);
@@ -151,7 +149,6 @@ namespace Puzzles
                 bool isWeldingTheSame = false;
                 if (exists)
                 {
-                    Debug.Log("Exists plug and slot");
                     var (previousPlug, previousSlot, existsPrevious) = _currentWeldingPair;
                     bool isSame = previousPlug == plug && previousSlot == slot;
                     isWeldingTheSame = existsPrevious && isSame;
@@ -161,7 +158,6 @@ namespace Puzzles
                         bool isConnected = IsPlugConnected(plug);
                         if (elapsed >= timeToWeld && !isConnected)
                         {
-                            Debug.Log("connect");
                             ConnectPlugToSlot(plug, slot);
                             CheckSolveCondition();
                         }
@@ -244,6 +240,12 @@ namespace Puzzles
                     StartCoroutine(CoroutineUtils.CoroutineSequence(new List<IEnumerator>
                     {
                         CoroutineUtils.WaitTimeCoroutine(0.5f),
+                        CoroutineUtils.ActionCoroutine(() =>
+                        {
+                            var sounds = GameSounds.Instance;
+                            print("puzzle 2 solved");
+                            sounds.PlaySound(sounds.puzzle2Solved);
+                        }),
                         CoroutineUtils.ActionCoroutine(() => eventPuzzleSolved?.Invoke())
                     }));
                 }

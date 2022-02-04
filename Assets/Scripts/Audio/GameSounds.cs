@@ -15,13 +15,15 @@ namespace Audio
         public AudioClip puzzle1Ping1;
         public AudioClip puzzle1DoorCloses;
         public AudioClip puzzle1DoorOpens;
+        public AudioClip puzzle1Solved;
 
         [Space]
         
         public AudioClip puzzle2CutCable;
         public AudioClip puzzle2ConnectCable;
         public AudioClip puzzle2Weld;
-        
+        public AudioClip puzzle2Solved;
+
         [Space]
         
         public AudioClip puzzle3OpenDoor;

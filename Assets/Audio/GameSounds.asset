@@ -18,8 +18,10 @@ MonoBehaviour:
   puzzle1Ping1: {fileID: 8300000, guid: 3bbde562e8f0d884f833fc02b011c6fd, type: 3}
   puzzle1DoorCloses: {fileID: 8300000, guid: f466909dd51a6494aa4421570656eea5, type: 3}
   puzzle1DoorOpens: {fileID: 8300000, guid: 0f675d72348dc3142af470e39f0669cf, type: 3}
+  puzzle1Solved: {fileID: 8300000, guid: 3cde6e76e35e0ad438d0c8b3a1952411, type: 3}
   puzzle2CutCable: {fileID: 8300000, guid: 6069cd84a61d3d041bac934caf4b029f, type: 3}
   puzzle2ConnectCable: {fileID: 8300000, guid: fcc3b0b0f2edfb34c97bc86c2c21b110, type: 3}
   puzzle2Weld: {fileID: 8300000, guid: 17cbb4b2dcdc6be4c9af8eb120ce24fc, type: 3}
+  puzzle2Solved: {fileID: 8300000, guid: 2b8636197a59e544ab17ffc466fd3b24, type: 3}
   puzzle3OpenDoor: {fileID: 8300000, guid: 5ba8034af2d194e4abf8e536209687f6, type: 3}
   puzzle3CloseDoor: {fileID: 8300000, guid: 3c512ba3cee740c47a4d3b2df9b68624, type: 3}
