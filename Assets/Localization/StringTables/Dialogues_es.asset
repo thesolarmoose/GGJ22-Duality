@@ -37,8 +37,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576414666752
-    m_Localized: Esta vista es de las pocas cosas que hacen que mi existencia valga
-      la pena.
+    m_Localized: "Este peque\xF1o jard\xEDn me ayuda a sobrellevar mi existencia."
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861056
@@ -60,8 +59,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055360
-    m_Localized: "Por suerte no se han robado los cables. En lugar de arrancarlos,
-      todos los d\xEDas los zafan, como si quisiesen que uno los reconecte cada d\xEDa."
+    m_Localized: "Por suerte no se han robado los cables. Todos los d\xEDas lo mismo.
+      \xBFPor qu\xE9 no los arrancan y terminan con esto de una vez?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055361
@@ -69,7 +68,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055362
-    m_Localized: 33 %. Al menos sigue igual que ayer.
+    m_Localized: 33 %. Sigue igual que ayer.
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249664
@@ -81,8 +80,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249666
-    m_Localized: "Otro d\xEDa en el para\xEDso. Sin luz, a reparar todo lo deshecho
-      por mi n\xE9mesis, y esperar a que mi bater\xEDa no siga perdiendo capacidad."
+    m_Localized: "Otro d\xEDa en el para\xEDso. A reparar todo lo deshecho por mi
+      n\xE9mesis. Esperemos que mi bater\xEDa no siga perdiendo capacidad."
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249667
@@ -90,7 +89,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443968
-    m_Localized: "A veces me siento tentada a tomar las piezas de este cacharro para
+    m_Localized: "A veces tengo deseos de tomar las piezas de este cacharro para
       mi propio beneficio\u2026 Mejor no, qui\xE9n sabe si un d\xEDa se vuelve \xFAtil."
     m_Metadata:
       m_Items: []
@@ -128,8 +127,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9576435638275
     m_Localized: "33 %. Espera, \xBFqu\xE9 es esto? \xBFUn disco de 3 y media? \xBFY
-      este objeto museable de d\xF3nde ha salido? \xBFSe supone qu\xE9 en alg\xFAn
-      lado pueda ver la informaci\xF3n de esto?"
+      este objeto museable de d\xF3nde ha salido? \xBFSe supone que en alg\xFAn lado
+      pueda ver la informaci\xF3n de esto?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832576
@@ -188,8 +187,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576473387008
-    m_Localized: "\xBFVale la pena seguir viviendo a costa de este mundo? \xBFEs
-      tan significativa mi existencia?"
+    m_Localized: "\xBFVale la pena seguir viviendo mientras destruyo este mundo?
+      \xBFEs tan significativa mi existencia?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576473387009

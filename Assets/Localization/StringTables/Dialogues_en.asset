@@ -59,12 +59,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055360
-    m_Localized: Shit, my battery's duration is worst every day. If I don't find
-      a short-term solution, this could get really ugly.
+    m_Localized: Luckily the cables have not been stolen. It is the same every day.
+      Why don't they rip them out and get this over with?
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055361
-    m_Localized: Another great day. At least I know  I will live tomorrow.
+    m_Localized: Another great day. At least I know I will live tomorrow.
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055362
@@ -81,7 +81,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9576427249666
     m_Localized: Another day in paradise. I am ready to repair everything my nemesis
-      has undone and waiting for my battery to die.
+      has undone. Let's hope my battery won't get worse.
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249667
@@ -198,7 +198,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9576477581312
     m_Localized: If they wanted me dead, they would have ripped these cables out
-      by now. So why did they leave me that diskette with the information?
+      by now. So... why did they leave me that diskette with the information?
     m_Metadata:
       m_Items: []
   - m_Id: 9576477581313
