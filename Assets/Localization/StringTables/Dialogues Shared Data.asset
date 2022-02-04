@@ -225,6 +225,10 @@ MonoBehaviour:
     m_Key: day3_screen_solved
     m_Metadata:
       m_Items: []
+  - m_Id: 4586080654024704
+    m_Key: bookshelf_language
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

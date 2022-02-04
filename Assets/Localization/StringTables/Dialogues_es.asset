@@ -225,5 +225,9 @@ MonoBehaviour:
     m_Localized: Todo en orden.
     m_Metadata:
       m_Items: []
+  - m_Id: 4586080654024704
+    m_Localized: "Es hora de hablar espa\xF1ol."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
