@@ -21671,10 +21671,18 @@ PrefabInstance:
       propertyPath: ropeSegLen
       value: 0.03
       objectReference: {fileID: 0}
+    - target: {fileID: 7597518378834144425, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fe8926f52a535e144b3420c8754b20ef, type: 3}
     - target: {fileID: 7597518378834144430, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 7597518378834144430, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: idleSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fe8926f52a535e144b3420c8754b20ef, type: 3}
     - target: {fileID: 8016045546775275989, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -22412,10 +22420,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8016511813378727097, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fe8926f52a535e144b3420c8754b20ef, type: 3}
     - target: {fileID: 8016511813378727102, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8016511813378727102, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: idleSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fe8926f52a535e144b3420c8754b20ef, type: 3}
     - target: {fileID: 8016511813417739586, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: m_Name
       value: CableDerRed
