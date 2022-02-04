@@ -127,7 +127,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1.2
+  bundleVersion: 0.2.0
   preloadedAssets:
   - {fileID: 11400000, guid: 2a139319d742d53458c9f90b88645631, type: 2}
   - {fileID: 11400000, guid: 3e593a40be97dd6459fcb62ba0384cee, type: 2}
@@ -153,7 +153,7 @@ PlayerSettings:
   applicationIdentifier:
     Standalone: com.TheSolarMoose.LavidadeAndrea
   buildNumber:
-    Standalone: 0.1.2
+    Standalone: 0.2.0
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
@@ -269,6 +269,48 @@ PlayerSettings:
       m_Icon: {fileID: 2800000, guid: f9239abfab34eb04480b7fbb93083ef2, type: 3}
       m_Width: 128
       m_Height: 128
+      m_Kind: 0
+  - m_BuildTarget: Standalone
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 5b0f3e52f6076d047a7829db13716409, type: 3}
+      m_Width: 1024
+      m_Height: 1024
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 17fccf5feed12b84bb2a18b7ecd1e8cb, type: 3}
+      m_Width: 512
+      m_Height: 512
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: dbd6522bdd56d214bb1fd4ea8a4cc1e4, type: 3}
+      m_Width: 256
+      m_Height: 256
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 7210d3cafa3dfde458593329bd9fe93f, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 1f0fb3c76f395d844974067566808b28, type: 3}
+      m_Width: 64
+      m_Height: 64
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 9c438e37db611f14db7ba2ae4ddbeb94, type: 3}
+      m_Width: 48
+      m_Height: 48
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 80b0045d127480d4194f99a4c8496533, type: 3}
+      m_Width: 32
+      m_Height: 32
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: f9239abfab34eb04480b7fbb93083ef2, type: 3}
+      m_Width: 16
+      m_Height: 16
       m_Kind: 0
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching: []
