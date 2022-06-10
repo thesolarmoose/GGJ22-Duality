@@ -1,4 +1,4 @@
-while IFS=: read -r key value
+﻿while IFS=: read -r key value
 do
     if [[ $key == "  productName" ]]
     then
