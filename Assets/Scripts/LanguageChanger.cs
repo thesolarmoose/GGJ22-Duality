@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
@@ -21,9 +22,10 @@ public class LanguageChanger : MonoBehaviour
         LocalizationSettings.Instance.SetSelectedLocale(locales[_currentIndex]);
     }
 
-    private void SetIndexOfCurrentLocale()
+    private async void SetIndexOfCurrentLocale()
     {
-        var currentLocale = LocalizationSettings.Instance.GetSelectedLocale();
+        var operation = LocalizationSettings.Instance.GetSelectedLocaleAsync();
+        var currentLocale = await operation.Task;
         _currentIndex = locales.IndexOf(currentLocale);
     }
 }
