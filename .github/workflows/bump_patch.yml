@@ -6,7 +6,7 @@ on:
     
 jobs:
   run:
-    uses: mnicolas94/UnityCICDWorkflows/.github/workflows/bump_patch.yml@v1-pre-9
+    uses: mnicolas94/UnityCICDWorkflows/.github/workflows/bump_patch.yml@v1-pre-13
     secrets:
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}

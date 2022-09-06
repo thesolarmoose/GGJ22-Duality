@@ -5,7 +5,7 @@ on:
 
 jobs:
   run:
-    uses: mnicolas94/UnityCICDWorkflows/.github/workflows/BnD_standalone.yml@v1-pre-12
+    uses: mnicolas94/UnityCICDWorkflows/.github/workflows/BnD_standalone.yml@v1-pre-13
     with:
       development_build: false
       cache_tgsession: false
