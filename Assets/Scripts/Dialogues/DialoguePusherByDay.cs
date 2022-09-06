@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using DaysSystem;
 using Dialogues.UI;
 using UnityEngine;
@@ -22,9 +24,10 @@ namespace Dialogues
                 Push();
         }
         
-        public void Push()
+        public async void Push()
         {
-            DialoguePanel.Instance.PushDialogueSequence(GetDayDialogue());
+            var localizedDialogues = await GetDayDialogue();
+            DialoguePanel.Instance.PushDialogueSequence(localizedDialogues);
             DialoguePanel.Instance.eventAllDialoguesProcessed += OnDialoguesProcessed;
         }
 
@@ -34,13 +37,15 @@ namespace Dialogues
             DialoguePanel.Instance.eventAllDialoguesProcessed -= OnDialoguesProcessed;
         }
 
-        private List<string> GetDayDialogue()
+        private async Task<List<string>> GetDayDialogue()
         {
             foreach (var dayDialogue in dialogues)
             {
                 if (dayDialogue.day == DayData.Instance.Day)
                 {
-                    return dayDialogue.dialogues.ConvertAll(d => d.GetLocalizedString());
+                    var tasks = dayDialogue.dialogues.ConvertAll(d => d.GetLocalizedStringAsync().Task);
+                    var localizedDialogues = await Task.WhenAll(tasks);
+                    return localizedDialogues.ToList();
                 }
             }
             

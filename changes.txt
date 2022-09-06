@@ -1,0 +1,39 @@
+New features
+- steps sounds
+
+
+Fixes:
+- fixed character movement animation
+- fixed credits language (was displayed only in spanish)
+- fixed puzzles' hands grab position in order to make it more intuitive
+- fixed bug where the robotic hand could press buttons through door in last puzzle
+- adjusted some UI elements sizes and positions
+- minor animation fixes
+- minor bug fixes
+
+
+FEAT: add icons with greater resolution
+VERSION: 0.2.0
+FEAT: add cursor tu puzzles' human hand
+FIX: change some dialogues
+FEAT: add interaction with bookshelf to change language
+FEAT: add sounds when solve puzzle 1 and 2
+FIX: fix dialogue line
+CHORE: improve version text format
+FEAT: close game with escape in credits menu
+FEAT: add sound when weld cable
+FIX: fix 3rd puzzle interaction canvas sorting layer
+FIX: change weld cables position FIX: dialogue grammar
+FIX: change weld sparks animation
+FIX: fix camera movement bounds
+FIX: fix green screen bug
+FIX: fix interaction letters' size
+FIX: fix camera bounds
+FIX: fix robotic hand pressing buttons through door
+FIX: change pivot position of grab hand
+FIX: fix door sparks animation
+FIX: fix text link colors
+
+FEAT: add steps sound
+FIX: fix movement animation
+FIX: fix credits localization

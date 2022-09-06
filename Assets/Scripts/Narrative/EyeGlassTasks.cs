@@ -32,10 +32,12 @@ namespace Narrative
             ShowText(tasksText);
         }
 
-        public void ShowText(LocalizedString textToShow)
+        public async void ShowText(LocalizedString textToShow)
         {
+            
             menu.ShowPanel();
-            text.PutText(textToShow.GetLocalizedString());
+            var localizedText = await textToShow.GetLocalizedStringAsync().Task;
+            text.PutText(localizedText);
             _started = true;
         }
 
