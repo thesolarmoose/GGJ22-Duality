@@ -40,9 +40,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7100051447808
-    m_Localized: 'A: low ping.
+    m_Localized: 'A: low beep.
 
-      D: high ping.'
+      D: high beep.'
     m_Metadata:
       m_Items: []
   - m_Id: 79491393871872
@@ -52,15 +52,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 174750610186240
-    m_Localized: 'Solar panels: Disconnected
+    m_Localized: 'Solar panels: Disconnected.
 
-      Energy cells: Disconnected'
+      Energy cells: Disconnected.'
     m_Metadata:
       m_Items: []
   - m_Id: 174956932194304
-    m_Localized: 'Solar panels: Connected
+    m_Localized: 'Solar panels: Connected.
 
-      Energy cells: Connected'
+      Energy cells: Connected.'
     m_Metadata:
       m_Items: []
   references:

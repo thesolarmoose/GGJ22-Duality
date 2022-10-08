@@ -25,15 +25,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576402083840
-    m_Localized: Me hubiese gustado conocer el mundo cuando era de esta forma.
+    m_Localized: "Me hubiese gustado conocer el mundo cuando se ve\xEDa de esta forma."
     m_Metadata:
       m_Items: []
   - m_Id: 9576402083841
-    m_Localized: No hay mucho que ver. He revisado este cacharro cientos de veces.
+    m_Localized: No hay mucho que buscar. He revisado este cacharro cientos de veces.
     m_Metadata:
       m_Items: []
   - m_Id: 9576402083842
-    m_Localized: "Todo ca\xEDdo, como cada d\xEDa."
+    m_Localized: "Todo est\xE1 desconectado, como cada d\xEDa."
     m_Metadata:
       m_Items: []
   - m_Id: 9576414666752
@@ -54,8 +54,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861059
-    m_Localized: "Mierda, mi bater\xEDa cada d\xEDa dura menos\u2026 si no encuentro
-      una soluci\xF3n a corto plazo, esto puede ponerse feo."
+    m_Localized: "Mierda, mi bater\xEDa cada d\xEDa dura menos\u2026 Esto puede ponerse
+      feo si no encuentro una soluci\xF3n a corto plazo."
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055360
@@ -76,12 +76,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249665
-    m_Localized: Hora de lanzarse en la cama energizante.
+    m_Localized: Hora de lanzarse a la cama energizante.
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249666
-    m_Localized: "Otro d\xEDa en el para\xEDso. A reparar todo lo deshecho por mi
-      n\xE9mesis. Esperemos que mi bater\xEDa no siga perdiendo capacidad."
+    m_Localized: "Otro d\xEDa en el para\xEDso. A reparar los destrozos de mi n\xE9mesis.
+      Esperemos que mi bater\xEDa no contin\xFAe perdiendo capacidad."
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249667
@@ -90,7 +90,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9576431443968
     m_Localized: "A veces tengo deseos de tomar las piezas de este cacharro para
-      mi propio beneficio\u2026 Mejor no, qui\xE9n sabe si un d\xEDa se vuelve \xFAtil."
+      mi propio beneficio\u2026 Mejor no, qui\xE9n sabe si alg\xFAn d\xEDa ser\xE1
+      \xFAtil."
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443969
@@ -102,13 +103,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443971
-    m_Localized: 'Y con ustedes, un estreno mundial, un tema nunca antes escuchado:
+    m_Localized: 'Y con ustedes, un estreno mundial! Un tema nunca antes escuchado:
       Whispering de Paul Whiteman and His Ambassador Orchestra.'
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443972
     m_Localized: "\xBFC\xF3mo abrir\xE1 esta caja mi n\xE9mesis? \xBFTendr\xE1 un
-      brazo como el m\xEDo?"
+      brazo rob\xF3tico como el m\xEDo?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638272
@@ -126,9 +127,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638275
-    m_Localized: "33 %. Espera, \xBFqu\xE9 es esto? \xBFUn disco de 3 y media? \xBFY
-      este objeto museable de d\xF3nde ha salido? \xBFSe supone que en alg\xFAn lado
-      pueda ver la informaci\xF3n de esto?"
+    m_Localized: "33 %. Espera, \xBFqu\xE9 es esto? \xBFUn disco de 3 y media? \xBFDe
+      d\xF3nde ha salido este objeto museable? \xBFSe supone que en alg\xFAn lado
+      pueda ver la informaci\xF3n que contiene?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832576

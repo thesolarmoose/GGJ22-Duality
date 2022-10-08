@@ -34,9 +34,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7100051447808
-    m_Localized: 'A: ping grave.
+    m_Localized: 'A: pitido grave.
 
-      D: ping agudo.'
+      D: pitido agudo.'
     m_Metadata:
       m_Items: []
   - m_Id: 79491393871872
@@ -47,11 +47,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 174750610186240
-    m_Localized: "Paneles Solares: Desconectados\nC\xE9lulas de Energ\xEDa: Desconectadas"
+    m_Localized: "Paneles Solares: Desconectados.\nC\xE9lulas de Energ\xEDa: Desconectadas."
     m_Metadata:
       m_Items: []
   - m_Id: 174956932194304
-    m_Localized: "Paneles Solares: Conectados\nC\xE9lulas de Energ\xEDa: Conectadas"
+    m_Localized: "Paneles Solares: Conectados.\nC\xE9lulas de Energ\xEDa: Conectadas."
     m_Metadata:
       m_Items: []
   references:
