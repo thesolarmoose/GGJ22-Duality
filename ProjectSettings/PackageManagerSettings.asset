@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EnablePreReleasePackages: 0
-  m_EnablePackageDependencies: 0
+  m_EnablePackageDependencies: 1
   m_AdvancedSettingsExpanded: 1
   m_ScopedRegistriesSettingsExpanded: 1
   m_SeeAllPackageVersions: 0
@@ -29,10 +29,12 @@ MonoBehaviour:
     m_Name: OpenUPM
     m_Url: https://package.openupm.com
     m_Scopes:
-    - com.vertx
-    - com.needle
-    - com.yasirkula
+    - com.brunomikoski.animationsequencer
     - com.dbrizov
+    - com.needle
+    - com.openupm
+    - com.vertx
+    - com.yasirkula
     m_IsDefault: 0
     m_Capabilities: 0
   m_UserSelectedRegistryName: OpenUPM
@@ -44,19 +46,23 @@ MonoBehaviour:
       m_Name: OpenUPM
       m_Url: https://package.openupm.com
       m_Scopes:
-      - com.vertx
-      - com.needle
-      - com.yasirkula
+      - com.brunomikoski.animationsequencer
       - com.dbrizov
+      - com.needle
+      - com.openupm
+      - com.vertx
+      - com.yasirkula
       m_IsDefault: 0
       m_Capabilities: 0
     m_Modified: 0
     m_Name: OpenUPM
     m_Url: https://package.openupm.com
     m_Scopes:
-    - com.vertx
-    - com.needle
-    - com.yasirkula
+    - com.brunomikoski.animationsequencer
     - com.dbrizov
+    - com.needle
+    - com.openupm
+    - com.vertx
+    - com.yasirkula
     m_SelectedScopeIndex: 0
   m_LoadAssets: 0

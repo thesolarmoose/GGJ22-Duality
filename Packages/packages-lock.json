@@ -1,18 +1,34 @@
 {
   "dependencies": {
-    "com.dbrizov.naughtyattributes": {
-      "version": "2.1.1",
+    "com.brunomikoski.animationsequencer": {
+      "version": "0.3.8",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://package.openupm.com"
+    },
+    "com.dbrizov.naughtyattributes": {
+      "version": "2.1.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.facticus.asyncutils": {
+      "version": "https://github.com/mnicolas94/unity-async-utils.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.facticus.utils": "0.9.1"
+      },
+      "hash": "8850d3e004d6c7a9aa4bd8a696f4700cafe49566"
     },
     "com.facticus.utils": {
       "version": "https://github.com/mnicolas94/UnityUtils.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "01395d8a0434888367ca9234d717f72dad701815"
+      "hash": "b280bdb466408728dd210988c1de4ee214ca90d1"
     },
     "com.lms.version_mand": {
       "version": "https://github.com/mnicolas94/LMS.Version.git?path=/Assets/Version",
@@ -252,7 +268,7 @@
       "url": "https://package.openupm.com"
     },
     "com.yasirkula.ingamedebugconsole": {
-      "version": "1.5.3",
+      "version": "1.5.8",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
