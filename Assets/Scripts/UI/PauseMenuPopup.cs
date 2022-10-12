@@ -18,11 +18,7 @@ namespace UI
         public override void Initialize()
         {
             _quitButton.onClick.AddListener(Application.Quit);
-            
-            // TODO get from utils
-            var key = Key.Escape;
-            _resumeAction = new InputAction(key.ToString());
-            _resumeAction.AddBinding(Keyboard.current[key]);
+            _resumeAction = Utils.Input.InputActionUtils.GetKeyAction(Key.Escape);
             _resumeAction.Enable();
         }
 
