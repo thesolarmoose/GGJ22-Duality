@@ -34,7 +34,6 @@ namespace Narrative
 
         public async void ShowText(LocalizedString textToShow)
         {
-            
             menu.ShowPanel();
             var localizedText = await textToShow.GetLocalizedStringAsync().Task;
             text.PutText(localizedText);

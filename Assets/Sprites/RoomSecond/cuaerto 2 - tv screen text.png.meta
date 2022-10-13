@@ -1,7 +1,16 @@
 fileFormatVersion: 2
-guid: 25bbb6a00500c4f4ea8b92fd7ae4c1dc
+guid: 02d6ba679ba78a640bea6c9f79dc309a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4738445756934746498
+    second: cuaerto 2 - tv screen text_0
+  - first:
+      213: -1664343803911462776
+    second: cuaerto 2 - tv screen text_1
+  - first:
+      213: 5035170367489719200
+    second: cuaerto 2 - tv screen text_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +50,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
@@ -113,7 +122,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cuaerto 2 - tv screen text_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 54
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2817d818f4752c140800000000000000
+      internalID: 4738445756934746498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuaerto 2 - tv screen text_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 54
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8802cbfd02017e8e0800000000000000
+      internalID: -1664343803911462776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuaerto 2 - tv screen text_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 54
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab3cc195c480e540800000000000000
+      internalID: 5035170367489719200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
