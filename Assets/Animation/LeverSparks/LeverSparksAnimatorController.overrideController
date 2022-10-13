@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LeverSparksAnimatorController
+  m_Controller: {fileID: 9100000, guid: c80f384d44a65054184e67568cde6dde, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ccccfa4cc4d8b344b84a4925377c43ae, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d3c16f458ab5a7848b09a4661d7b45e6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e2fb16a415c201849b7978e382ce5237, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 242d91788782ca543b2866cd92fc6192, type: 2}
