@@ -53,7 +53,8 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0",
-    "com.brunomikoski.animationsequencer": "0.3.8"
+    "com.brunomikoski.animationsequencer": "0.3.8",
+    "com.mefistofiles.unity-event-visualizer": "1.4.4"
   },
   "scopedRegistries": [
     {
@@ -62,6 +63,7 @@
       "scopes": [
         "com.brunomikoski.animationsequencer",
         "com.dbrizov",
+        "com.mefistofiles.unity-event-visualizer",
         "com.needle",
         "com.openupm",
         "com.vertx",

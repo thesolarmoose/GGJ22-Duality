@@ -31,6 +31,7 @@ MonoBehaviour:
     m_Scopes:
     - com.brunomikoski.animationsequencer
     - com.dbrizov
+    - com.mefistofiles.unity-event-visualizer
     - com.needle
     - com.openupm
     - com.vertx
@@ -48,6 +49,7 @@ MonoBehaviour:
       m_Scopes:
       - com.brunomikoski.animationsequencer
       - com.dbrizov
+      - com.mefistofiles.unity-event-visualizer
       - com.needle
       - com.openupm
       - com.vertx
@@ -60,6 +62,7 @@ MonoBehaviour:
     m_Scopes:
     - com.brunomikoski.animationsequencer
     - com.dbrizov
+    - com.mefistofiles.unity-event-visualizer
     - com.needle
     - com.openupm
     - com.vertx

@@ -37,6 +37,13 @@
       "dependencies": {},
       "hash": "8bbd4283f361df3280a0335ea833ed51f4426c4e"
     },
+    "com.mefistofiles.unity-event-visualizer": {
+      "version": "1.4.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.needle.editorpatching": {
       "version": "1.2.0-exp.1",
       "depth": 1,
