@@ -10,8 +10,9 @@ namespace Character
         [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private Animator animator;
 
-        [SerializeField] private AudioSource audioSource;
-        [SerializeField] private AudioClip stepClip;
+        [SerializeField] private FMODUnity.StudioEventEmitter _stepSound;
+//        [SerializeField] private AudioSource audioSource;
+//        [SerializeField] private AudioClip stepClip;
         
         [SerializeField] private float speed;
     
@@ -51,7 +52,8 @@ namespace Character
 
         public void PlayStepSound()
         {
-            audioSource.PlayOneShot(stepClip);
+            _stepSound.Play();
+//            audioSource.PlayOneShot(stepClip);
         }
     }
 }
