@@ -256,6 +256,7 @@ namespace Puzzles
         {
             var connectPosition = slot.transform.position;
             SetPlugPosition(plug, connectPosition);
+            slot.Connect();
             _connectedPlugs.Add(plug, slot);
             var sounds = GameSounds.Instance;
             sounds.PlaySound(sounds.puzzle2ConnectCable);
@@ -263,6 +264,8 @@ namespace Puzzles
 
         private void DisconnectPlug(CablePlug plug)
         {
+            var slot = _connectedPlugs[plug];
+            slot.Disconnect();
             _connectedPlugs.Remove(plug);
             var sounds = GameSounds.Instance;
             sounds.PlaySound(sounds.puzzle2CutCable);
