@@ -54,7 +54,8 @@
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0",
     "com.brunomikoski.animationsequencer": "0.3.8",
-    "com.mefistofiles.unity-event-visualizer": "1.4.4"
+    "com.mefistofiles.unity-event-visualizer": "1.4.4",
+    "com.yasirkula.assetusagedetector": "2.3.0"
   },
   "scopedRegistries": [
     {
@@ -67,7 +68,8 @@
         "com.needle",
         "com.openupm",
         "com.vertx",
-        "com.yasirkula"
+        "com.yasirkula",
+        "com.yasirkula.assetusagedetector"
       ]
     }
   ]

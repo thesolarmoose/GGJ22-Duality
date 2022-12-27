@@ -36,6 +36,7 @@ MonoBehaviour:
     - com.openupm
     - com.vertx
     - com.yasirkula
+    - com.yasirkula.assetusagedetector
     m_IsDefault: 0
     m_Capabilities: 0
   m_UserSelectedRegistryName: OpenUPM
@@ -54,6 +55,7 @@ MonoBehaviour:
       - com.openupm
       - com.vertx
       - com.yasirkula
+      - com.yasirkula.assetusagedetector
       m_IsDefault: 0
       m_Capabilities: 0
     m_Modified: 0
@@ -67,5 +69,6 @@ MonoBehaviour:
     - com.openupm
     - com.vertx
     - com.yasirkula
+    - com.yasirkula.assetusagedetector
     m_SelectedScopeIndex: 0
   m_LoadAssets: 0

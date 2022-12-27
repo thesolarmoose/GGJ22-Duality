@@ -274,6 +274,13 @@
       "dependencies": {},
       "url": "https://package.openupm.com"
     },
+    "com.yasirkula.assetusagedetector": {
+      "version": "2.3.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.yasirkula.ingamedebugconsole": {
       "version": "1.5.8",
       "depth": 0,
