@@ -16,17 +16,24 @@ namespace UI
 
         private void OnPauseChange(bool paused)
         {
-            if (paused)
+            try  // try because game object could be destroyed
             {
-                _activeBeforeChanged = gameObject.activeSelf;
-                gameObject.SetActive(false);
-            }
-            else
-            {
-                if (_activeBeforeChanged)
+                if (paused)
                 {
-                    gameObject.SetActive(true);
+                    _activeBeforeChanged = gameObject.activeSelf;
+                    gameObject.SetActive(false);
                 }
+                else
+                {
+                    if (_activeBeforeChanged)
+                    {
+                        gameObject.SetActive(true);
+                    }
+                }
+            }
+            catch
+            {
+                // ignored
             }
         }
     }

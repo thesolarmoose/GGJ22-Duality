@@ -55,6 +55,7 @@ namespace UI
             }
             _cts.Dispose();
             _pauseAction?.Disable();
+            _onAfterPause.Invoke();
         }
     }
 }

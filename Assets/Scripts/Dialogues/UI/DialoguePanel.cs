@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
-using UnityEngine.Localization.SmartFormat.PersistentVariables;
 
 namespace Dialogues.UI
 {
@@ -119,7 +119,9 @@ namespace Dialogues.UI
 
         private void Update()
         {
-            if (Input.GetKeyDown(nextKey))
+            bool pressedNextKey = Input.GetKeyDown(nextKey);
+            bool isPaused = _pausedVariable.Value;
+            if (pressedNextKey && !isPaused)
             {
                 if (dialogueText.IsRunning)
                 {
@@ -131,7 +133,7 @@ namespace Dialogues.UI
                 }
             }
 
-            if (Time.time >= _nextTimeToProcess && ShowingDialogue)
+            if (Time.time >= _nextTimeToProcess && ShowingDialogue && !isPaused)
             {
                 ProcessQueue();
             }
