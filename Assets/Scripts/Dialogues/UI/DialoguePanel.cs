@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization.SmartFormat.PersistentVariables;
 
 namespace Dialogues.UI
 {
@@ -15,7 +16,8 @@ namespace Dialogues.UI
         [SerializeField] private GameObject panelContainer;
         [SerializeField] private DialogueText dialogueText;
         [SerializeField] private float processTimeOut;
-        
+
+        [SerializeField] private BoolVariable _pausedVariable;
         [SerializeField] private KeyCode nextKey;
         
         private List<string> _dialogueQueue;

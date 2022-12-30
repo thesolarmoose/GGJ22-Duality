@@ -1038,6 +1038,7 @@ GameObject:
   - component: {fileID: 158067130}
   - component: {fileID: 158067131}
   - component: {fileID: 158067128}
+  - component: {fileID: 158067132}
   m_Layer: 0
   m_Name: PanelInteractable
   m_TagString: Untagged
@@ -1255,6 +1256,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.29799807, y: 0.38855076}
   m_EdgeRadius: 0
+--- !u!114 &158067132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158067125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!4 &175311142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8016511813275943204, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
@@ -1742,6 +1756,7 @@ GameObject:
   - component: {fileID: 246534943}
   - component: {fileID: 246534942}
   - component: {fileID: 246534945}
+  - component: {fileID: 246534946}
   m_Layer: 0
   m_Name: DialogueFootsteps
   m_TagString: Untagged
@@ -1894,6 +1909,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   days: 00000000
+--- !u!114 &246534946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246534940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!1 &260672254
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,6 +2125,7 @@ GameObject:
   - component: {fileID: 329235858}
   - component: {fileID: 329235857}
   - component: {fileID: 329235856}
+  - component: {fileID: 329235859}
   m_Layer: 0
   m_Name: DialoguePC
   m_TagString: Untagged
@@ -2256,6 +2285,19 @@ MonoBehaviour:
       m_Calls: []
   references:
     version: 1
+--- !u!114 &329235859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329235854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!114 &335721534 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2732170939228890555, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
@@ -2450,6 +2492,24 @@ Transform:
   m_Father: {fileID: 1623532914}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &372517789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8016511813503372846, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+  m_PrefabInstance: {fileID: 8016511813182687234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &372517790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372517789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!1 &375001625
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,7 +3793,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -9
   m_Sprite: {fileID: 21300000, guid: 25bbb6a00500c4f4ea8b92fd7ae4c1dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9050,6 +9110,7 @@ GameObject:
   - component: {fileID: 749330481}
   - component: {fileID: 749330480}
   - component: {fileID: 749330479}
+  - component: {fileID: 749330478}
   m_Layer: 0
   m_Name: DialogueReboot
   m_TagString: Untagged
@@ -9072,6 +9133,19 @@ Transform:
   m_Father: {fileID: 1229133294}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &749330478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749330476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!61 &749330479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9528,7 +9602,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -7
   m_TargetDisplay: 0
 --- !u!1 &806269958
 GameObject:
@@ -10181,6 +10255,7 @@ GameObject:
   - component: {fileID: 898596985}
   - component: {fileID: 898596984}
   - component: {fileID: 898596983}
+  - component: {fileID: 898596982}
   m_Layer: 0
   m_Name: DialogueLever
   m_TagString: Untagged
@@ -10203,6 +10278,19 @@ Transform:
   m_Father: {fileID: 1229133294}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &898596982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898596980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!61 &898596983
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10615,6 +10703,7 @@ GameObject:
   - component: {fileID: 931773324}
   - component: {fileID: 931773323}
   - component: {fileID: 931773322}
+  - component: {fileID: 931773325}
   m_Layer: 0
   m_Name: DialogueBattery
   m_TagString: Untagged
@@ -10846,6 +10935,19 @@ MonoBehaviour:
       m_Calls: []
   references:
     version: 1
+--- !u!114 &931773325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931773320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!1 &934907433
 GameObject:
   m_ObjectHideFlags: 0
@@ -14007,6 +14109,7 @@ GameObject:
   - component: {fileID: 1275819992}
   - component: {fileID: 1275819991}
   - component: {fileID: 1275819994}
+  - component: {fileID: 1275819995}
   m_Layer: 0
   m_Name: DialoguePcStory
   m_TagString: Untagged
@@ -14191,6 +14294,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   days: 01000000
+--- !u!114 &1275819995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275819989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!1 &1298199178
 GameObject:
   m_ObjectHideFlags: 0
@@ -14263,7 +14379,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -8
   m_Sprite: {fileID: 21300000, guid: 2f9e134b1b0420445b0588aeee10d0a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14344,6 +14460,7 @@ GameObject:
   - component: {fileID: 1324581768}
   - component: {fileID: 1324581767}
   - component: {fileID: 1324581766}
+  - component: {fileID: 1324581769}
   m_Layer: 0
   m_Name: DialogueScreenSolved
   m_TagString: Untagged
@@ -14515,6 +14632,19 @@ MonoBehaviour:
       m_Calls: []
   references:
     version: 1
+--- !u!114 &1324581769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324581764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!1 &1334591795
 GameObject:
   m_ObjectHideFlags: 0
@@ -16501,6 +16631,7 @@ GameObject:
   - component: {fileID: 1536633904}
   - component: {fileID: 1536633902}
   - component: {fileID: 1536633901}
+  - component: {fileID: 1536633905}
   m_Layer: 0
   m_Name: BookshelfInteraction
   m_TagString: Untagged
@@ -16650,6 +16781,19 @@ MonoBehaviour:
   locales:
   - {fileID: 11400000, guid: 92d1cd4e4d153004b8fd29f4bb33236e, type: 2}
   - {fileID: 11400000, guid: b2728cf50abaec84eaff6ac514d18c84, type: 2}
+--- !u!114 &1536633905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536633899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!1 &1545981596
 GameObject:
   m_ObjectHideFlags: 0
@@ -17010,6 +17154,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   _onAfterPause:
     m_PersistentCalls:
       m_Calls:
@@ -17024,6 +17180,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1581485139
 GameObject:
@@ -18241,6 +18409,7 @@ GameObject:
   - component: {fileID: 1769556632}
   - component: {fileID: 1769556631}
   - component: {fileID: 1769556630}
+  - component: {fileID: 1769556633}
   m_Layer: 0
   m_Name: DialogueScreen
   m_TagString: Untagged
@@ -18412,6 +18581,19 @@ MonoBehaviour:
       m_Calls: []
   references:
     version: 1
+--- !u!114 &1769556633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769556628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!1 &1779395054
 GameObject:
   m_ObjectHideFlags: 0
@@ -19126,6 +19308,24 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823622308}
   m_Enabled: 1
+--- !u!1 &1826110113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6482354817601592112, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+  m_PrefabInstance: {fileID: 6482354818761916692}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1826110114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826110113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!1 &1830825642
 GameObject:
   m_ObjectHideFlags: 0
@@ -21015,7 +21215,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: 81d30e9e8a1c0ef47a3d4aa5c7295d02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -21249,6 +21449,7 @@ GameObject:
   - component: {fileID: 2047723921}
   - component: {fileID: 2047723920}
   - component: {fileID: 2047723923}
+  - component: {fileID: 2047723924}
   m_Layer: 0
   m_Name: DialogueSleep
   m_TagString: Untagged
@@ -21401,6 +21602,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   days: 00000000
+--- !u!114 &2047723924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047723918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!114 &2061972004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24045,6 +24259,7 @@ GameObject:
   - component: {fileID: 6789963104085499352}
   - component: {fileID: 1991197174052055480}
   - component: {fileID: 6789963104085499353}
+  - component: {fileID: 6789963104085499354}
   m_Layer: 0
   m_Name: DialoguePhotos
   m_TagString: Untagged
@@ -24127,6 +24342,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.35343575, y: 0.57459617}
   m_EdgeRadius: 0
+--- !u!114 &6789963104085499354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6789963104085499351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!1 &7993125957925494810
 GameObject:
   m_ObjectHideFlags: 0
@@ -24263,6 +24491,7 @@ GameObject:
   - component: {fileID: 4240376431570930575}
   - component: {fileID: 218969393947405702}
   - component: {fileID: 9169394630051856353}
+  - component: {fileID: 9169394630051856354}
   m_Layer: 0
   m_Name: DialogueLight
   m_TagString: Untagged
@@ -24319,3 +24548,16 @@ MonoBehaviour:
       m_Calls: []
   references:
     version: 1
+--- !u!114 &9169394630051856354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9169394630051856352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
