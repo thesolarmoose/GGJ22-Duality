@@ -229,5 +229,9 @@ MonoBehaviour:
     m_Localized: "Es hora de hablar espa\xF1ol."
     m_Metadata:
       m_Items: []
+  - m_Id: 125363751481143296
+    m_Localized: "\xBFUna moneda romana? Tal vez sea un cifrado de C\xE9sar."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

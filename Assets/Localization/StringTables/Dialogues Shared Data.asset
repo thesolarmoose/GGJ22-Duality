@@ -229,6 +229,10 @@ MonoBehaviour:
     m_Key: bookshelf_language
     m_Metadata:
       m_Items: []
+  - m_Id: 125363751481143296
+    m_Key: day_3_puzzle_hint
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

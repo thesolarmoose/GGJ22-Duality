@@ -229,5 +229,9 @@ MonoBehaviour:
     m_Localized: I guess it's time to speak English.
     m_Metadata:
       m_Items: []
+  - m_Id: 125363751481143296
+    m_Localized: A Roman coin? Maybe it's a Caesar cipher.
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
