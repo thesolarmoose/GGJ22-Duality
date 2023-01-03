@@ -24,15 +24,8 @@ namespace Narrative
         [SerializeField] private LocalizedString screenCheckSolved;
             
         private bool _started;
-        
-        private IEnumerator Start()
-        {
-            yield return new WaitForSeconds(delayToStart);
-            var tasksText = GetDayTasks();
-            ShowText(tasksText);
-        }
 
-        public async void ShowText(LocalizedString textToShow)
+        private async void ShowText(LocalizedString textToShow)
         {
             menu.ShowPanel();
             var localizedText = await textToShow.GetLocalizedStringAsync().Task;
@@ -40,6 +33,12 @@ namespace Narrative
             _started = true;
         }
 
+        public void ShowDayTask()
+        {
+            var tasksText = GetDayTasks();
+            ShowText(tasksText);
+        }
+        
         public void ShowPingTask()
         {
             ShowText(pingTask);
