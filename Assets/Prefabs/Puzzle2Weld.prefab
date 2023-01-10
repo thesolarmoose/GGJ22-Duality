@@ -1695,6 +1695,7 @@ GameObject:
   - component: {fileID: 8016511812549668262}
   - component: {fileID: 8016511812549668257}
   - component: {fileID: 8016511812549668256}
+  - component: {fileID: 1283522352}
   m_Layer: 5
   m_Name: CableIzqBlue
   m_TagString: Untagged
@@ -1806,6 +1807,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &1283522352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016511812549668258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c9d79f0054195ba0716d055aa2f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lineRenderer: {fileID: 8016511812661843493}
+  _enterColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
+  _exitColor: {r: 0.050980393, g: 0.050980393, b: 0.050980393, a: 1}
 --- !u!1 &8016511812583286428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +1834,7 @@ GameObject:
   - component: {fileID: 8016511812583286432}
   - component: {fileID: 8016511812583286435}
   - component: {fileID: 8016511812583286434}
+  - component: {fileID: 1577147660}
   m_Layer: 5
   m_Name: CableDerYellow
   m_TagString: Untagged
@@ -1929,6 +1946,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &1577147660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016511812583286428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c9d79f0054195ba0716d055aa2f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lineRenderer: {fileID: 8016511813098838182}
+  _enterColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
+  _exitColor: {r: 0.050980393, g: 0.050980393, b: 0.050980393, a: 1}
 --- !u!1 &8016511812589440611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2528,6 +2560,7 @@ GameObject:
   - component: {fileID: 8016511812872982552}
   - component: {fileID: 8016511812872982555}
   - component: {fileID: 8016511812872982554}
+  - component: {fileID: 1694343366}
   m_Layer: 5
   m_Name: CableIzqYellow
   m_TagString: Untagged
@@ -2639,6 +2672,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &1694343366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016511812872982548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c9d79f0054195ba0716d055aa2f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lineRenderer: {fileID: 8016511813863994606}
+  _enterColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
+  _exitColor: {r: 0.050980393, g: 0.050980393, b: 0.050980393, a: 1}
 --- !u!1 &8016511812876313273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2651,6 +2699,7 @@ GameObject:
   - component: {fileID: 8016511812876313277}
   - component: {fileID: 8016511812876313276}
   - component: {fileID: 8016511812876313279}
+  - component: {fileID: 1927165817}
   m_Layer: 5
   m_Name: CableIzqRed
   m_TagString: Untagged
@@ -2762,6 +2811,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &1927165817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016511812876313273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c9d79f0054195ba0716d055aa2f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lineRenderer: {fileID: 8016511812724587708}
+  _enterColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
+  _exitColor: {r: 0.050980393, g: 0.050980393, b: 0.050980393, a: 1}
 --- !u!1 &8016511812892508836
 GameObject:
   m_ObjectHideFlags: 0
@@ -3329,7 +3393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8016511813275943204
 Transform:
   m_ObjectHideFlags: 0
@@ -3583,6 +3647,7 @@ GameObject:
   - component: {fileID: 8016511813503372847}
   - component: {fileID: 8016511813503372844}
   - component: {fileID: 8342839978960486690}
+  - component: {fileID: 372517790}
   m_Layer: 0
   m_Name: PanelInteractable
   m_TagString: Untagged
@@ -3693,6 +3758,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8513787, y: 0.6856098}
   m_EdgeRadius: 0
+--- !u!114 &372517790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016511813503372846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb44548622e400388e7eb9f133649cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
 --- !u!1 &8016511813507315196
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,6 +3783,7 @@ GameObject:
   - component: {fileID: 8016511813507315200}
   - component: {fileID: 8016511813507315203}
   - component: {fileID: 8016511813507315202}
+  - component: {fileID: 557919566}
   m_Layer: 5
   m_Name: CableDerBlue
   m_TagString: Untagged
@@ -3816,6 +3895,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &557919566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016511813507315196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c9d79f0054195ba0716d055aa2f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lineRenderer: {fileID: 8016511813169001048}
+  _enterColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
+  _exitColor: {r: 0.050980393, g: 0.050980393, b: 0.050980393, a: 1}
 --- !u!1 &8016511813559112121
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,6 +4007,7 @@ GameObject:
   - component: {fileID: 8016511813584130074}
   - component: {fileID: 8016511813584130069}
   - component: {fileID: 8016511813584130068}
+  - component: {fileID: 1643701815}
   m_Layer: 5
   m_Name: CableDerRed
   m_TagString: Untagged
@@ -4024,6 +4119,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &1643701815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016511813584130070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7c9d79f0054195ba0716d055aa2f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lineRenderer: {fileID: 8016511813417739584}
+  _enterColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
+  _exitColor: {r: 0.050980393, g: 0.050980393, b: 0.050980393, a: 1}
 --- !u!1 &8016511813817853717
 GameObject:
   m_ObjectHideFlags: 0
