@@ -1379,6 +1379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ecf7d38860439fb274891a4560e6c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _weldSPot: {fileID: 0}
 --- !u!1 &6482354817832415005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,6 +1998,7 @@ GameObject:
   - component: {fileID: 6482354818510355157}
   - component: {fileID: 8134591075508634005}
   - component: {fileID: 6482354818510355159}
+  - component: {fileID: 1133522331825938054}
   m_Layer: 5
   m_Name: PlugGreen
   m_TagString: Untagged
@@ -2109,6 +2111,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.55, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &1133522331825938054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6482354818510355115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6482354818510355157}
+          m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+          m_MethodName: set_material
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2100000, guid: fd4a065535e48704fb5653ba7abf51fd, type: 2}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6482354818510355157}
+          m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+          m_MethodName: set_material
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6482354818515264041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,6 +2416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ecf7d38860439fb274891a4560e6c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _weldSPot: {fileID: 0}
 --- !u!1 &6482354818610377904
 GameObject:
   m_ObjectHideFlags: 0
@@ -2631,6 +2679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ecf7d38860439fb274891a4560e6c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _weldSPot: {fileID: 0}
 --- !u!1 &6482354818985435644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2727,6 +2776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ecf7d38860439fb274891a4560e6c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _weldSPot: {fileID: 0}
 --- !u!1 &6482354818990295358
 GameObject:
   m_ObjectHideFlags: 0
@@ -3847,6 +3897,7 @@ GameObject:
   - component: {fileID: 8332024985091990836}
   - component: {fileID: 6536799706227334772}
   - component: {fileID: 6482354818444845733}
+  - component: {fileID: 6622047176875511744}
   m_Layer: 5
   m_Name: PlugBlue
   m_TagString: Untagged
@@ -3959,6 +4010,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.55, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &6622047176875511744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332024985091990858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8332024985091990836}
+          m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+          m_MethodName: set_material
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2100000, guid: fd4a065535e48704fb5653ba7abf51fd, type: 2}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8332024985091990836}
+          m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+          m_MethodName: set_material
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8332024985152251383
 GameObject:
   m_ObjectHideFlags: 0
@@ -4001,6 +4097,7 @@ GameObject:
   - component: {fileID: 8332024985227336642}
   - component: {fileID: 6536799707975327874}
   - component: {fileID: 6482354817824243812}
+  - component: {fileID: 4331341741759236024}
   m_Layer: 5
   m_Name: PlugPurple
   m_TagString: Untagged
@@ -4113,6 +4210,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.55, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &4331341741759236024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332024985227336636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8332024985227336642}
+          m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+          m_MethodName: set_material
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2100000, guid: fd4a065535e48704fb5653ba7abf51fd, type: 2}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8332024985227336642}
+          m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+          m_MethodName: set_material
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8332024985242486925
 GameObject:
   m_ObjectHideFlags: 0
@@ -4125,6 +4267,7 @@ GameObject:
   - component: {fileID: 8332024985242487027}
   - component: {fileID: 6536799707955884979}
   - component: {fileID: 6482354819049899537}
+  - component: {fileID: 8361838752298556484}
   m_Layer: 5
   m_Name: PlugOrange
   m_TagString: Untagged
@@ -4237,6 +4380,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.55, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &8361838752298556484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332024985242486925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8332024985242487027}
+          m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+          m_MethodName: set_material
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2100000, guid: fd4a065535e48704fb5653ba7abf51fd, type: 2}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8332024985242487027}
+          m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+          m_MethodName: set_material
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8332024985270175792
 GameObject:
   m_ObjectHideFlags: 0
