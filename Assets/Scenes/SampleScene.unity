@@ -19605,6 +19605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puzzle3Code
       objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418050, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7847252135996418300, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: eventPuzzleSolved.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
@@ -19677,6 +19681,10 @@ PrefabInstance:
       propertyPath: eventBeforeShow.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1102463236}
+    - target: {fileID: 7847252136444710717, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
 --- !u!1 &7993125957925494810
