@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using Audio;
+using FmodExtensions;
+using FMODUnity;
 using InputActions;
 using UnityEngine;
 using UnityEngine.Events;
@@ -21,6 +23,11 @@ namespace Puzzles
         [SerializeField] private Vector3 connectSlotOffset;
 
         [SerializeField] private LayerMask cablesMask;
+
+        [Header("Sounds")]
+        [SerializeField] private EventReference _puzzleSolved;
+        [SerializeField] private EventReference _cablePluggedIn;
+        [SerializeField] private EventReference _cablePluggedOut;
         
         private GameInputActions _inputActions;
 
@@ -135,8 +142,7 @@ namespace Puzzles
                         CoroutineUtils.WaitTimeCoroutine(0.5f),
                         CoroutineUtils.ActionCoroutine(() =>
                         {
-                            var sounds = GameSounds.Instance;
-                            sounds.PlaySound(sounds.puzzle1Solved);
+                            _puzzleSolved.PlayEvent();
                         }),
                         CoroutineUtils.ActionCoroutine(() => eventPuzzleSolved?.Invoke()),
                     }));
@@ -161,13 +167,13 @@ namespace Puzzles
             var connectPosition = slot.transform.position + connectSlotOffset;
             SetPlugPosition(plug, connectPosition);
             _connectedPlugs.Add(plug, slot);
-            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzle1CablesPlugIn, Vector3.zero);
+            _cablePluggedIn.PlayEvent();
         }
 
         private void DisconnectPlug(CablePlug plug)
         {
             _connectedPlugs.Remove(plug);
-            AudioSource.PlayClipAtPoint(GameSounds.Instance.puzzle1CablesPlugOut, Vector3.zero);
+            _cablePluggedOut.PlayEvent();
         }
 
         private bool IsSlotConnected(CableSlot slot)

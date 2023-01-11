@@ -428,9 +428,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d00dabca05b341f1a5b56d24868b3ee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 2732170939228890551}
-  volumePing: 0.7
-  volumeRespond: 1
   lightARenderer: {fileID: 6482354818629845421}
   lightBRenderer: {fileID: 6482354819376418496}
   lightSprite: {fileID: 21300000, guid: ad5bfa378ab57c94c8626c49b13389b9, type: 3}
@@ -438,6 +435,20 @@ MonoBehaviour:
   lightAColorPressed: {r: 0.5723684, g: 1, b: 0, a: 1}
   lightBColor: {r: 0.28634846, g: 0, b: 0.5660378, a: 1}
   lightBColorPressed: {r: 0.50694466, g: 0, b: 1, a: 1}
+  _pingASound:
+    Guid:
+      Data1: 955612623
+      Data2: 1161233140
+      Data3: -8740457
+      Data4: -2099564061
+    Path: event:/Efectos Sonoros/puzzle1_ping_grueso
+  _pingBSound:
+    Guid:
+      Data1: 639109269
+      Data2: 1089740706
+      Data3: -1241758079
+      Data4: 272148173
+    Path: event:/Efectos Sonoros/puzzle1_ping_fino
   pingRate: 1.5
   responseTime: 1
   responsesInRowForEvent: 3
@@ -1800,6 +1811,27 @@ MonoBehaviour:
   cablesMask:
     serializedVersion: 2
     m_Bits: 32
+  _puzzleSolved:
+    Guid:
+      Data1: 1661335684
+      Data2: 1075777847
+      Data3: 245284480
+      Data4: 81472310
+    Path: event:/Efectos Sonoros/puzzle1_ping_terminado
+  _cablePluggedIn:
+    Guid:
+      Data1: -758191045
+      Data2: 1205164029
+      Data3: -1631825273
+      Data4: -1458234804
+    Path: event:/Efectos Sonoros/puzzle1_conectar_plug
+  _cablePluggedOut:
+    Guid:
+      Data1: 1003676948
+      Data2: 1168391722
+      Data3: 1481727105
+      Data4: -794022806
+    Path: event:/Efectos Sonoros/puzzle1_desconectar_plug
 --- !u!114 &6482354818353559693
 MonoBehaviour:
   m_ObjectHideFlags: 0

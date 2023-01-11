@@ -601,6 +601,67 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &6571574932483041682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4145421716319686620}
+  - component: {fileID: 4284587817363692892}
+  m_Layer: 0
+  m_Name: WeldSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4145421716319686620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6571574932483041682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8016511812307413333}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4284587817363692892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6571574932483041682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -175965801
+      Data2: 1153553570
+      Data3: 176356538
+      Data4: -1657158682
+    Path: event:/Efectos Sonoros/puzzle2_soldadura
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8016511811851607215
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,6 +966,7 @@ Transform:
   - {fileID: 8016511811857428306}
   - {fileID: 8016511812866373588}
   - {fileID: 8016511813378727096}
+  - {fileID: 4145421716319686620}
   m_Father: {fileID: 8016511813275943204}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1064,10 +1126,31 @@ MonoBehaviour:
   distanceToCutCable: 1
   timeToWeld: 1
   sparks: {fileID: 690258419650130833}
-  audioSource: {fileID: 8016511812307413337}
   cablesMask:
     serializedVersion: 2
     m_Bits: 32
+  _weldSoundEmitter: {fileID: 4284587817363692892}
+  _weldCableSound:
+    Guid:
+      Data1: -808587549
+      Data2: 1311779607
+      Data3: -1061252186
+      Data4: 652835893
+    Path: event:/Efectos Sonoros/puzzle2_conectar_cable
+  _cutCableSound:
+    Guid:
+      Data1: 1064657810
+      Data2: 1095185726
+      Data3: -513180790
+      Data4: 1881968023
+    Path: event:/Efectos Sonoros/puzzle2_arrancar_cable
+  _solvedSound:
+    Guid:
+      Data1: -1410513625
+      Data2: 1252186598
+      Data3: -1658619457
+      Data4: 1023759802
+    Path: event:/Efectos Sonoros/puzzle2_soldar_terminado
 --- !u!114 &8016511812307413339
 MonoBehaviour:
   m_ObjectHideFlags: 0

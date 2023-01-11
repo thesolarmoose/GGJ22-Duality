@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Audio;
+using FmodExtensions;
+using FMODUnity;
 using InputActions;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,10 +12,6 @@ namespace Puzzles
 {
     public class PuzzleRespondPing : MonoBehaviour
     {
-        [SerializeField] private AudioSource audioSource;
-        [SerializeField] private float volumePing;
-        [SerializeField] private float volumeRespond;
-        
         [SerializeField] private SpriteRenderer lightARenderer;
         [SerializeField] private SpriteRenderer lightBRenderer;
         
@@ -22,6 +20,8 @@ namespace Puzzles
         [SerializeField] private Color lightAColorPressed;
         [SerializeField] private Color lightBColor;
         [SerializeField] private Color lightBColorPressed;
+        [SerializeField] private EventReference _pingASound;
+        [SerializeField] private EventReference _pingBSound;
 
         [SerializeField] private float pingRate;
         [SerializeField] private float responseTime;
@@ -39,7 +39,7 @@ namespace Puzzles
         private bool _respondedWell;
         private int _responsesInARow;
 
-        private Dictionary<int, (SpriteRenderer, Color, Color, AudioClip)> _indexMap;
+        private Dictionary<int, (SpriteRenderer, Color, Color, EventReference)> _indexMap;
         
         private void Start()
         {
@@ -48,10 +48,10 @@ namespace Puzzles
             _inputActions.PuzzlePing.Ping0.performed += context => HandleResponse(0);
             _inputActions.PuzzlePing.Ping1.performed += context => HandleResponse(1);
 
-            _indexMap = new Dictionary<int, (SpriteRenderer, Color, Color, AudioClip)>
+            _indexMap = new Dictionary<int, (SpriteRenderer, Color, Color, EventReference)>
             {
-                [0] = (lightARenderer, lightAColor, lightAColorPressed, GameSounds.Instance.puzzle1Ping0),
-                [1] = (lightBRenderer, lightBColor, lightBColorPressed, GameSounds.Instance.puzzle1Ping1)
+                [0] = (lightARenderer, lightAColor, lightAColorPressed, _pingASound),
+                [1] = (lightBRenderer, lightBColor, lightBColorPressed, _pingBSound)
             };
         }
         
@@ -92,9 +92,7 @@ namespace Puzzles
             _responded = false;
             _respondedWell = false;
             
-            audioSource.clip = sound;
-            audioSource.volume = volumePing;
-            audioSource.Play();
+            sound.PlayEvent();
             
             Invoke(nameof(ClearSprite), responseTime);
             Invoke(nameof(CheckFailure), responseTime + 0.01f);
@@ -112,7 +110,6 @@ namespace Puzzles
                 spriteRenderer.color = color;
                 _respondedWell = true;
                 _responsesInARow++;
-                audioSource.volume = volumeRespond;
                 CheckResponsesInARow();
             }
             else

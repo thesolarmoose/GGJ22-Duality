@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using Audio;
+using FmodExtensions;
+using FMODUnity;
 using InputActions;
 using UnityEngine;
 using UnityEngine.Events;
@@ -29,9 +31,14 @@ namespace Puzzles
         [SerializeField] private float timeToWeld;
 
         [SerializeField] private GameObject sparks;
-        [SerializeField] private AudioSource audioSource;
 
         [SerializeField] private LayerMask cablesMask;
+
+        [Header("Sounds")]
+        [SerializeField] private StudioEventEmitter _weldSoundEmitter;
+        [SerializeField] private EventReference _weldCableSound;
+        [SerializeField] private EventReference _cutCableSound;
+        [SerializeField] private EventReference _solvedSound;
         
         private GameInputActions _inputActions;
         
@@ -55,7 +62,6 @@ namespace Puzzles
             _inputActions.Player.Interaction.performed += StartWeld;
             _inputActions.Player.Interaction.canceled += StopWeld;
 
-            audioSource.clip = GameSounds.Instance.puzzle2Weld;
             sparks.SetActive(false);
         }
 
@@ -79,7 +85,7 @@ namespace Puzzles
             _clickIsDown = false;
             _currentDraggingPlug = null;
             _isWelding = false;
-            audioSource.Stop();
+            _weldSoundEmitter.Stop();
             _currentWeldingPair = (default, default, false);
         }
 
@@ -128,13 +134,13 @@ namespace Puzzles
         private void StartWeld(InputAction.CallbackContext context)
         {
             _isWelding = true;
-            audioSource.Play();
+            _weldSoundEmitter.Play();
         }
         
         private void StopWeld(InputAction.CallbackContext context)
         {
             _isWelding = false;
-            audioSource.Stop();
+            _weldSoundEmitter.Stop();
             _currentWeldingPair = (default, default, false);
             
             sparks.SetActive(false);
@@ -242,9 +248,7 @@ namespace Puzzles
                         CoroutineUtils.WaitTimeCoroutine(0.5f),
                         CoroutineUtils.ActionCoroutine(() =>
                         {
-                            var sounds = GameSounds.Instance;
-                            print("puzzle 2 solved");
-                            sounds.PlaySound(sounds.puzzle2Solved);
+                            _solvedSound.PlayEvent();
                         }),
                         CoroutineUtils.ActionCoroutine(() => eventPuzzleSolved?.Invoke())
                     }));
@@ -258,8 +262,7 @@ namespace Puzzles
             SetPlugPosition(plug, connectPosition);
             slot.Connect();
             _connectedPlugs.Add(plug, slot);
-            var sounds = GameSounds.Instance;
-            sounds.PlaySound(sounds.puzzle2ConnectCable);
+            _weldCableSound.PlayEvent();
         }
 
         private void DisconnectPlug(CablePlug plug)
@@ -267,8 +270,7 @@ namespace Puzzles
             var slot = _connectedPlugs[plug];
             slot.Disconnect();
             _connectedPlugs.Remove(plug);
-            var sounds = GameSounds.Instance;
-            sounds.PlaySound(sounds.puzzle2CutCable);
+            _cutCableSound.PlayEvent();
         }
 
         private bool IsSlotConnected(CableSlot slot)
