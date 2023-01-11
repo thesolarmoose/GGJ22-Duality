@@ -518,6 +518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 146546338}
   - component: {fileID: 146546340}
+  - component: {fileID: 146546339}
   m_Layer: 0
   m_Name: Office
   m_TagString: Untagged
@@ -539,6 +540,36 @@ Transform:
   m_Father: {fileID: 1779395055}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &146546339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146546337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1613990510
+      Data2: 1201593868
+      Data3: -358609008
+      Data4: 1789528888
+    Path: "event:/M\xFAsica/Sala de M\xE1quinas m\xFAsica"
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!82 &146546340
 AudioSource:
   m_ObjectHideFlags: 0
@@ -546,7 +577,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146546337}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b252f1148e0e35346a388d0b4952a638, type: 3}
@@ -6707,6 +6738,7 @@ GameObject:
   m_Component:
   - component: {fileID: 650432918}
   - component: {fileID: 650432920}
+  - component: {fileID: 650432919}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -6728,6 +6760,36 @@ Transform:
   m_Father: {fileID: 1779395055}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &650432919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650432917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1941181726
+      Data2: 1126946760
+      Data3: -412074360
+      Data4: -584416675
+    Path: "event:/M\xFAsica/Habitaci\xF3n"
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!82 &650432920
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6735,7 +6797,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650432917}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9133fb94645005943b28c4089329380b, type: 3}
@@ -9911,11 +9973,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1227223652
+      Data2: 1128972821
+      Data3: 1046256542
+      Data4: -741066033
+    Path: event:/Efectos Sonoros/pasos Andrea/paso_andrea
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -9924,8 +9986,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1108366502
 GameObject:
   m_ObjectHideFlags: 0
@@ -15053,6 +15115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1817074041}
   - component: {fileID: 1817074042}
+  - component: {fileID: 1817074043}
   m_Layer: 0
   m_Name: Corridor
   m_TagString: Untagged
@@ -15081,7 +15144,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817074040}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 47642c369df92ed4bac65e93ef52aa8a, type: 3}
@@ -15170,6 +15233,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1817074043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817074040}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -285807852
+      Data2: 1287225884
+      Data3: 1004834949
+      Data4: -811594409
+    Path: "event:/M\xFAsica/Pasillo"
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1823622308
 GameObject:
   m_ObjectHideFlags: 0
@@ -19684,6 +19777,46 @@ PrefabInstance:
     - target: {fileID: 7847252136444710717, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: _openDoorSound.Path
+      value: event:/Efectos Sonoros/puzzle3_caja_cipher_abre
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: _closeDoorSound.Path
+      value: event:/Efectos Sonoros/puzzle3_caja_cipher_cierra
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: _openDoorSound.Guid.Data1
+      value: 1485063477
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: _openDoorSound.Guid.Data2
+      value: 1198040729
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: _openDoorSound.Guid.Data3
+      value: 1864130481
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: _openDoorSound.Guid.Data4
+      value: 770425320
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: _closeDoorSound.Guid.Data1
+      value: 1824075142
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: _closeDoorSound.Guid.Data2
+      value: 1234869773
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: _closeDoorSound.Guid.Data3
+      value: -2064122484
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: _closeDoorSound.Guid.Data4
+      value: 1534161847
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
