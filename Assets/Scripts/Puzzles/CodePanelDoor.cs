@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Audio;
+using FmodExtensions;
+using FMODUnity;
 using UnityEngine;
 
 namespace Puzzles
@@ -12,6 +13,9 @@ namespace Puzzles
         [SerializeField] private float maxDisplacement;
         [SerializeField] private float closeAccel;
         [SerializeField] private float maxVel;
+
+        [SerializeField] private EventReference _openDoorSound;
+        [SerializeField] private EventReference _closeDoorSound;
 
         private float _minX;
         private float _maxX;
@@ -61,8 +65,7 @@ namespace Puzzles
             _currentCursor = cursor;
             _currentOffsetX = transform.position.x - position.x;
             
-            var sounds = GameSounds.Instance;
-            sounds.PlaySound(sounds.puzzle3OpenDoor);
+            _openDoorSound.PlayEvent();
         }
 
         private void OnCursorReleased(HandCursor cursor)
@@ -84,8 +87,7 @@ namespace Puzzles
 
         private IEnumerator CloseCoroutine()
         {
-            var sounds = GameSounds.Instance;
-            sounds.PlaySound(sounds.puzzle3CloseDoor);
+            _closeDoorSound.PlayEvent();
             
             var position = transform.localPosition;
             int dir = (int) Mathf.Sign(_minX - position.x);
