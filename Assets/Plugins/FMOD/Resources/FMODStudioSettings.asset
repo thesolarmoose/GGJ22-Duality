@@ -309,15 +309,8 @@ MonoBehaviour:
   - Master
   Banks:
   - Ambiente
-  - Dialogue_CN
-  - Dialogue_EN
-  - Dialogue_JP
   - Efectos Sonoros
-  - Music
   - "M\xFAsica"
-  - SFX
-  - Vehicles
-  - VO
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

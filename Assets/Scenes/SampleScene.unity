@@ -6673,6 +6673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 650432918}
   - component: {fileID: 650432920}
+  - component: {fileID: 650432919}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -6694,6 +6695,36 @@ Transform:
   m_Father: {fileID: 1779395055}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &650432919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650432917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!82 &650432920
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6701,7 +6732,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650432917}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9133fb94645005943b28c4089329380b, type: 3}
@@ -6750,7 +6781,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -7684,11 +7715,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1613990510
-      Data2: 1201593868
-      Data3: -358609008
-      Data4: 1789528888
-    Path: "event:/M\xFAsica/Sala de M\xE1quinas m\xFAsica"
+      Data1: 267285064
+      Data2: 1102370962
+      Data3: -359785599
+      Data4: -1062059523
+    Path: "event:/M\xFAsica/M\xE1quinas Jazz Altavoz"
   Event: 
   PlayEvent: 11
   StopEvent: 12
@@ -9407,11 +9438,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1941181726
-      Data2: 1126946760
-      Data3: -412074360
-      Data4: -584416675
-    Path: "event:/M\xFAsica/Habitaci\xF3n"
+      Data1: -1797699758
+      Data2: 1168534524
+      Data3: -307936101
+      Data4: -307445391
+    Path: "event:/M\xFAsica/Habitaci\xF3n silencioso boceto"
   Event: 
   PlayEvent: 11
   StopEvent: 12
