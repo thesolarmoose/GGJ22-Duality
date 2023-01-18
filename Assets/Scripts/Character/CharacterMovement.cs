@@ -7,12 +7,9 @@ namespace Character
         public static int SpeedHashId = Animator.StringToHash("speed");
         public static int DirHashId = Animator.StringToHash("dir");
 
-        [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private Animator animator;
 
         [SerializeField] private FMODUnity.StudioEventEmitter _stepSound;
-//        [SerializeField] private AudioSource audioSource;
-//        [SerializeField] private AudioClip stepClip;
         
         [SerializeField] private float speed;
     
@@ -53,7 +50,6 @@ namespace Character
         public void PlayStepSound()
         {
             _stepSound.Play();
-//            audioSource.PlayOneShot(stepClip);
         }
     }
 }
