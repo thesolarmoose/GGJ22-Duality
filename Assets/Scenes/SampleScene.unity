@@ -16563,9 +16563,12 @@ MonoBehaviour:
     - name: ale
       variable:
         id: 3
-    - name: miguel
+    - name: marco
       variable:
         id: 4
+    - name: miguel
+      variable:
+        id: 5
   m_FormatArguments: []
   m_UpdateString:
     m_PersistentCalls:
@@ -16587,25 +16590,27 @@ MonoBehaviour:
     00000000:
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: <size=150%><b><#7f7fe6><link="https://twitter.com/thesolarmoose">The
-          Solar Moose</link></color></b></size>
+        m_Value: <size=150%><b>The Solar Moose</b></size>
     00000001:
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: <size=60%>Javier Montenegro <#7f7fe6><link="https://twitter.com/XaviLomaprieta">@XaviLomaprieta</link></color></size>
+        m_Value: <size=60%>Javier Montenegro</size>
     00000002:
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: <size=60%>Rafael Fuentes  <#7f7fe6><link="https://twitter.com/Rafux1">@Rafux1</link></color>
-          <#7f7fe6><link="https://pixeljoint.com/p/179992.htm">pixeljoint</link></color></size>
+        m_Value: <size=60%>Rafael Fuentes</size>
     00000003:
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: "<size=60%>Alejandro Hern\xE1ndez  <#7f7fe6><link=\"https://twitter.com/alejandrogiubel\">@alejandrogiubel</link></color></size>"
+        m_Value: "<size=60%>Alejandro Hern\xE1ndez</size>"
     00000004:
       type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
       data:
-        m_Value: "<size=60%>Miguel Nicol\xE1s <#7f7fe6><link=\"https://twitter.com/MiguelCokTSM\">@MiguelCokTSM</link></color></size>"
+        m_Value: <size=60%>Marco Postman</size>
+    00000005:
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: "<size=60%>Miguel Nicol\xE1s</size>"
 --- !u!114 &2033330480
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -21,8 +21,8 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 6216704000
     m_Localized: "{studio}\n\n<b>Dise\xF1o de videojuego</b>\n{javier}\n\n<b>Arte
-      2D</b>\n{rafa}\n\n<b>Interfaz de usuario de los puzzles</b>\n{ale}\n\n<b>Programaci\xF3n</b>\n{miguel}\n\n<size=60%>M\xFAsica
-      y sonidos descargados bajo licencia creative commons 0</size>"
+      2D</b>\n{rafa}\n\n<b>Interfaz de usuario de los puzzles</b>\n{ale}\n\n<b>M\xFAsica
+      y sonidos</b>\n{marco}\n\n<b>Programaci\xF3n</b>\n{miguel}"
     m_Metadata:
       m_Items:
       - id: 0
