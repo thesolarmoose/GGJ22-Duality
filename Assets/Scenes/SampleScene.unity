@@ -686,9 +686,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideAttenuation: 1
+  OverrideMinDistance: 4
+  OverrideMaxDistance: 6
 --- !u!1 &203266128
 GameObject:
   m_ObjectHideFlags: 0
@@ -6673,7 +6673,6 @@ GameObject:
   m_Component:
   - component: {fileID: 650432918}
   - component: {fileID: 650432920}
-  - component: {fileID: 650432919}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -6695,36 +6694,6 @@ Transform:
   m_Father: {fileID: 1779395055}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &650432919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650432917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!82 &650432920
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6732,7 +6701,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650432917}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9133fb94645005943b28c4089329380b, type: 3}
@@ -7727,9 +7696,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideAttenuation: 1
+  OverrideMinDistance: 14
+  OverrideMaxDistance: 16
 --- !u!1 &797177849
 GameObject:
   m_ObjectHideFlags: 0
@@ -9450,9 +9419,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideAttenuation: 1
+  OverrideMinDistance: 3.3
+  OverrideMaxDistance: 5
 --- !u!114 &1000945799 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4044760190196196334, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
