@@ -1,7 +1,7 @@
 ﻿using FMODUnity;
 using UnityEditor;
 
-namespace FmodExtensions
+namespace FmodExtensions.Editor
 {
     public static class EmitterMenuItems
     {
