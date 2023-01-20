@@ -5,6 +5,7 @@ namespace FmodExtensions.Editor
 {
     public static class EmitterMenuItems
     {
+        // test comment
         [MenuItem("GameObject/FMOD Extensions/Play emitter's event")]
         public static void PlayEmitter()
         {
