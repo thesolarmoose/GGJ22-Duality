@@ -13672,41 +13672,6 @@ Transform:
   m_Father: {fileID: 722990135}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1629020102 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1488982300, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
-  m_PrefabInstance: {fileID: 6482354818761916692}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1629020105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629020102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
 --- !u!1 &1636097415
 GameObject:
   m_ObjectHideFlags: 0
@@ -19488,10 +19453,6 @@ PrefabInstance:
       propertyPath: eventBeforeShow.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4044760190196196334, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
-      propertyPath: animationSteps.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 8300000, guid: 376bc21301247fd44881387455d45f0a, type: 3}
     - target: {fileID: 4044760190196196334, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: animationSteps.Array.data[6].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
