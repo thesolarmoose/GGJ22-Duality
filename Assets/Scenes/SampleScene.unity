@@ -12204,7 +12204,7 @@ MonoBehaviour:
       Data2: 1153553570
       Data3: 176356538
       Data4: -1657158682
-    Path: event:/Efectos Sonoros/Puzzle2/puzzle2_soldadura
+    Path: event:/Efectos Sonoros/puzzle2_soldadura
   Event: 
   PlayEvent: 11
   StopEvent: 12
@@ -19391,7 +19391,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _pingBSound.Path
-      value: event:/Efectos Sonoros/Puzzle1/puzzle1_ping_fino
+      value: event:/Efectos Sonoros/puzzle1_ping_fino
       objectReference: {fileID: 0}
     - target: {fileID: 2732170939228890555, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: relativeTo
@@ -19535,11 +19535,11 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 6482354818353559694, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _cablePluggedIn.Path
-      value: event:/Efectos Sonoros/Puzzle1/puzzle1_conectar_plug
+      value: event:/Efectos Sonoros/puzzle1_conectar_plug
       objectReference: {fileID: 0}
     - target: {fileID: 6482354818353559694, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _cablePluggedOut.Path
-      value: event:/Efectos Sonoros/Puzzle1/puzzle1_desconectar_plug
+      value: event:/Efectos Sonoros/puzzle1_desconectar_plug
       objectReference: {fileID: 0}
     - target: {fileID: 6482354818353559694, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: eventPuzzleSolved.m_PersistentCalls.m_Calls.Array.data[7].m_Target
@@ -19768,11 +19768,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: _openDoorSound.Path
-      value: event:/Efectos Sonoros/Puzzle3/puzzle3_caja_cipher_abre
+      value: event:/Efectos Sonoros/puzzle3_caja_cipher_abre
       objectReference: {fileID: 0}
     - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: _closeDoorSound.Path
-      value: event:/Efectos Sonoros/Puzzle3/puzzle3_caja_cipher_cierra
+      value: event:/Efectos Sonoros/puzzle3_caja_cipher_cierra
       objectReference: {fileID: 0}
     - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: _openDoorSound.Guid.Data1
@@ -19840,7 +19840,7 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 8016511812307413336, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: _cutCableSound.Path
-      value: event:/Efectos Sonoros/Puzzle2/puzzle2_arrancar_cable
+      value: event:/Efectos Sonoros/puzzle2_arrancar_cable
       objectReference: {fileID: 0}
     - target: {fileID: 8016511812307413336, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: eventPuzzleSolved.m_PersistentCalls.m_Calls.Array.data[4].m_Target

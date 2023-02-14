@@ -651,7 +651,7 @@ MonoBehaviour:
       Data2: 1153553570
       Data3: 176356538
       Data4: -1657158682
-    Path: event:/Efectos Sonoros/Puzzle2/puzzle2_soldadura
+    Path: event:/Efectos Sonoros/puzzle2_soldadura
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -1135,14 +1135,14 @@ MonoBehaviour:
       Data2: 1311779607
       Data3: -1061252186
       Data4: 652835893
-    Path: event:/Efectos Sonoros/Puzzle2/puzzle2_conectar_cable
+    Path: event:/Efectos Sonoros/puzzle2_conectar_cable
   _cutCableSound:
     Guid:
       Data1: 1064657810
       Data2: 1095185726
       Data3: -513180790
       Data4: 1881968023
-    Path: event:/Efectos Sonoros/Puzzle2/puzzle2_arrancar_cable
+    Path: event:/Efectos Sonoros/puzzle2_arrancar_cable
   _solvedSound:
     Guid:
       Data1: -1410513625

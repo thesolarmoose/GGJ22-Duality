@@ -282,7 +282,7 @@ MonoBehaviour:
       Data2: 1205590273
       Data3: -587936881
       Data4: 316023442
-    Path: event:/Efectos Sonoros/Puzzle1/puzzle1_ping_grueso_3D
+    Path: event:/Efectos Sonoros/puzzle1_ping_grueso_3D
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -356,14 +356,14 @@ MonoBehaviour:
       Data2: 1161233140
       Data3: -8740457
       Data4: -2099564061
-    Path: event:/Efectos Sonoros/Puzzle1/puzzle1_ping_grueso
+    Path: event:/Efectos Sonoros/puzzle1_ping_grueso
   _pingBSound:
     Guid:
       Data1: 639109269
       Data2: 1089740706
       Data3: -1241758079
       Data4: 272148173
-    Path: event:/Efectos Sonoros/Puzzle1/puzzle1_ping_fino
+    Path: event:/Efectos Sonoros/puzzle1_ping_fino
   pingRate: 1.5
   responseTime: 1
   responsesInRowForEvent: 3
@@ -1636,21 +1636,21 @@ MonoBehaviour:
       Data2: 1075777847
       Data3: 245284480
       Data4: 81472310
-    Path: event:/Efectos Sonoros/Puzzle1/puzzle1_ping_terminado
+    Path: event:/Efectos Sonoros/puzzle1_ping_terminado
   _cablePluggedIn:
     Guid:
       Data1: -758191045
       Data2: 1205164029
       Data3: -1631825273
       Data4: -1458234804
-    Path: event:/Efectos Sonoros/Puzzle1/puzzle1_conectar_plug
+    Path: event:/Efectos Sonoros/puzzle1_conectar_plug
   _cablePluggedOut:
     Guid:
       Data1: 1003676948
       Data2: 1168391722
       Data3: 1481727105
       Data4: -794022806
-    Path: event:/Efectos Sonoros/Puzzle1/puzzle1_desconectar_plug
+    Path: event:/Efectos Sonoros/puzzle1_desconectar_plug
 --- !u!114 &6482354818353559693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3092,7 +3092,7 @@ MonoBehaviour:
       Data2: 1111406054
       Data3: -1043228533
       Data4: -194420284
-    Path: event:/Efectos Sonoros/Puzzle1/puzzle1_ping_fino_3D
+    Path: event:/Efectos Sonoros/puzzle1_ping_fino_3D
   Event: 
   PlayEvent: 0
   StopEvent: 0
