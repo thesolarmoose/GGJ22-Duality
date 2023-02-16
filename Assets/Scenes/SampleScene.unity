@@ -714,7 +714,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195716673}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.5, z: 0}
+  m_LocalPosition: {x: 0, y: 6.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1779395055}
@@ -747,9 +747,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 4
-  OverrideMaxDistance: 6
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &203266128
 GameObject:
   m_ObjectHideFlags: 0
@@ -9530,11 +9530,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1797699758
-      Data2: 1168534524
-      Data3: -307936101
-      Data4: -307445391
-    Path: "event:/M\xFAsica/Habitaci\xF3n silencioso boceto"
+      Data1: 1825337001
+      Data2: 1127022577
+      Data3: 1254756225
+      Data4: 1331697684
+    Path: "event:/M\xFAsica/Habitaci\xF3n M\xFAsica"
   Event: 
   PlayEvent: 11
   StopEvent: 12
@@ -9542,9 +9542,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 3.3
-  OverrideMaxDistance: 5
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!114 &1000945799 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4044760190196196334, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
