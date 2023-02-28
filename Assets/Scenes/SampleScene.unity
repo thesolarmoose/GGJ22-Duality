@@ -5271,6 +5271,7 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: 15aa86e6ea1ab2b40b10ae86a08c1c52, type: 2}
+    - {fileID: 11400000, guid: 82ce2bbcda26f3c418ca64025947f76d, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -5285,6 +5286,20 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: c5ee200337413a747941865945a964e7, type: 2}
+          m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+          m_MethodName: set_Value
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
 --- !u!320 &447366421
 PlayableDirector:
@@ -9994,6 +10009,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 1102463236}
+  _stoppingStates:
+  - {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
+  - {fileID: 11400000, guid: d7e2f4eed4640be4db879f189b0d43f5, type: 2}
+  - {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+  - {fileID: 11400000, guid: c5ee200337413a747941865945a964e7, type: 2}
 --- !u!114 &1102463236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13488,30 +13508,6 @@ MonoBehaviour:
   _onBeforePause:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1102463235}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1102463236}
-        m_TargetAssemblyTypeName: Character.CharacterMovement, com.thesolarmoose.ggj22
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
         m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
         m_MethodName: set_Value
@@ -13527,18 +13523,6 @@ MonoBehaviour:
   _onAfterPause:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1102463235}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
         m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
         m_MethodName: set_Value
@@ -14372,6 +14356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761829524}
   - component: {fileID: 1761829525}
+  - component: {fileID: 1761829526}
   m_Layer: 0
   m_Name: SceneStart
   m_TagString: Untagged
@@ -14411,8 +14396,40 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -225299841359585670, guid: 3426d727a19cd914891e1bf064b5964f, type: 2}
     value: {fileID: 1254792133}
+  - key: {fileID: -9069611150974306148, guid: 3426d727a19cd914891e1bf064b5964f, type: 2}
+    value: {fileID: 1761829526}
   m_ExposedReferences:
     m_References: []
+--- !u!114 &1761829526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761829523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 14f01a3b1298aa54280c8981974ce28e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: c5ee200337413a747941865945a964e7, type: 2}
+          m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+          m_MethodName: set_Value
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1769556628
 GameObject:
   m_ObjectHideFlags: 0

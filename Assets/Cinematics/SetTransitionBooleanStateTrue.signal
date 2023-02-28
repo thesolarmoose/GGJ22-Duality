@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7a2b66ac74833047acddd8286b9ba93, type: 3}
-  m_Name: DayData
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: SetTransitionBooleanStateTrue
   m_EditorClassIdentifier: 
-  day: 0
