@@ -27,7 +27,7 @@ namespace Dialogues
         public async void Push()
         {
             var localizedDialogues = await GetDayDialogue();
-            DialoguePanel.Instance.PushDialogueSequence(localizedDialogues);
+            DialoguePanel.Instance.PushDialogueSequenceAsync(localizedDialogues);
             DialoguePanel.Instance.eventAllDialoguesProcessed += OnDialoguesProcessed;
         }
 

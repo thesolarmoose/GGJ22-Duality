@@ -29,9 +29,9 @@ namespace Dialogues
             });
             
             var allTask = Task.WhenAll(tasks);
-
             var localizedDialogues = await allTask;
-            DialoguePanel.Instance.PushDialogueSequence(localizedDialogues.ToList());
+            
+            DialoguePanel.Instance.PushDialogueSequenceAsync(localizedDialogues.ToList());
         }
     }
 }
