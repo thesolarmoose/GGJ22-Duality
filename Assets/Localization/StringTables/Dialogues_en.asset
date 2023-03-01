@@ -19,17 +19,16 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 9576393695232
-    m_Localized: 'Here we go again. Ready to enjoy another great day in my shitty
-      existence: connecting the wires and welding the lithium units. Is this some
-      kind of Sisyphean punishment?'
+    m_Localized: Here we go again. Another wonderful day in my shitty existence.
+      Reconnect the cables. Weld the lithium units. Am I doomed to a Sisyphean fate?
     m_Metadata:
       m_Items: []
   - m_Id: 9576402083840
-    m_Localized: I would have loved to know the world when it looked like this.
+    m_Localized: I would have loved to see the world when it looked like this.
     m_Metadata:
       m_Items: []
   - m_Id: 9576402083841
-    m_Localized: 'There is not much to search for. I have checked this clunker hundreds
+    m_Localized: 'There is not much to look for. I have checked this clunker hundreds
       of times. '
     m_Metadata:
       m_Items: []
@@ -38,7 +37,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576414666752
-    m_Localized: This landscape is one of the few things that make my existence meaningful.
+    m_Localized: This little garden helps me cope with my existence.
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861056
@@ -46,61 +45,60 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861057
-    m_Localized: It looks like the rain didn't stop our night crawler. Too bad a
-      lighting didn't strike him.
+    m_Localized: It seems that last night's rain didn't stop our nocturnal prowler.
+      It's a shame he wasn't struck by lightning.
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861058
-    m_Localized: What's the point of disconnecting all of this every night?
+    m_Localized: What benefit will he get from disconnecting this every night?
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861059
-    m_Localized: Shit, my battery lasts less every day... Bad things could happen
-      if I don't find a short-term solution.
+    m_Localized: Shit, my battery lasts less and less every day... Bad things could
+      happen if I don't find a short-term solution.
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055360
-    m_Localized: Luckily the wires have not been stolen. It is the same every day.
-      Why don't they rip them out and get this over with?
+    m_Localized: Luckily, the wires haven't been stolen. It's the same thing every
+      day. Why don't they just rip them out and end this once and for all?
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055361
-    m_Localized: Another great day. At least I know I will live tomorrow.
+    m_Localized: Another productive day. At least I know I'll live to see tomorrow.
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055362
-    m_Localized: 33 %. It is just like yesterday.
+    m_Localized: 33%. It's the same as yesterday.
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249664
-    m_Localized: "Everything is okay\u2026 until tomorrow."
+    m_Localized: Everything is in order... until tomorrow.
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249665
-    m_Localized: Time to get on the energizer bed.
+    m_Localized: Time to climb into the recharging bed.
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249666
-    m_Localized: Another day in paradise. I am ready to repair everything my nemesis
-      has undone. Let's hope my battery won't get worse.
+    m_Localized: Another day in paradise. Time to repair the damage caused by my
+      nemesis. Let's hope my battery doesn't continue to lose capacity.
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249667
-    m_Localized: What happened to this beautiful world that has disappeared?
+    m_Localized: What could have happened for this beautiful world to disappear?
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443968
-    m_Localized: "Sometimes I feel tempted to take the pieces of this pileup for
-      my benefit\u2026 Better not. Who knows if one day it will come in handy."
+    m_Localized: Sometimes I feel like taking the parts of this device for my own
+      benefit... But it's better not to, who knows if it will be useful someday.
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443969
-    m_Localized: I hope someday I will wake up and I'll find all these things already
-      connected.
+    m_Localized: Will the day come when these pieces of junk survive the night connected?
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443970
-    m_Localized: "Mmmh\u2026 it feels a little cooler."
+    m_Localized: "Mmmh\uFFFD it feels a little cooler."
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443971
@@ -114,12 +112,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638272
-    m_Localized: "Shit, my battery is getting even worse\u2026 I must have\u2026
+    m_Localized: "Shit, my battery is getting even worse\uFFFD I must have\uFFFD
       No, you better not do that calculation. "
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638273
-    m_Localized: "I could swear my welder is losing power\u2026 Is my psyche affecting
+    m_Localized: "I could swear my welder is losing power\uFFFD Is my psyche affecting
       my mechanical body?"
     m_Metadata:
       m_Items: []
@@ -142,12 +140,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832578
-    m_Localized: "Wow\u2026 this is hard to process. This planet is dying slowly,
+    m_Localized: "Wow\uFFFD this is hard to process. This planet is dying slowly,
       and my existence, the energy I consume, accelerates that destruction."
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832579
-    m_Localized: "And yet, they don't kill me\u2026 they just... regulate my energy
+    m_Localized: "And yet, they don't kill me\uFFFD they just... regulate my energy
       consumption."
     m_Metadata:
       m_Items: []
@@ -177,7 +175,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576460804097
-    m_Localized: "Maybe\u2026 Maybe it's a good idea to keep them disconnected."
+    m_Localized: "Maybe\uFFFD Maybe it's a good idea to keep them disconnected."
     m_Metadata:
       m_Items: []
   - m_Id: 9576460804098

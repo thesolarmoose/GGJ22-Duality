@@ -19,13 +19,14 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 9576393695232
-    m_Localized: "Aqu\xED vamos de nuevo. Otro d\xEDa maravilloso en mi existencia
-      de mierda. Reconectar los cables. Soldar las unidades de litio. \xBFEstar\xE9
+    m_Localized: "Aqu\uFFFD vamos de nuevo. Otro d\uFFFDa maravilloso en mi existencia
+      de mierda. Reconectar los cables. Soldar las unidades de litio. \uFFFDEstar\uFFFD
       condenada a una suerte de castigo sisifiano?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576402083840
-    m_Localized: "Me hubiese gustado conocer el mundo cuando se ve\xEDa de esta forma."
+    m_Localized: "Me hubiese gustado conocer el mundo cuando se ve\uFFFDa de esta
+      forma."
     m_Metadata:
       m_Items: []
   - m_Id: 9576402083841
@@ -33,15 +34,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576402083842
-    m_Localized: "Todo est\xE1 desconectado, como cada d\xEDa."
+    m_Localized: "Todo est\uFFFD desconectado, como cada d\uFFFDa."
     m_Metadata:
       m_Items: []
   - m_Id: 9576414666752
-    m_Localized: "Este peque\xF1o jard\xEDn me ayuda a sobrellevar mi existencia."
+    m_Localized: "Este peque\uFFFDo jard\uFFFDn me ayuda a sobrellevar mi existencia."
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861056
-    m_Localized: "Odio profundamente esa canci\xF3n"
+    m_Localized: "Odio profundamente esa canci\uFFFDn"
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861057
@@ -50,21 +51,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861058
-    m_Localized: "\xBFQu\xE9 ganar\xE1 desconectando esto todas las noches?"
+    m_Localized: "\uFFFDQu\uFFFD ganar\uFFFD desconectando esto todas las noches?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861059
-    m_Localized: "Mierda, mi bater\xEDa cada d\xEDa dura menos\u2026 Esto puede ponerse
-      feo si no encuentro una soluci\xF3n a corto plazo."
+    m_Localized: "Mierda, mi bater\uFFFDa cada d\uFFFDa dura menos\uFFFD Esto puede
+      ponerse feo si no encuentro una soluci\uFFFDn a corto plazo."
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055360
-    m_Localized: "Por suerte no se han robado los cables. Todos los d\xEDas lo mismo.
-      \xBFPor qu\xE9 no los arrancan y terminan con esto de una vez?"
+    m_Localized: "Por suerte no se han robado los cables. Todos los d\uFFFDas lo
+      mismo. \uFFFDPor qu\uFFFD no los arrancan y terminan con esto de una vez?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055361
-    m_Localized: "Otro d\xEDa productivo. Al menos ya s\xE9 que vivir\xE9 ma\xF1ana."
+    m_Localized: "Otro d\uFFFDa productivo. Al menos ya s\uFFFD que vivir\uFFFD ma\uFFFDana."
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055362
@@ -72,7 +73,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249664
-    m_Localized: "Todo en orden\u2026 hasta ma\xF1ana."
+    m_Localized: "Todo en orden\uFFFD hasta ma\uFFFDana."
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249665
@@ -80,22 +81,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249666
-    m_Localized: "Otro d\xEDa en el para\xEDso. A reparar los destrozos de mi n\xE9mesis.
-      Esperemos que mi bater\xEDa no contin\xFAe perdiendo capacidad."
+    m_Localized: "Otro d\uFFFDa en el para\uFFFDso. A reparar los destrozos de mi
+      n\uFFFDmesis. Esperemos que mi bater\uFFFDa no contin\uFFFDe perdiendo capacidad."
     m_Metadata:
       m_Items: []
   - m_Id: 9576427249667
-    m_Localized: "\xBFQu\xE9 habr\xE1 pasado que este mundo tan hermoso desapareci\xF3?"
+    m_Localized: "\uFFFDQu\uFFFD habr\uFFFD pasado que este mundo tan hermoso desapareci\uFFFD?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443968
     m_Localized: "A veces tengo deseos de tomar las piezas de este cacharro para
-      mi propio beneficio\u2026 Mejor no, qui\xE9n sabe si alg\xFAn d\xEDa ser\xE1
-      \xFAtil."
+      mi propio beneficio\uFFFD Mejor no, qui\uFFFDn sabe si alg\uFFFDn d\uFFFDa
+      ser\uFFFD \uFFFDtil."
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443969
-    m_Localized: "\xBFLlegar\xE1 el d\xEDa en que estas porquer\xEDas amanezcan conectadas?"
+    m_Localized: "\uFFFDLlegar\uFFFD el d\uFFFDa en que estas porquer\uFFFDas amanezcan
+      conectadas?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443970
@@ -108,18 +110,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443972
-    m_Localized: "\xBFC\xF3mo abrir\xE1 esta caja mi n\xE9mesis? \xBFTendr\xE1 un
-      brazo rob\xF3tico como el m\xEDo?"
+    m_Localized: "\uFFFDC\uFFFDmo abrir\uFFFD esta caja mi n\uFFFDmesis? \uFFFDTendr\uFFFD
+      un brazo rob\uFFFDtico como el m\uFFFDo?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638272
-    m_Localized: "Mierda, el deterioro de mi bater\xEDa empeora por d\xEDa\u2026
-      deben quedarme\u2026 No, mejor no hacer ese c\xE1lculo."
+    m_Localized: "Mierda, el deterioro de mi bater\uFFFDa empeora por d\uFFFDa\uFFFD
+      deben quedarme\uFFFD No, mejor no hacer ese c\uFFFDlculo."
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638273
-    m_Localized: "Jurar\xEDa que mi soldador est\xE1 perdiendo potencia\u2026 \xBFEstar\xE1
-      mi siquis afectando mi cuerpo mec\xE1nico?"
+    m_Localized: "Jurar\uFFFDa que mi soldador est\uFFFD perdiendo potencia\uFFFD
+      \uFFFDEstar\uFFFD mi siquis afectando mi cuerpo mec\uFFFDnico?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638274
@@ -127,29 +129,29 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638275
-    m_Localized: "33 %. Espera, \xBFqu\xE9 es esto? \xBFUn disco de 3 y media? \xBFDe
-      d\xF3nde ha salido este objeto museable? \xBFSe supone que en alg\xFAn lado
-      pueda ver la informaci\xF3n que contiene?"
+    m_Localized: "33 %. Espera, \uFFFDqu\uFFFD es esto? \uFFFDUn disco de 3 y media?
+      \uFFFDDe d\uFFFDnde ha salido este objeto museable? \uFFFDSe supone que en
+      alg\uFFFDn lado pueda ver la informaci\uFFFDn que contiene?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832576
-    m_Localized: "S\xED, aun no han desconectado nada."
+    m_Localized: "S\uFFFD, aun no han desconectado nada."
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832577
-    m_Localized: "\xBFTendr\xE1 este cacharro una entrada de disco de 3 y media?
-      Pues s\xED, aqu\xED est\xE1. Pongamos esto y veamos qu\xE9 hay interesante."
+    m_Localized: "\uFFFDTendr\uFFFD este cacharro una entrada de disco de 3 y media?
+      Pues s\uFFFD, aqu\uFFFD est\uFFFD. Pongamos esto y veamos qu\uFFFD hay interesante."
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832578
-    m_Localized: "Wow\u2026 esto es dif\xEDcil de digerir. Este planeta se est\xE1
-      destruyendo poco a poco, y mi existencia, la energ\xEDa que consumo, acelera
-      esa destrucci\xF3n."
+    m_Localized: "Wow\uFFFD esto es dif\uFFFDcil de digerir. Este planeta se est\uFFFD
+      destruyendo poco a poco, y mi existencia, la energ\uFFFDa que consumo, acelera
+      esa destrucci\uFFFDn."
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832579
-    m_Localized: "Y a\xFAn as\xED, ellos no me matan\u2026 solo regulan mi consumo
-      de energ\xEDa. "
+    m_Localized: "Y a\uFFFDn as\uFFFD, ellos no me matan\uFFFD solo regulan mi consumo
+      de energ\uFFFDa. "
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832580
@@ -158,52 +160,53 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 9576444026880
     m_Localized: "Voy a tirarme en la cama, el peor sitio donde uno puede estar a
-      solas con sus pensamientos. S\xED, ma\xF1ana ser\xE1 otro d\xEDa.\nO no."
+      solas con sus pensamientos. S\uFFFD, ma\uFFFDana ser\uFFFD otro d\uFFFDa.\nO
+      no."
     m_Metadata:
       m_Items: []
   - m_Id: 9576444026881
-    m_Localized: "Qu\xE9 pocos deseos de hacer nada. No importa. All\xE1 vamos. Vivir
-      y destruir el mundo. "
+    m_Localized: "Qu\uFFFD pocos deseos de hacer nada. No importa. All\uFFFD vamos.
+      Vivir y destruir el mundo. "
     m_Metadata:
       m_Items: []
   - m_Id: 9576452415488
-    m_Localized: "Supongo que esto es todo lo que podr\xE9 ver de este mundo."
+    m_Localized: "Supongo que esto es todo lo que podr\uFFFD ver de este mundo."
     m_Metadata:
       m_Items: []
   - m_Id: 9576460804096
-    m_Localized: "Deb\xED destruirte cuando tuve la oportunidad. As\xED habr\xEDa
+    m_Localized: "Deb\uFFFD destruirte cuando tuve la oportunidad. As\uFFFD habr\uFFFDa
       muerto en la ignorancia."
     m_Metadata:
       m_Items: []
   - m_Id: 9576460804097
-    m_Localized: "Tal vez\u2026 Tal vez sea una buena idea mantenerlos as\xED."
+    m_Localized: "Tal vez\uFFFD Tal vez sea una buena idea mantenerlos as\uFFFD."
     m_Metadata:
       m_Items: []
   - m_Id: 9576460804098
-    m_Localized: "(respira profundo) Peque\xF1as cosas a las que aferrarse."
+    m_Localized: "(respira profundo) Peque\uFFFDas cosas a las que aferrarse."
     m_Metadata:
       m_Items: []
   - m_Id: 9576464998400
-    m_Localized: "Hoy no me parece una canci\xF3n tan terrible."
+    m_Localized: "Hoy no me parece una canci\uFFFDn tan terrible."
     m_Metadata:
       m_Items: []
   - m_Id: 9576473387008
-    m_Localized: "\xBFVale la pena seguir viviendo mientras destruyo este mundo?
-      \xBFEs tan significativa mi existencia?"
+    m_Localized: "\uFFFDVale la pena seguir viviendo mientras destruyo este mundo?
+      \uFFFDEs tan significativa mi existencia?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576473387009
-    m_Localized: "\xA1Mierda! Tampoco es que mi bater\xEDa me de muchas opciones
-      de seguir viviendo\u2026"
+    m_Localized: "\uFFFDMierda! Tampoco es que mi bater\uFFFDa me de muchas opciones
+      de seguir viviendo\uFFFD"
     m_Metadata:
       m_Items: []
   - m_Id: 9576477581312
-    m_Localized: "Si ellos me quisieran muerta, ya habr\xEDan arrancado estos cables.
-      Entonces, \xBFpor qu\xE9 me dejaron ese disquete con la informaci\xF3n?"
+    m_Localized: "Si ellos me quisieran muerta, ya habr\uFFFDan arrancado estos cables.
+      Entonces, \uFFFDpor qu\uFFFD me dejaron ese disquete con la informaci\uFFFDn?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576477581313
-    m_Localized: "Mejor no darle tantas vueltas. La respuesta sencilla y ego\xEDsta
+    m_Localized: "Mejor no darle tantas vueltas. La respuesta sencilla y ego\uFFFDsta
       es que quiero vivir."
     m_Metadata:
       m_Items: []
@@ -212,13 +215,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576481775617
-    m_Localized: "\xBFY esto de d\xF3nde sali\xF3? \xBFOtro regalo desagradable de
-      mis amigos nocturnos?"
+    m_Localized: "\uFFFDY esto de d\uFFFDnde sali\uFFFD? \uFFFDOtro regalo desagradable
+      de mis amigos nocturnos?"
     m_Metadata:
       m_Items: []
   - m_Id: 9576485969920
-    m_Localized: "Es\u2026 Es mi n\xFAcleo\u2026 mi bater\xEDa\u2026 una bater\xEDa
-      nueva\u2026 para mi\u2026"
+    m_Localized: "Es\uFFFD Es mi n\uFFFDcleo\uFFFD mi bater\uFFFDa\uFFFD una bater\uFFFDa
+      nueva\uFFFD para mi\uFFFD"
     m_Metadata:
       m_Items: []
   - m_Id: 9576485969921
@@ -226,11 +229,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4586080654024704
-    m_Localized: "Es hora de hablar espa\xF1ol."
+    m_Localized: "Es hora de hablar espa\uFFFDol."
     m_Metadata:
       m_Items: []
   - m_Id: 125363751481143296
-    m_Localized: "\xBFUna moneda romana? Tal vez sea un cifrado de C\xE9sar."
+    m_Localized: "\uFFFDUna moneda romana? Tal vez sea un cifrado de C\uFFFDsar."
     m_Metadata:
       m_Items: []
   references:
