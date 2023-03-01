@@ -77,17 +77,6 @@ namespace Dialogues.UI
             bool shouldProcess = _dialogueQueue.Count == 0 && !dialogueText.IsRunning;
             return shouldProcess;
         }
-        
-        public void PushDialogue(string dialogue)
-        {
-            bool shouldProcess = ShouldProcessOnPush();
-            _dialogueQueue.Add(dialogue);
-
-            if (shouldProcess)
-            {
-                ProcessQueue();
-            }
-        }
 
         public void PushDialogueSequence(List<string> sequence, bool clearOthers = true)
         {
@@ -109,13 +98,12 @@ namespace Dialogues.UI
             }
         }
         
-        public async void PushDialogueSequenceAsync(List<string> sequence, bool clearOthers = true)
+        public async void PushDialogueSequenceAsync(List<string> sequence)
         {
-            PushDialogueSequenceAsync(sequence, null, null, clearOthers);
+            PushDialogueSequenceAsync(sequence, null, null);
         }
         
-        public async void PushDialogueSequenceAsync(List<string> sequence, Action beforeDialogue, Action afterDialogue,
-            bool clearOthers = true)
+        public async void PushDialogueSequenceAsync(List<string> sequence, Action beforeDialogue, Action afterDialogue)
         {
             await ClosePreviousDialogueAndWait();
 

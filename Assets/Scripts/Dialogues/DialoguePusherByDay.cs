@@ -16,6 +16,7 @@ namespace Dialogues
 
         [SerializeField] private bool pushOnStart;
         
+        public UnityEvent eventOnDialogueStarts;
         public UnityEvent eventOnDialogueEnds;
 
         private void Start()
@@ -27,14 +28,17 @@ namespace Dialogues
         public async void Push()
         {
             var localizedDialogues = await GetDayDialogue();
-            DialoguePanel.Instance.PushDialogueSequenceAsync(localizedDialogues);
-            DialoguePanel.Instance.eventAllDialoguesProcessed += OnDialoguesProcessed;
+            DialoguePanel.Instance.PushDialogueSequenceAsync(localizedDialogues, OnBeforeDialogue, OnAfterDialogue);
         }
 
-        private void OnDialoguesProcessed()
+        private void OnBeforeDialogue()
         {
-            eventOnDialogueEnds?.Invoke();
-            DialoguePanel.Instance.eventAllDialoguesProcessed -= OnDialoguesProcessed;
+            eventOnDialogueStarts.Invoke();
+        }
+        
+        private void OnAfterDialogue()
+        {
+            eventOnDialogueEnds.Invoke();
         }
 
         private async Task<List<string>> GetDayDialogue()

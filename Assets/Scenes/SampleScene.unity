@@ -1367,9 +1367,36 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 1
 --- !u!114 &246534945
@@ -1756,9 +1783,36 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 1
 --- !u!114 &329235859
@@ -6951,9 +7005,36 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 1
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 490892032}
         m_TargetAssemblyTypeName: Narrative.EyeGlassTasks, com.thesolarmoose.ggj22
         m_MethodName: ShowDayTask
@@ -7435,9 +7516,36 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 1
 --- !u!1 &779205511
@@ -8678,9 +8786,36 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 1
 --- !u!1 &913320313
@@ -8979,9 +9114,36 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 1
 --- !u!114 &931773325
@@ -11297,12 +11459,27 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1560754045}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11672,9 +11849,36 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 1
 --- !u!114 &1324581769
@@ -14078,6 +14282,9 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls: []
   eventOnDialogueEnds:
     m_PersistentCalls:
       m_Calls: []
@@ -14381,9 +14588,36 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 1
 --- !u!114 &1769556633
@@ -16577,9 +16811,36 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 447366422}
         m_TargetAssemblyTypeName: SceneReseter, com.thesolarmoose.ggj22
         m_MethodName: Reset
@@ -19159,6 +19420,66 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218425265143685710, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
 --- !u!1 &6789963104085499351
@@ -19225,9 +19546,36 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 1
 --- !u!61 &6789963104085499353
@@ -19341,9 +19689,81 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
       objectReference: {fileID: 1418475590}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StartCinematic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Narrative.FinalcinematicStarter, com.thesolarmoose.ggj22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252135996418303, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7847252136100828471, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: relativeTo
       value: 
@@ -19396,6 +19816,66 @@ PrefabInstance:
       propertyPath: _closeDoorSound.Guid.Data4
       value: 1534161847
       objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
 --- !u!1 &7993125957925494810
@@ -19424,6 +19904,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1786552103}
     m_Modifications:
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8016511812307413336, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: camera
       value: 
@@ -19574,9 +20114,36 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   pushOnStart: 0
+  eventOnDialogueStarts:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 1
 --- !u!114 &9169394630051856354
