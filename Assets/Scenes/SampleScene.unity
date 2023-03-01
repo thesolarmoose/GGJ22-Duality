@@ -5806,9 +5806,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1
-    height: 1
+    y: 0.10739532
+    width: 0.9998074
+    height: 0.78394055
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -19573,6 +19573,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1786552103}
     m_Modifications:
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_Id
+      value: 8bd31aa3-3606-4835-bb35-2e718185d029
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_Id
+      value: 3ba2e7ea-279a-4c25-9e0b-4f268390ac4c
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_Name
+      value: Left Ping Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_Name
+      value: Right Ping Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 34e41e00-b5e8-4447-b362-3eb2487c572c
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: ab6d5e33-c95f-482e-90c2-90dc0499d843
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/a
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/d
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Left Ping Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Right Ping Input
+      objectReference: {fileID: 0}
     - target: {fileID: 2732170939228890555, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: relativeTo
       value: 
@@ -19637,6 +19685,10 @@ PrefabInstance:
       propertyPath: eventBeforeShow.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4044760190196196334, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: managedReferences[6].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ff759dffb225964c97ef92419e510e5, type: 3}
     - target: {fileID: 4044760190196196334, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: animationSteps.Array.data[6].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 

@@ -821,18 +821,18 @@ namespace InputActions
             ""id"": ""96aa3f11-c062-4ce7-93ef-7e765f1015b1"",
             ""actions"": [
                 {
-                    ""name"": ""Ping0"",
+                    ""name"": ""asd"",
                     ""type"": ""Button"",
-                    ""id"": ""13b75dd3-6dad-4243-a2cf-93dee66d8f2c"",
+                    ""id"": ""3ce27a3a-35b3-4307-ae77-7c5939aea338"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Ping1"",
+                    ""name"": ""dsa"",
                     ""type"": ""Button"",
-                    ""id"": ""22f27c8c-26f1-4c07-83d2-ac2b7ab8305c"",
+                    ""id"": ""74ad39f2-e05c-426b-856e-efa46679e389"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -842,23 +842,23 @@ namespace InputActions
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""90971b04-eaec-4156-9c36-1ccad5d44991"",
+                    ""id"": ""b45d00c3-461c-4152-9ebd-1e94855fe02f"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Ping0"",
+                    ""action"": ""asd"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""9be1d5b6-9d29-4e26-9798-d3e5194501b7"",
+                    ""id"": ""554d43c2-85ad-4784-9103-0154790e5f7c"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Ping1"",
+                    ""action"": ""dsa"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -948,8 +948,8 @@ namespace InputActions
             m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
             // PuzzlePing
             m_PuzzlePing = asset.FindActionMap("PuzzlePing", throwIfNotFound: true);
-            m_PuzzlePing_Ping0 = m_PuzzlePing.FindAction("Ping0", throwIfNotFound: true);
-            m_PuzzlePing_Ping1 = m_PuzzlePing.FindAction("Ping1", throwIfNotFound: true);
+            m_PuzzlePing_asd = m_PuzzlePing.FindAction("asd", throwIfNotFound: true);
+            m_PuzzlePing_dsa = m_PuzzlePing.FindAction("dsa", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -1171,14 +1171,14 @@ namespace InputActions
         // PuzzlePing
         private readonly InputActionMap m_PuzzlePing;
         private IPuzzlePingActions m_PuzzlePingActionsCallbackInterface;
-        private readonly InputAction m_PuzzlePing_Ping0;
-        private readonly InputAction m_PuzzlePing_Ping1;
+        private readonly InputAction m_PuzzlePing_asd;
+        private readonly InputAction m_PuzzlePing_dsa;
         public struct PuzzlePingActions
         {
             private @GameInputActions m_Wrapper;
             public PuzzlePingActions(@GameInputActions wrapper) { m_Wrapper = wrapper; }
-            public InputAction @Ping0 => m_Wrapper.m_PuzzlePing_Ping0;
-            public InputAction @Ping1 => m_Wrapper.m_PuzzlePing_Ping1;
+            public InputAction @asd => m_Wrapper.m_PuzzlePing_asd;
+            public InputAction @dsa => m_Wrapper.m_PuzzlePing_dsa;
             public InputActionMap Get() { return m_Wrapper.m_PuzzlePing; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -1188,22 +1188,22 @@ namespace InputActions
             {
                 if (m_Wrapper.m_PuzzlePingActionsCallbackInterface != null)
                 {
-                    @Ping0.started -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing0;
-                    @Ping0.performed -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing0;
-                    @Ping0.canceled -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing0;
-                    @Ping1.started -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing1;
-                    @Ping1.performed -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing1;
-                    @Ping1.canceled -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnPing1;
+                    @asd.started -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnAsd;
+                    @asd.performed -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnAsd;
+                    @asd.canceled -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnAsd;
+                    @dsa.started -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnDsa;
+                    @dsa.performed -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnDsa;
+                    @dsa.canceled -= m_Wrapper.m_PuzzlePingActionsCallbackInterface.OnDsa;
                 }
                 m_Wrapper.m_PuzzlePingActionsCallbackInterface = instance;
                 if (instance != null)
                 {
-                    @Ping0.started += instance.OnPing0;
-                    @Ping0.performed += instance.OnPing0;
-                    @Ping0.canceled += instance.OnPing0;
-                    @Ping1.started += instance.OnPing1;
-                    @Ping1.performed += instance.OnPing1;
-                    @Ping1.canceled += instance.OnPing1;
+                    @asd.started += instance.OnAsd;
+                    @asd.performed += instance.OnAsd;
+                    @asd.canceled += instance.OnAsd;
+                    @dsa.started += instance.OnDsa;
+                    @dsa.performed += instance.OnDsa;
+                    @dsa.canceled += instance.OnDsa;
                 }
             }
         }
@@ -1275,8 +1275,8 @@ namespace InputActions
         }
         public interface IPuzzlePingActions
         {
-            void OnPing0(InputAction.CallbackContext context);
-            void OnPing1(InputAction.CallbackContext context);
+            void OnAsd(InputAction.CallbackContext context);
+            void OnDsa(InputAction.CallbackContext context);
         }
     }
 }

@@ -4,6 +4,7 @@ using FMODUnity;
 using InputActions;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 
 namespace Puzzles
@@ -26,10 +27,12 @@ namespace Puzzles
 
         [SerializeField] private int responsesInRowForEvent;
 
+        [SerializeField] private InputAction _leftPingInputAction;
+        [SerializeField] private InputAction _rightPingInputAction;
+
         public UnityEvent eventResponsesInARow;
         public UnityEvent eventFailed;
 
-        private GameInputActions _inputActions;
         private bool _isPinging;
         private float _lastTimePing;
         private int _currentPingIndex;
@@ -41,10 +44,10 @@ namespace Puzzles
         
         private void Start()
         {
-            _inputActions = new GameInputActions();
-            _inputActions.Enable();
-            _inputActions.PuzzlePing.Ping0.performed += context => HandleResponse(0);
-            _inputActions.PuzzlePing.Ping1.performed += context => HandleResponse(1);
+            _leftPingInputAction.Enable();
+            _rightPingInputAction.Enable();
+            _leftPingInputAction.performed += context => HandleResponse(0);
+            _rightPingInputAction.performed += context => HandleResponse(1);
 
             _indexMap = new Dictionary<int, (SpriteRenderer, Color, Color, EventReference)>
             {
@@ -55,12 +58,14 @@ namespace Puzzles
         
         private void OnEnable()
         {
-            _inputActions?.Enable();
+            _leftPingInputAction?.Enable();
+            _rightPingInputAction?.Enable();
         }
 
         private void OnDisable()
         {
-            _inputActions?.Disable();
+            _leftPingInputAction?.Disable();
+            _rightPingInputAction?.Disable();
             StopPing();
         }
 
