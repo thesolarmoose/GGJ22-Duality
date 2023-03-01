@@ -5,6 +5,7 @@
     "com.facticus.asyncutils": "https://github.com/mnicolas94/unity-async-utils.git",
     "com.facticus.utils": "https://github.com/mnicolas94/UnityUtils.git",
     "com.lms.version_mand": "https://github.com/mnicolas94/LMS.Version.git?path=/Assets/Version",
+    "com.mackysoft.serializereference-extensions": "1.1.7",
     "com.mefistofiles.unity-event-visualizer": "1.4.4",
     "com.unity-atoms.unity-atoms-base-atoms": "4.4.5",
     "com.unity-atoms.unity-atoms-core": "4.4.5",
@@ -67,6 +68,7 @@
       "scopes": [
         "com.brunomikoski.animationsequencer",
         "com.dbrizov",
+        "com.mackysoft.serializereference-extensions",
         "com.mefistofiles.unity-event-visualizer",
         "com.needle",
         "com.openupm",

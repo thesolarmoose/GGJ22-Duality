@@ -21,14 +21,14 @@
       "dependencies": {
         "com.facticus.utils": "0.9.1"
       },
-      "hash": "8850d3e004d6c7a9aa4bd8a696f4700cafe49566"
+      "hash": "ec38cdd70c46ebfb98108886ed111412160f3611"
     },
     "com.facticus.utils": {
       "version": "https://github.com/mnicolas94/UnityUtils.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "b280bdb466408728dd210988c1de4ee214ca90d1"
+      "hash": "27f543add0ad270a2fe6d094fec4e9a5eceb1b3c"
     },
     "com.lms.version_mand": {
       "version": "https://github.com/mnicolas94/LMS.Version.git?path=/Assets/Version",
@@ -36,6 +36,13 @@
       "source": "git",
       "dependencies": {},
       "hash": "8bbd4283f361df3280a0335ea833ed51f4426c4e"
+    },
+    "com.mackysoft.serializereference-extensions": {
+      "version": "1.1.7",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
     },
     "com.mefistofiles.unity-event-visualizer": {
       "version": "1.4.4",
