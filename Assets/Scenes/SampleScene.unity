@@ -19994,6 +19994,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1786552103}
     m_Modifications:
+    - target: {fileID: 190114727, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 462525339, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 462525341, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 883530388, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1112860610, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414520220, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476665038, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -20054,6 +20082,10 @@ PrefabInstance:
       propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8016511812203159519, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8016511812307413336, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: camera
       value: 
@@ -20082,6 +20114,10 @@ PrefabInstance:
       propertyPath: eventBeforeShow.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1102463236}
+    - target: {fileID: 8016511812489174451, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8016511812541496764, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: m_fontSize
       value: 0.6
@@ -20146,6 +20182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puzzle2Weld
       objectReference: {fileID: 0}
+    - target: {fileID: 8016511813275943207, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8016511813378727102, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: camera
       value: 
@@ -20154,6 +20194,10 @@ PrefabInstance:
       propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 490892032}
+    - target: {fileID: 8016511813559112127, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
 --- !u!1 &9169394630051856352
