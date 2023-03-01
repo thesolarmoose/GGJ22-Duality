@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.2.30
+  bundleVersion: 0.2.40
   preloadedAssets:
   - {fileID: 11400000, guid: 2a139319d742d53458c9f90b88645631, type: 2}
   - {fileID: 11400000, guid: 3e593a40be97dd6459fcb62ba0384cee, type: 2}
@@ -163,7 +163,7 @@ PlayerSettings:
   applicationIdentifier:
     Standalone: com.The-Solar-Moose.La-vida-de-Andrea
   buildNumber:
-    Standalone: 0.2.30
+    Standalone: 0.2.40
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
