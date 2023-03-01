@@ -842,7 +842,7 @@ namespace InputActions
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""8acd989f-7b27-46fe-8cd1-1414a1e1607d"",
+                    ""id"": ""90971b04-eaec-4156-9c36-1ccad5d44991"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -853,7 +853,7 @@ namespace InputActions
                 },
                 {
                     ""name"": """",
-                    ""id"": ""56d47261-5b2b-41fd-8f05-e846168a67b8"",
+                    ""id"": ""9be1d5b6-9d29-4e26-9798-d3e5194501b7"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
