@@ -3,6 +3,7 @@
     "com.brunomikoski.animationsequencer": "0.3.8",
     "com.dbrizov.naughtyattributes": "2.1.4",
     "com.facticus.asyncutils": "https://github.com/mnicolas94/unity-async-utils.git",
+    "com.facticus.deploy": "https://github.com/mnicolas94/facticus-deploy.git",
     "com.facticus.utils": "https://github.com/mnicolas94/UnityUtils.git",
     "com.lms.version_mand": "https://github.com/mnicolas94/LMS.Version.git?path=/Assets/Version",
     "com.mackysoft.serializereference-extensions": "1.1.7",

@@ -12,7 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6228cd6dd744bb8b6bc1150736cb0a, type: 3}
   m_Name: Debug
   m_EditorClassIdentifier: 
-  _repositoryBranch: 
-  _elements: []
+  _repositoryBranch: dev
+  _elements:
+  - _developmentBuild: 0
+    _buildPlatform:
+      rid: 3334506543518318598
+    _deployPlatform:
+      rid: 3334506543518318600
+  - _developmentBuild: 1
+    _buildPlatform:
+      rid: 3334506543518318599
+    _deployPlatform:
+      rid: 3334506543518318601
   references:
-    version: 1
+    version: 2
+    RefIds:
+    - rid: 3334506543518318598
+      type: {class: Windows, ns: Deploy.Editor.BuildPlatforms, asm: com.facticus.deploy.editor}
+    - rid: 3334506543518318599
+      type: {class: Windows, ns: Deploy.Editor.BuildPlatforms, asm: com.facticus.deploy.editor}
+    - rid: 3334506543518318600
+      type: {class: Telegram, ns: Deploy.Editor.DeployPlatforms, asm: com.facticus.deploy.editor}
+      data:
+        message: Windows build
+    - rid: 3334506543518318601
+      type: {class: Telegram, ns: Deploy.Editor.DeployPlatforms, asm: com.facticus.deploy.editor}
+      data:
+        message: Windows build (dev)
