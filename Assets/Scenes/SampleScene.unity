@@ -5806,9 +5806,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.08428494
-    width: 0.61645156
-    height: 0.48335448
+    y: 0.10739532
+    width: 0.9998074
+    height: 0.78394055
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -20368,10 +20368,6 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 8016511812307413336, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
-      propertyPath: _cutCableSound.Path
-      value: event:/Efectos Sonoros/puzzle2_arrancar_cable
-      objectReference: {fileID: 0}
     - target: {fileID: 8016511812307413336, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: eventPuzzleSolved.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
