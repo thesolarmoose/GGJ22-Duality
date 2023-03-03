@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Resume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9661acff1ba514740bb7a96134bff277, type: 2}
-  m_sharedMaterial: {fileID: -335160893500453996, guid: 9661acff1ba514740bb7a96134bff277, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c5c991ac1cf0b4c48ab496098e14b2e1, type: 2}
+  m_sharedMaterial: {fileID: -7832003436410225699, guid: c5c991ac1cf0b4c48ab496098e14b2e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -318,8 +318,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0.1.0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9661acff1ba514740bb7a96134bff277, type: 2}
-  m_sharedMaterial: {fileID: -335160893500453996, guid: 9661acff1ba514740bb7a96134bff277, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c5c991ac1cf0b4c48ab496098e14b2e1, type: 2}
+  m_sharedMaterial: {fileID: -7832003436410225699, guid: c5c991ac1cf0b4c48ab496098e14b2e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -343,8 +343,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -466,8 +466,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9661acff1ba514740bb7a96134bff277, type: 2}
-  m_sharedMaterial: {fileID: -335160893500453996, guid: 9661acff1ba514740bb7a96134bff277, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c5c991ac1cf0b4c48ab496098e14b2e1, type: 2}
+  m_sharedMaterial: {fileID: -7832003436410225699, guid: c5c991ac1cf0b4c48ab496098e14b2e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -491,8 +491,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -724,7 +724,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -43.4}
-  m_SizeDelta: {x: -80, y: 150}
+  m_SizeDelta: {x: -80, y: 230}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &7057739423872501755
 CanvasRenderer:
@@ -756,8 +756,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: La vida de Andrea
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9661acff1ba514740bb7a96134bff277, type: 2}
-  m_sharedMaterial: {fileID: -335160893500453996, guid: 9661acff1ba514740bb7a96134bff277, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c5c991ac1cf0b4c48ab496098e14b2e1, type: 2}
+  m_sharedMaterial: {fileID: -7832003436410225699, guid: c5c991ac1cf0b4c48ab496098e14b2e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -781,8 +781,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 67
-  m_fontSizeBase: 67
+  m_fontSize: 100.08
+  m_fontSizeBase: 100.08
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

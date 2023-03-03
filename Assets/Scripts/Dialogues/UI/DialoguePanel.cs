@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
@@ -22,9 +24,38 @@ namespace Dialogues.UI
         
         private List<string> _dialogueQueue;
         private float _nextTimeToProcess;
+        
         private bool _showingDialogue;
-
         public bool ShowingDialogue => _showingDialogue;
+
+        private CancellationTokenSource _cts;
+        private Task _currentTask;
+
+        private void OnEnable()
+        {
+            CreateCts();
+        }
+
+        private void OnDisable()
+        {
+            DisposeCts();
+        }
+
+        private void CreateCts()
+        {
+            _cts = new CancellationTokenSource();
+        }
+
+        private void DisposeCts()
+        {
+            if (!_cts.IsCancellationRequested)
+            {
+                _cts.Cancel();
+            }
+
+            _cts.Dispose();
+            _cts = null;
+        }
 
         private void Awake()
         {
@@ -46,17 +77,6 @@ namespace Dialogues.UI
             bool shouldProcess = _dialogueQueue.Count == 0 && !dialogueText.IsRunning;
             return shouldProcess;
         }
-        
-        public void PushDialogue(string dialogue)
-        {
-            bool shouldProcess = ShouldProcessOnPush();
-            _dialogueQueue.Add(dialogue);
-
-            if (shouldProcess)
-            {
-                ProcessQueue();
-            }
-        }
 
         public void PushDialogueSequence(List<string> sequence, bool clearOthers = true)
         {
@@ -76,6 +96,45 @@ namespace Dialogues.UI
             {
                 ProcessQueue();
             }
+        }
+        
+        public async void PushDialogueSequenceAsync(List<string> sequence)
+        {
+            PushDialogueSequenceAsync(sequence, null, null);
+        }
+        
+        public async void PushDialogueSequenceAsync(List<string> sequence, Action beforeDialogue, Action afterDialogue)
+        {
+            await ClosePreviousDialogueAndWait();
+
+            beforeDialogue?.Invoke();
+            PushDialogueSequence(sequence);
+
+            var ct = _cts.Token;
+            _currentTask = WaitForDialogues(afterDialogue, ct);
+            await _currentTask;
+        }
+
+        private async Task ClosePreviousDialogueAndWait()
+        {
+            // dispose and wait for previous task
+            if (ShowingDialogue)
+            {
+                DisposeCts();
+                await _currentTask;
+                CreateCts();
+            }
+        }
+
+        private async Task WaitForDialogues(Action afterDialogue, CancellationToken ct)
+        {
+            while (ShowingDialogue && !ct.IsCancellationRequested)
+            {
+                await Task.Yield();
+            }
+            
+            afterDialogue?.Invoke();
+            await Task.Yield();
         }
 
         public void ClearQueue()

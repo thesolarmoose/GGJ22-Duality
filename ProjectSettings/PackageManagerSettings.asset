@@ -31,6 +31,7 @@ MonoBehaviour:
     m_Scopes:
     - com.brunomikoski.animationsequencer
     - com.dbrizov
+    - com.mackysoft.serializereference-extensions
     - com.mefistofiles.unity-event-visualizer
     - com.needle
     - com.openupm
@@ -52,6 +53,7 @@ MonoBehaviour:
       m_Scopes:
       - com.brunomikoski.animationsequencer
       - com.dbrizov
+      - com.mackysoft.serializereference-extensions
       - com.mefistofiles.unity-event-visualizer
       - com.needle
       - com.openupm
@@ -68,6 +70,7 @@ MonoBehaviour:
     m_Scopes:
     - com.brunomikoski.animationsequencer
     - com.dbrizov
+    - com.mackysoft.serializereference-extensions
     - com.mefistofiles.unity-event-visualizer
     - com.needle
     - com.openupm

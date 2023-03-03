@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -220,6 +221,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      sparks_animation_0: -3260518850968329704
+      sparks_animation_2: -1192227822726965725
+      sparks_animation_1: 3096901207685383987
+      sparks_animation_3: -1491194408414951638
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

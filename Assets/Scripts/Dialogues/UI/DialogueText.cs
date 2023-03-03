@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections;
+using System.Threading;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
@@ -34,6 +36,18 @@ namespace Dialogues.UI
                 _coroutine = ShowCharacterByCharacter();
                 StartCoroutine(_coroutine);
             }
+        }
+
+        public async Task PutTextAsync(string text, CancellationToken ct)
+        {
+            PutText(text);
+            while (_isRunning && !ct.IsCancellationRequested)
+            {
+                await Task.Yield();
+            }
+            
+            ShowAll();
+            await Task.Yield();
         }
 
         public void PutText(string text, Action onTextFinishedShowing)
