@@ -174,7 +174,7 @@ MonoBehaviour:
       Data2: 1145350380
       Data3: 601626545
       Data4: -180961733
-    Path: event:/Efectos Sonoros/palanca_activar_hacia_arriba
+    Path: event:/Efectos Sonoros/Interruptores/palanca_activar_hacia_arriba
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -721,7 +721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195716673}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.5, z: 0}
+  m_LocalPosition: {x: 0, y: 6.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -747,7 +747,7 @@ MonoBehaviour:
       Data2: 1287225884
       Data3: 1004834949
       Data4: -811594409
-    Path: "event:/M\xFAsica/Pasillo"
+    Path: event:/Musica/Pasillo
   Event: 
   PlayEvent: 11
   StopEvent: 12
@@ -755,9 +755,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 4
-  OverrideMaxDistance: 6
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &203266128
 GameObject:
   m_ObjectHideFlags: 0
@@ -2169,7 +2169,7 @@ MonoBehaviour:
       Data2: 1175873818
       Data3: 92265147
       Data4: 904406992
-    Path: event:/Efectos Sonoros/interruptor_encender
+    Path: event:/Efectos Sonoros/Interruptores/interruptor_encender
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -7902,7 +7902,7 @@ MonoBehaviour:
       Data2: 1102370962
       Data3: -359785599
       Data4: -1062059523
-    Path: "event:/M\xFAsica/M\xE1quinas Jazz Altavoz"
+    Path: event:/Musica/Maquinas Jazz Altavoz
   Event: 
   PlayEvent: 11
   StopEvent: 12
@@ -9600,11 +9600,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1797699758
-      Data2: 1168534524
-      Data3: -307936101
-      Data4: -307445391
-    Path: "event:/M\xFAsica/Habitaci\xF3n silencioso boceto"
+      Data1: 1825337001
+      Data2: 1127022577
+      Data3: 1254756225
+      Data4: 1331697684
+    Path: event:/Musica/Habitacion Musica
   Event: 
   PlayEvent: 11
   StopEvent: 12
@@ -9612,9 +9612,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 3.3
-  OverrideMaxDistance: 5
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!114 &1000945799 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4044760190196196334, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
@@ -19544,6 +19544,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1786552103}
     m_Modifications:
     - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _pingBSound.Path
+      value: event:/Efectos Sonoros/puzzle1_ping_fino
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _leftPingInputAction.m_Id
       value: 8bd31aa3-3606-4835-bb35-2e718185d029
       objectReference: {fileID: 0}
@@ -19727,6 +19731,14 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6482354818353559694, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _cablePluggedIn.Path
+      value: event:/Efectos Sonoros/puzzle1_conectar_plug
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482354818353559694, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _cablePluggedOut.Path
+      value: event:/Efectos Sonoros/puzzle1_desconectar_plug
+      objectReference: {fileID: 0}
     - target: {fileID: 6482354818353559694, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: eventPuzzleSolved.m_PersistentCalls.m_Calls.Array.data[7].m_Target
       value: 
@@ -20356,6 +20368,10 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8016511812307413336, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: _cutCableSound.Path
+      value: event:/Efectos Sonoros/puzzle2_arrancar_cable
+      objectReference: {fileID: 0}
     - target: {fileID: 8016511812307413336, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: eventPuzzleSolved.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 

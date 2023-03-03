@@ -410,7 +410,7 @@ MonoBehaviour:
       Data2: 1321599283
       Data3: 596868001
       Data4: 889863603
-    Path: "event:/Efectos Sonoros/Sonidos de los n\xFAmeros/numero_4"
+    Path: event:/Efectos Sonoros/Sonidos de los numeros/numero_4
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -726,7 +726,7 @@ MonoBehaviour:
       Data2: 1224115969
       Data3: 242013344
       Data4: 236365896
-    Path: "event:/Efectos Sonoros/Sonidos de los n\xFAmeros/numero_8"
+    Path: event:/Efectos Sonoros/Sonidos de los numeros/numero_8
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -1142,7 +1142,7 @@ MonoBehaviour:
       Data2: 1268132029
       Data3: -1772250240
       Data4: 335682125
-    Path: "event:/Efectos Sonoros/Sonidos de los n\xFAmeros/numero_3"
+    Path: event:/Efectos Sonoros/Sonidos de los numeros/numero_3
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -1324,7 +1324,7 @@ MonoBehaviour:
       Data2: 1079809622
       Data3: -1103362139
       Data4: 873296153
-    Path: "event:/Efectos Sonoros/Sonidos de los n\xFAmeros/numero_0"
+    Path: event:/Efectos Sonoros/Sonidos de los numeros/numero_0
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -2012,7 +2012,7 @@ MonoBehaviour:
       Data2: 1112990115
       Data3: -903003740
       Data4: 1580968745
-    Path: "event:/Efectos Sonoros/Sonidos de los n\xFAmeros/numero_7"
+    Path: event:/Efectos Sonoros/Sonidos de los numeros/numero_7
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -2462,7 +2462,7 @@ MonoBehaviour:
       Data2: 1260113014
       Data3: 87516600
       Data4: 72922368
-    Path: "event:/Efectos Sonoros/Sonidos de los n\xFAmeros/numero_2"
+    Path: event:/Efectos Sonoros/Sonidos de los numeros/numero_2
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -3501,7 +3501,7 @@ MonoBehaviour:
       Data2: 1334237249
       Data3: -1361637976
       Data4: 539634847
-    Path: "event:/Efectos Sonoros/Sonidos de los n\xFAmeros/numero_6"
+    Path: event:/Efectos Sonoros/Sonidos de los numeros/numero_6
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -3683,7 +3683,7 @@ MonoBehaviour:
       Data2: 1219385277
       Data3: 453123748
       Data4: 955948421
-    Path: "event:/Efectos Sonoros/Sonidos de los n\xFAmeros/numero_5"
+    Path: event:/Efectos Sonoros/Sonidos de los numeros/numero_5
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -3979,7 +3979,7 @@ MonoBehaviour:
       Data2: 1312613238
       Data3: 699415696
       Data4: 316735427
-    Path: "event:/Efectos Sonoros/Sonidos de los n\xFAmeros/numero_9"
+    Path: event:/Efectos Sonoros/Sonidos de los numeros/numero_9
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -5160,7 +5160,7 @@ MonoBehaviour:
       Data2: 1275734974
       Data3: -1291778385
       Data4: 1881548218
-    Path: "event:/Efectos Sonoros/Sonidos de los n\xFAmeros/numero_1"
+    Path: event:/Efectos Sonoros/Sonidos de los numeros/numero_1
   Event: 
   PlayEvent: 0
   StopEvent: 0
