@@ -739,7 +739,7 @@ MonoBehaviour:
       Data2: 1287225884
       Data3: 1004834949
       Data4: -811594409
-    Path: "event:/M\xFAsica/Pasillo"
+    Path: event:/Musica/Pasillo
   Event: 
   PlayEvent: 11
   StopEvent: 12
@@ -7810,7 +7810,7 @@ MonoBehaviour:
       Data2: 1102370962
       Data3: -359785599
       Data4: -1062059523
-    Path: "event:/M\xFAsica/M\xE1quinas Jazz Altavoz"
+    Path: event:/Musica/Maquinas Jazz Altavoz
   Event: 
   PlayEvent: 11
   StopEvent: 12
@@ -9534,7 +9534,7 @@ MonoBehaviour:
       Data2: 1127022577
       Data3: 1254756225
       Data4: 1331697684
-    Path: "event:/M\xFAsica/Habitaci\xF3n M\xFAsica"
+    Path: event:/Musica/Habitacion Musica
   Event: 
   PlayEvent: 11
   StopEvent: 12
