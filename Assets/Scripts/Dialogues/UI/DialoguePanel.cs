@@ -17,13 +17,11 @@ namespace Dialogues.UI
         
         [SerializeField] private GameObject panelContainer;
         [SerializeField] private DialogueText dialogueText;
-        [SerializeField] private float processTimeOut;
 
         [SerializeField] private BoolVariable _pausedVariable;
         [SerializeField] private KeyCode nextKey;
         
         private List<string> _dialogueQueue;
-        private float _nextTimeToProcess;
         
         private bool _showingDialogue;
         public bool ShowingDialogue => _showingDialogue;
@@ -69,7 +67,6 @@ namespace Dialogues.UI
             }
             _dialogueQueue = new List<string>();
             ProcessQueue(false);
-            _nextTimeToProcess = Time.time + processTimeOut;
         }
 
         private bool ShouldProcessOnPush()
@@ -154,7 +151,6 @@ namespace Dialogues.UI
 
                 dialogueText.PutText(dialogue);
 
-                _nextTimeToProcess = Time.time + processTimeOut;
                 _showingDialogue = true;
                 
                 if (emitEvents)
@@ -190,11 +186,6 @@ namespace Dialogues.UI
                 {
                     ProcessQueue();
                 }
-            }
-
-            if (Time.time >= _nextTimeToProcess && ShowingDialogue && !isPaused)
-            {
-                ProcessQueue();
             }
         }
     }
