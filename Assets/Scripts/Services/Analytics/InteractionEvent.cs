@@ -1,13 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using DaysSystem;
 using UnityEngine;
+using Utils.Attributes;
 
 namespace Services.Analytics
 {
-    [Serializable]
-    public class InteractionEvent : ICustomEvent
+    [CreateAssetMenu(fileName = "InteractionEvent", menuName = "Analytics/CustomEvents/InteractionEvent", order = 0)]
+    public class InteractionEvent : ScriptableObject, ICustomEvent
     {
         [SerializeField] private string _interactedObject;
+
+        [SerializeField, AutoProperty(AutoPropertyMode.Asset)]
+        private DayData _dayData;
         
         public string GetEventName()
         {
@@ -18,7 +22,8 @@ namespace Services.Analytics
         {
             return new Dictionary<string, object>
             {
-                {"interactedObject", _interactedObject}
+                {"interactedObject", _interactedObject},
+                {"day", _dayData.Day}
             };
         }
     }
