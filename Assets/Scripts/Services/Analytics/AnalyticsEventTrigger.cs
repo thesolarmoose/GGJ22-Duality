@@ -14,7 +14,15 @@ namespace Services.Analytics
             var eventParams = _event.GetEventParams();
             
             AnalyticsService.Instance.CustomData(eventName, eventParams);
-            AnalyticsService.Instance.Flush();
+
+            try
+            {
+                AnalyticsService.Instance.Flush();
+            }
+            catch (Exception e)
+            {
+                // ignored
+            }
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Services
             catch (ConsentCheckException e)
             {
                 // Something went wrong when checking the GeoIP, check the e.Reason and handle appropriately.
-                Debug.LogError(e.Message);
+                Debug.LogWarning(e.Message);
             }
         }
     }
