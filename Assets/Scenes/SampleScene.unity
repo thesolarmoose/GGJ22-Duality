@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &2244095 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985412624050296, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &14409386
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,6 +585,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77355097}
   m_CullTransparentMesh: 1
+--- !u!114 &116224878 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985412535232233, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &146546337 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4712205976390699113, guid: 1a4ce1eb78cc22845852169694376bef, type: 3}
@@ -746,6 +768,17 @@ Transform:
   m_Father: {fileID: 1674973146}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &204305741 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985412421984458, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &206959705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,6 +1281,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 50523402278617980}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   eventLeavedInteractionArea:
     m_PersistentCalls:
       m_Calls: []
@@ -1549,6 +1594,17 @@ Transform:
   m_Father: {fileID: 421032587}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &328271541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985412346237746, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &329235854
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,6 +1710,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1804569650}
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1485956319}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1786,6 +1854,62 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89f81ffd1c568ec4f84a5f3037ac4434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &336168862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 336168864}
+  - component: {fileID: 336168863}
+  m_Layer: 0
+  m_Name: Services
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &336168863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336168862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa256896b19416fa5d1aa588709471e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &336168864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336168862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1505945280}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &339054155 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985412289321932, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &353065919
@@ -5491,7 +5615,7 @@ RectTransform:
   m_Children:
   - {fileID: 779205512}
   m_Father: {fileID: 1674973146}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5730,9 +5854,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.006048387
-    width: 0.9995461
-    height: 0.98678315
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -5933,6 +6057,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.71490765, y: 1.5737743}
   m_EdgeRadius: 0
+--- !u!114 &524909378 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985412139134661, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &536300409
 GameObject:
   m_ObjectHideFlags: 0
@@ -6038,6 +6173,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &536568770 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985412150539845, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &536916757
 GameObject:
   m_ObjectHideFlags: 0
@@ -7097,6 +7243,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 328271541}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
       m_Calls:
@@ -7221,6 +7379,17 @@ Transform:
   m_Father: {fileID: 1853514532}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &735109605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985413021545570, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &735408577
 GameObject:
   m_ObjectHideFlags: 0
@@ -7545,6 +7714,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 735109605}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventLeavedInteractionArea:
     m_PersistentCalls:
       m_Calls: []
@@ -7646,6 +7827,17 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &772901325 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985412925021258, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &779205511
 GameObject:
   m_ObjectHideFlags: 0
@@ -8957,6 +9149,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 339054155}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventLeavedInteractionArea:
     m_PersistentCalls:
       m_Calls: []
@@ -9281,6 +9485,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2244095}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11793,6 +12009,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1751800352}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   eventLeavedInteractionArea:
     m_PersistentCalls:
       m_Calls: []
@@ -12203,6 +12431,18 @@ MonoBehaviour:
       - m_Target: {fileID: 596741923}
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 524909378}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13533,6 +13773,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.87123847, y: 1.9010655}
   m_EdgeRadius: 0
+--- !u!114 &1485956319 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985411155013976, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1505945280 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1507169611 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985411175727308, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1531966649
 GameObject:
   m_ObjectHideFlags: 0
@@ -13710,6 +13977,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1536633903}
         m_TargetAssemblyTypeName: Dialogues.DialoguePusher, com.thesolarmoose.ggj22
         m_MethodName: Push
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 772901325}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13931,6 +14210,17 @@ Transform:
   m_Father: {fileID: 1247563252}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1555847706 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985411089305501, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1560754045
 GameObject:
   m_ObjectHideFlags: 0
@@ -14147,6 +14437,28 @@ Transform:
   m_Father: {fileID: 1853514532}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1591089021 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985411058254586, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1599715972 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985411066425091, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1612746769 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6482354818299751026, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
@@ -14645,8 +14957,8 @@ Transform:
   m_Children:
   - {fileID: 876207061}
   - {fileID: 203266131}
-  - {fileID: 1906866910}
   - {fileID: 490892028}
+  - {fileID: 1906866910}
   - {fileID: 1560754046}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -14757,6 +15069,17 @@ Canvas:
   m_SortingLayerID: -1794549875
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1751800352 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2472985411956608935, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1757485316
 GameObject:
   m_ObjectHideFlags: 0
@@ -14848,6 +15171,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1555847706}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15153,6 +15488,18 @@ MonoBehaviour:
       - m_Target: {fileID: 596741923}
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 204305741}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17210,6 +17557,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 116224878}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 116224878}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   eventLeavedInteractionArea:
     m_PersistentCalls:
       m_Calls: []
@@ -17622,6 +17993,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &50523402278617980 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2513767139595687675, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &50523402442476900 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2513767139423443171, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+  m_PrefabInstance: {fileID: 2472985412622079367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6f8fd29bd440eab46b40f8d5ac7bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000011114778311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19221,6 +19614,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1507169611}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   eventLeavedInteractionArea:
     m_PersistentCalls:
       m_Calls: []
@@ -19265,6 +19670,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &2472985412622079367
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 336168864}
+    m_Modifications:
+    - target: {fileID: 2472985411174871864, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_Name
+      value: AnalyticsEvents
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472985411174871879, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 737a934b5b0220a48a8470a7d020fd86, type: 3}
 --- !u!114 &2787089845838672551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19590,6 +20052,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 50523402442476900}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventLeavedInteractionArea:
     m_PersistentCalls:
       m_Calls: []
@@ -19766,7 +20240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4879881891985751304, guid: 6f573ec1877e2094593f97792152c0b8, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4879881891985751304, guid: 6f573ec1877e2094593f97792152c0b8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -19997,9 +20471,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 7ff759dffb225964c97ef92419e510e5, type: 3}
     - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 490892032}
+    - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 536568770}
+    - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: TriggerAnalyticsEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6482354818299751026, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: m_Name
       value: Puzzle1CablesAndPing
@@ -20573,6 +21075,34 @@ PrefabInstance:
       propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1591089021}
+    - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: TriggerAnalyticsEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
 --- !u!1 &7993125957925494810
@@ -20798,9 +21328,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 490892032}
+    - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1599715972}
+    - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: TriggerAnalyticsEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Services.Analytics.AnalyticsEventTrigger, com.thesolarmoose.ggj22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8016511813559112127, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: m_SortingOrder
       value: 2
