@@ -104,7 +104,6 @@ namespace Puzzles
 
         private void HandleResponse(int index)
         {
-            Debug.Log($"HandleResponse: {index}");
             bool inResponseWindow = _lastTimePing + responseTime >= Time.time;
             bool correctIndex = index == _currentPingIndex;
             if (inResponseWindow && correctIndex && !_responded)
