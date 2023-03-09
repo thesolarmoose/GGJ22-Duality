@@ -310,7 +310,7 @@ MonoBehaviour:
   Banks:
   - Ambiente
   - Efectos Sonoros
-  - "M\xFAsica"
+  - Musica
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

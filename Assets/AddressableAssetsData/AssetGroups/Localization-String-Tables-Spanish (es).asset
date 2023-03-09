@@ -22,21 +22,25 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6672374813b536d47ae483c503b963c1
     m_Address: Dialogues_es
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 533512a6bb918734ca08411617c2c4d9
     m_Address: Credits_es
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cb7562d18c1e7d64f8ef7b4c31f56722
     m_Address: Puzzles_es
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: ac99d85dcc3d171448d1a8d235d4102f, type: 2}
   m_SchemaSet:

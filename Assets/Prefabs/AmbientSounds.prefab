@@ -104,6 +104,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4712205976952546957}
   - component: {fileID: 4712205976952546958}
+  - component: {fileID: 5557592025553247610}
+  - component: {fileID: 2646692780699608827}
   m_Layer: 0
   m_Name: (FMOD) Office
   m_TagString: Untagged
@@ -156,6 +158,66 @@ MonoBehaviour:
   OverrideAttenuation: 1
   OverrideMinDistance: 14
   OverrideMaxDistance: 16
+--- !u!114 &5557592025553247610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4712205976952546956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1602890024
+      Data2: 1181170621
+      Data3: 1433544110
+      Data4: -1197983967
+    Path: event:/Ambiente/aires Acondicionados/Maquinas Encendidas
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2646692780699608827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4712205976952546956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -179475085
+      Data2: 1077515849
+      Data3: -453902680
+      Data4: 1025849235
+    Path: event:/Ambiente/Maquinas Naturaleza
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &4712205977155506918
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4712205977155506919}
   - component: {fileID: 4712205977155506936}
+  - component: {fileID: 5685463230016473213}
   m_Layer: 0
   m_Name: (FMOD) Room
   m_TagString: Untagged
@@ -208,6 +271,36 @@ MonoBehaviour:
       Data3: 1254756225
       Data4: 1331697684
     Path: event:/Musica/Habitacion Musica
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &5685463230016473213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4712205977155506918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1863761260
+      Data2: 1118286409
+      Data3: -338899067
+      Data4: 1404760857
+    Path: event:/Ambiente/Habitacion_extractor
   Event: 
   PlayEvent: 11
   StopEvent: 12

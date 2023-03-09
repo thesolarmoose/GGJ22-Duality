@@ -21,18 +21,22 @@ MonoBehaviour:
     m_Address: Assets/Localization/StringTables/DayTasks Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b2554ea6b804bb949b9eb4da73fb2437
     m_Address: Assets/Localization/StringTables/Dialogues Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d7e9b651e488c3f4785a01d305e34ace
     m_Address: Assets/Localization/Credits Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4b1f16d8def47224c839cc099ef3649a
     m_Address: Assets/Localization/StringTables/Puzzles Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: ac99d85dcc3d171448d1a8d235d4102f, type: 2}
   m_SchemaSet:

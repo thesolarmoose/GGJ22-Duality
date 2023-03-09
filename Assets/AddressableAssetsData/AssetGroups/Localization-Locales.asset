@@ -22,11 +22,13 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 92d1cd4e4d153004b8fd29f4bb33236e
     m_Address: Spanish (es)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: ac99d85dcc3d171448d1a8d235d4102f, type: 2}
   m_SchemaSet:
