@@ -702,17 +702,17 @@ MonoBehaviour:
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 2064916234097673511, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: -1967631576421560919, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 8056856818456041789, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: 3279352641294131588, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: 3837173908680883260, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 4754684134866288074, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
+  m_PointAction: {fileID: -3907621158177979476, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
+  m_MoveAction: {fileID: 3431216473664028917, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
+  m_SubmitAction: {fileID: -4278184148016618429, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
+  m_CancelAction: {fileID: -1024998205953179285, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
+  m_LeftClickAction: {fileID: -6549002479340450363, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
+  m_MiddleClickAction: {fileID: -7355651254481962264, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
+  m_RightClickAction: {fileID: -111437472822035808, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
+  m_ScrollWheelAction: {fileID: -7373331165137274975, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 1605953108148575188, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 5699475434677256069, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
@@ -1284,6 +1284,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Action
       m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
     m_Flags: 0
 --- !u!114 &246534944
 MonoBehaviour:
@@ -1707,6 +1715,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: b3804502-ec5b-4345-9339-f77495e26969
       m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -5800,9 +5816,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1
-    height: 1
+    y: 0.006048387
+    width: 0.9995461
+    height: 0.98678315
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -7664,6 +7680,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Action
       m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
     m_Flags: 0
 --- !u!114 &749330481
 MonoBehaviour:
@@ -9089,6 +9113,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Action
       m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
     m_Flags: 0
 --- !u!114 &898596985
 MonoBehaviour:
@@ -9429,6 +9461,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: b3804502-ec5b-4345-9339-f77495e26969
       m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -11951,6 +11991,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Action
       m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
     m_Flags: 0
 --- !u!114 &1275819993
 MonoBehaviour:
@@ -12378,6 +12426,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: b3804502-ec5b-4345-9339-f77495e26969
       m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -13903,6 +13959,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Action
       m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
     m_Flags: 0
 --- !u!114 &1536633903
 MonoBehaviour:
@@ -15367,6 +15431,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: b3804502-ec5b-4345-9339-f77495e26969
       m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -17433,6 +17505,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Action
       m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
     m_Flags: 0
 --- !u!114 &2047723922
 MonoBehaviour:
@@ -19457,6 +19537,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Action
       m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
     m_Flags: 0
 --- !u!224 &2152808780874849986
 RectTransform:
@@ -19834,6 +19922,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: b3804502-ec5b-4345-9339-f77495e26969
       m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -20223,8 +20319,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 7ff759dffb225964c97ef92419e510e5, type: 3}
     - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/buttonSouth
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Action
       objectReference: {fileID: 0}
     - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
@@ -20900,8 +21012,24 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/buttonSouth
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Action
       objectReference: {fileID: 0}
     - target: {fileID: 7847252136960967626, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
@@ -21192,8 +21320,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/buttonSouth
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: action.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Action
       objectReference: {fileID: 0}
     - target: {fileID: 8016511813503372844, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: eventInteracted.m_PersistentCalls.m_Calls.Array.data[2].m_Mode

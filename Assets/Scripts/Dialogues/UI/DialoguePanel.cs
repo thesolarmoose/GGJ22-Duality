@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Dialogues.UI
 {
@@ -20,6 +21,7 @@ namespace Dialogues.UI
 
         [SerializeField] private BoolVariable _pausedVariable;
         [SerializeField] private KeyCode nextKey;
+        [SerializeField] private InputActionReference _nextDialogueAction;
         
         private List<string> _dialogueQueue;
         
@@ -31,11 +33,13 @@ namespace Dialogues.UI
 
         private void OnEnable()
         {
+            _nextDialogueAction.action.Enable();
             CreateCts();
         }
 
         private void OnDisable()
         {
+            _nextDialogueAction.action.Disable();
             DisposeCts();
         }
 
@@ -67,6 +71,8 @@ namespace Dialogues.UI
             }
             _dialogueQueue = new List<string>();
             ProcessQueue(false);
+
+            _nextDialogueAction.action.performed += ctx => NextDialogue();
         }
 
         private bool ShouldProcessOnPush()
@@ -172,11 +178,10 @@ namespace Dialogues.UI
             }
         }
 
-        private void Update()
+        private void NextDialogue()
         {
-            bool pressedNextKey = Input.GetKeyDown(nextKey);
             bool isPaused = _pausedVariable.Value;
-            if (pressedNextKey && !isPaused)
+            if (!isPaused)
             {
                 if (dialogueText.IsRunning)
                 {

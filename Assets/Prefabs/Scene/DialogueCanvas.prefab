@@ -28,6 +28,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4879881891507054973}
   m_Father: {fileID: 4879881891985751304}
@@ -104,6 +105,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4879881891507054973}
   m_RootOrder: 0
@@ -239,6 +241,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4879881891281300735}
   m_Father: {fileID: 4879881890789221975}
@@ -391,6 +394,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4879881890789221975}
   m_Father: {fileID: 0}
@@ -415,9 +419,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelContainer: {fileID: 4879881890789221974}
   dialogueText: {fileID: 4879881891507054968}
-  processTimeOut: 13
   _pausedVariable: {fileID: 11400000, guid: 56c08b3412b44e0438f4d416c8414f0f, type: 2}
   nextKey: 101
+  _nextDialogueAction: {fileID: 4133118443317469296, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
 --- !u!223 &4879881891985751351
 Canvas:
   m_ObjectHideFlags: 0
