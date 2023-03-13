@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -25,7 +26,7 @@ namespace UI
         [SerializeField] private float timeToShow;
         [SerializeField] private float timeToHide;
 
-        [SerializeField] private InputAction cancelAction;
+        [SerializeField] private InputActionReference _cancelAction;
         [SerializeField] private bool cancellable;
 
         private bool _moving;
@@ -34,12 +35,8 @@ namespace UI
 
         private void Start()
         {
-            cancelAction.Enable();
-            cancelAction.performed += context =>
-            {
-                if (cancellable)
-                    HidePanel();
-            };
+            _cancelAction.action.Enable();
+            _cancelAction.action.performed += OnCancel;
             
             if (hideAtStart)
                 HideImmediately();
@@ -47,12 +44,20 @@ namespace UI
 
         private void OnEnable()
         {
-            cancelAction?.Enable();
+            _cancelAction.action?.Enable();
         }
 
         private void OnDisable()
         {
-            cancelAction?.Disable();
+            _cancelAction.action?.Disable();
+        }
+
+        private void OnCancel(InputAction.CallbackContext ctx)
+        {
+            if (cancellable)
+            {
+                HidePanel();
+            }
         }
 
         [NaughtyAttributes.Button]
