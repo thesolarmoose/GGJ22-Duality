@@ -1,23 +1,23 @@
 ﻿using InputActions;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Utils.Attributes;
 
 namespace Puzzles
 {
-    public class MouseHandCursor : HandCursor
+    public class MouseCursorController : MonoBehaviour
     {
-        [SerializeField] private new Camera camera;
+        [SerializeField, AutoProperty(AutoPropertyMode.Scene)] private Camera _camera;
+        [SerializeField] private HandCursor _cursor;
 
         private GameInputActions _inputActions;
         
         private void Start()
         {
-            Initialize();
             _inputActions = new GameInputActions();
             _inputActions.Enable();
             _inputActions.UI.Click.performed += OnClick;
-
-            Cursor.visible = false;
+            _inputActions.UI.Point.performed += OnMove;
         }
 
         private void OnClick(InputAction.CallbackContext context)
@@ -26,32 +26,30 @@ namespace Puzzles
             bool isClicked = value > 0.5f;
             if (isClicked)
             {
-                Press();
+                _cursor.Press();
             }
             else
             {
-                Release();
+                _cursor.Release();
             }
         }
 
         private void OnEnable()
         {
             _inputActions?.Enable();
-            Cursor.visible = false;
         }
 
         private void OnDisable()
         {
             _inputActions?.Disable();
-            Cursor.visible = true;
         }
 
-        private void Update()
+        private void OnMove(InputAction.CallbackContext ctx)
         {
             var screenPointerPosition = _inputActions.UI.Point.ReadValue<Vector2>();
-            var pointerPosition = camera.ScreenToWorldPoint(screenPointerPosition);
+            var pointerPosition = _camera.ScreenToWorldPoint(screenPointerPosition);
             pointerPosition.z = transform.position.z;
-            transform.position = pointerPosition;
+            _cursor.Move(pointerPosition);
         }
     }
 }

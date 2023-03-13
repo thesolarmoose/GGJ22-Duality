@@ -15,7 +15,7 @@ namespace Puzzles
         
         private void Update()
         {
-            var position = _cursor.GetPosition();
+            var position = _cursor.Position;
             bool isInside = IsInsideCollider(position);
 
             if (_lastFrameWasInside ^ isInside)

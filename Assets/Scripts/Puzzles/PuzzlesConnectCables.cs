@@ -3,10 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using FmodExtensions;
 using FMODUnity;
-using InputActions;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
 using Utils;
 
 namespace Puzzles
@@ -23,13 +21,13 @@ namespace Puzzles
 
         [SerializeField] private LayerMask cablesMask;
 
+        [SerializeField] private HandCursor _humanHand;
+
         [Header("Sounds")]
         [SerializeField] private EventReference _puzzleSolved;
         [SerializeField] private EventReference _cablePluggedIn;
         [SerializeField] private EventReference _cablePluggedOut;
         
-        private GameInputActions _inputActions;
-
         private bool _clickIsDown;
         private CablePlug _currentDraggingPlug;
         private Dictionary<CablePlug, CableSlot> _connectedPlugs;
@@ -39,27 +37,22 @@ namespace Puzzles
         private void Start()
         {
             _connectedPlugs = new Dictionary<CablePlug, CableSlot>();
-            
-            _inputActions = new GameInputActions();
-            _inputActions.Enable();
-            _inputActions.UI.Click.performed += OnClick;
-            _inputActions.UI.Point.performed += OnPointerMove;
+            _humanHand.eventPressed.AddListener(OnHandPressed);
+            _humanHand.eventReleased.AddListener(OnHandReleased);
+            _humanHand.eventMoved.AddListener(OnHandMoved);
         }
 
-        private void OnClick(InputAction.CallbackContext context)
+        private void OnHandPressed()
         {
-            _clickIsDown = context.ReadValue<float>() > 0.5f;
+            _clickIsDown = true;
 
             bool plugClicked = false;
             
-            if (_clickIsDown)
+            var cablePlug = GetPlugAtPointer();
+            if (cablePlug)
             {
-                var cablePlug = GetPlugAtPointer();
-                if (cablePlug)
-                {
-                    _currentDraggingPlug = cablePlug;
-                    plugClicked = true;
-                }
+                _currentDraggingPlug = cablePlug;
+                plugClicked = true;
             }
             
             if (!plugClicked)
@@ -67,8 +60,14 @@ namespace Puzzles
                 _currentDraggingPlug = null;
             }
         }
+
+        private void OnHandReleased()
+        {
+            _clickIsDown = false;
+            _currentDraggingPlug = null;
+        }
         
-        private void OnPointerMove(InputAction.CallbackContext context)
+        private void OnHandMoved()
         {
             if (_clickIsDown && IsDragging)
             {
@@ -149,14 +148,8 @@ namespace Puzzles
             }
         }
 
-        private void OnEnable()
-        {
-            _inputActions?.Enable();
-        }
-
         private void OnDisable()
         {
-            _inputActions?.Disable();
             _clickIsDown = false;
             _currentDraggingPlug = null;
         }
@@ -216,9 +209,7 @@ namespace Puzzles
         
         private Vector3 GetPointerToWorldPosition()
         {
-            var screenPosition = _inputActions.UI.Point.ReadValue<Vector2>();
-            var worldPosition = camera.ScreenToWorldPoint(screenPosition);
-            return worldPosition;
+            return _humanHand.Position;
         }
 
         private CablePair GetSlotsPair(CableSlot slot)

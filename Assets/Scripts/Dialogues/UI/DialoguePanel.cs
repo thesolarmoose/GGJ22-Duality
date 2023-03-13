@@ -20,7 +20,6 @@ namespace Dialogues.UI
         [SerializeField] private DialogueText dialogueText;
 
         [SerializeField] private BoolVariable _pausedVariable;
-        [SerializeField] private KeyCode nextKey;
         [SerializeField] private InputActionReference _nextDialogueAction;
         
         private List<string> _dialogueQueue;

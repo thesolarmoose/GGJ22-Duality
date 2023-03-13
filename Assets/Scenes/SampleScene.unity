@@ -20194,6 +20194,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1786552103}
     m_Modifications:
+    - target: {fileID: 84034387218556285, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 84034387218556285, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 2040818799343413416, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: idleSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fe8926f52a535e144b3420c8754b20ef, type: 3}
     - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _pingBSound.Path
       value: event:/Efectos Sonoros/puzzle1_ping_fino
@@ -20216,34 +20228,82 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[0].m_Id
       value: 34e41e00-b5e8-4447-b362-3eb2487c572c
       objectReference: {fileID: 0}
     - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 34ca1cf3-6ed3-4433-950d-fdb29bb5e8e4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[2].m_Id
+      value: b683be5d-4f76-495a-9bf9-e86ac4a9bab9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[0].m_Id
       value: ab6d5e33-c95f-482e-90c2-90dc0499d843
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 3acb53e4-ccc7-4663-a679-5bf6729fb576
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[2].m_Id
+      value: 876b2f66-1c3a-457b-96dd-3df0773abedb
       objectReference: {fileID: 0}
     - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[0].m_Path
       value: <Keyboard>/a
       objectReference: {fileID: 0}
     - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/dpad/left
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[2].m_Path
+      value: <Gamepad>/leftStick/left
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[0].m_Path
       value: <Keyboard>/d
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/dpad/right
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[2].m_Path
+      value: <Gamepad>/leftStick/right
       objectReference: {fileID: 0}
     - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[0].m_Action
       value: Left Ping Input
       objectReference: {fileID: 0}
     - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Left Ping Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _leftPingInputAction.m_SingletonActionBindings.Array.data[2].m_Action
+      value: Left Ping Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Right Ping Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Right Ping Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732170939228890550, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: _rightPingInputAction.m_SingletonActionBindings.Array.data[2].m_Action
       value: Right Ping Input
       objectReference: {fileID: 0}
     - target: {fileID: 2732170939228890555, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
@@ -20318,6 +20378,10 @@ PrefabInstance:
       propertyPath: animationSteps.Array.data[6].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8300000, guid: 7ff759dffb225964c97ef92419e510e5, type: 3}
+    - target: {fileID: 6070694476457213931, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 6482354817601592114, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
       propertyPath: action.m_SingletonActionBindings.Array.size
       value: 2
@@ -20566,6 +20630,10 @@ PrefabInstance:
       propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8419358441029546875, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a6ec35f607f44141a4e958121b93048, type: 3}
 --- !u!1 &6789963104085499351
@@ -20711,10 +20779,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1786552103}
     m_Modifications:
+    - target: {fileID: 1432062872490341711, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 3354912721795458570, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3690510824828778975, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 5100970042698493913, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 5100970042698493913, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 6607541569524998668, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: idleSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a398ea39fbb194b46a560225e4233e50, type: 3}
+    - target: {fileID: 6607541569524998668, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
+      propertyPath: clickSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d7b3c3479a8ec04ebcb8fee8634c13e, type: 3}
     - target: {fileID: 7847252135073224793, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: camera
       value: 
@@ -20907,50 +20999,6 @@ PrefabInstance:
       propertyPath: eventBeforeShow.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1102463236}
-    - target: {fileID: 7847252136444710717, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
-      propertyPath: _openDoorSound.Path
-      value: event:/Efectos Sonoros/puzzle3_caja_cipher_abre
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
-      propertyPath: _closeDoorSound.Path
-      value: event:/Efectos Sonoros/puzzle3_caja_cipher_cierra
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
-      propertyPath: _openDoorSound.Guid.Data1
-      value: 1485063477
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
-      propertyPath: _openDoorSound.Guid.Data2
-      value: 1198040729
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
-      propertyPath: _openDoorSound.Guid.Data3
-      value: 1864130481
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
-      propertyPath: _openDoorSound.Guid.Data4
-      value: 770425320
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
-      propertyPath: _closeDoorSound.Guid.Data1
-      value: 1824075142
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
-      propertyPath: _closeDoorSound.Guid.Data2
-      value: 1234869773
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
-      propertyPath: _closeDoorSound.Guid.Data3
-      value: -2064122484
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847252136444710719, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
-      propertyPath: _closeDoorSound.Guid.Data4
-      value: 1534161847
-      objectReference: {fileID: 0}
     - target: {fileID: 7847252136960967623, guid: 92354731f3dec184a8fe2913be49a966, type: 3}
       propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -21115,6 +21163,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 505842863411828077, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 505842863411828077, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 1807635032157156368, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: eventOnDialogueEnds.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -21175,6 +21231,14 @@ PrefabInstance:
       propertyPath: eventOnDialogueStarts.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1908928458508851384, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: idleSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fe8926f52a535e144b3420c8754b20ef, type: 3}
+    - target: {fileID: 5913474548839747579, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 8016511812203159519, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -21375,6 +21439,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8284371892312261483, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96be88b3847746c43b1ba3dbae0eb516, type: 3}
 --- !u!1 &9169394630051856352

@@ -64,6 +64,24 @@ namespace InputActions
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LeftHandInteraction"",
+                    ""type"": ""Button"",
+                    ""id"": ""47ee2eb5-47c8-4669-8771-1fd238cf658a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RightHandInteraction"",
+                    ""type"": ""Button"",
+                    ""id"": ""d77b56dc-ab57-4592-89ad-2b3e4408c462"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -306,6 +324,50 @@ namespace InputActions
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7a3e838a-7382-444d-aeec-1a9832e121b3"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftHandInteraction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9ca4bb03-1de9-4fc2-ba34-7b15f216ccb2"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftHandInteraction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d1d3f222-bb2a-4864-89ad-12aaa2d1a6e5"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightHandInteraction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fd192031-3dae-45c2-aedd-35ff476b9a08"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightHandInteraction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -945,6 +1007,8 @@ namespace InputActions
             m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
             m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
             m_Player_Interaction = m_Player.FindAction("Interaction", throwIfNotFound: true);
+            m_Player_LeftHandInteraction = m_Player.FindAction("LeftHandInteraction", throwIfNotFound: true);
+            m_Player_RightHandInteraction = m_Player.FindAction("RightHandInteraction", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1026,6 +1090,8 @@ namespace InputActions
         private readonly InputAction m_Player_Look;
         private readonly InputAction m_Player_Fire;
         private readonly InputAction m_Player_Interaction;
+        private readonly InputAction m_Player_LeftHandInteraction;
+        private readonly InputAction m_Player_RightHandInteraction;
         public struct PlayerActions
         {
             private @GameInputActions m_Wrapper;
@@ -1034,6 +1100,8 @@ namespace InputActions
             public InputAction @Look => m_Wrapper.m_Player_Look;
             public InputAction @Fire => m_Wrapper.m_Player_Fire;
             public InputAction @Interaction => m_Wrapper.m_Player_Interaction;
+            public InputAction @LeftHandInteraction => m_Wrapper.m_Player_LeftHandInteraction;
+            public InputAction @RightHandInteraction => m_Wrapper.m_Player_RightHandInteraction;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -1055,6 +1123,12 @@ namespace InputActions
                 @Interaction.started += instance.OnInteraction;
                 @Interaction.performed += instance.OnInteraction;
                 @Interaction.canceled += instance.OnInteraction;
+                @LeftHandInteraction.started += instance.OnLeftHandInteraction;
+                @LeftHandInteraction.performed += instance.OnLeftHandInteraction;
+                @LeftHandInteraction.canceled += instance.OnLeftHandInteraction;
+                @RightHandInteraction.started += instance.OnRightHandInteraction;
+                @RightHandInteraction.performed += instance.OnRightHandInteraction;
+                @RightHandInteraction.canceled += instance.OnRightHandInteraction;
             }
 
             private void UnregisterCallbacks(IPlayerActions instance)
@@ -1071,6 +1145,12 @@ namespace InputActions
                 @Interaction.started -= instance.OnInteraction;
                 @Interaction.performed -= instance.OnInteraction;
                 @Interaction.canceled -= instance.OnInteraction;
+                @LeftHandInteraction.started -= instance.OnLeftHandInteraction;
+                @LeftHandInteraction.performed -= instance.OnLeftHandInteraction;
+                @LeftHandInteraction.canceled -= instance.OnLeftHandInteraction;
+                @RightHandInteraction.started -= instance.OnRightHandInteraction;
+                @RightHandInteraction.performed -= instance.OnRightHandInteraction;
+                @RightHandInteraction.canceled -= instance.OnRightHandInteraction;
             }
 
             public void RemoveCallbacks(IPlayerActions instance)
@@ -1311,6 +1391,8 @@ namespace InputActions
             void OnLook(InputAction.CallbackContext context);
             void OnFire(InputAction.CallbackContext context);
             void OnInteraction(InputAction.CallbackContext context);
+            void OnLeftHandInteraction(InputAction.CallbackContext context);
+            void OnRightHandInteraction(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {

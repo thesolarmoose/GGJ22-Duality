@@ -3,10 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using FmodExtensions;
 using FMODUnity;
-using InputActions;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
 using Utils;
 
 namespace Puzzles
@@ -15,8 +13,8 @@ namespace Puzzles
     {
         public UnityEvent eventPuzzleSolved;
         
-        [SerializeField] private new Camera camera;
-        [SerializeField] private Transform robotHand;
+        [SerializeField] private HandCursor _leftRobotHand;
+        [SerializeField] private HandCursor _rightHumanHand;
 
         [SerializeField] private List<SlotPair> slotPairs;
         [SerializeField] private List<CablePlugId> leftCablesPlugs;
@@ -39,8 +37,6 @@ namespace Puzzles
         [SerializeField] private EventReference _cutCableSound;
         [SerializeField] private EventReference _solvedSound;
         
-        private GameInputActions _inputActions;
-        
         private bool _clickIsDown;
         private CablePlug _currentDraggingPlug;
         private Dictionary<CablePlug, CableSlot> _connectedPlugs;
@@ -54,32 +50,26 @@ namespace Puzzles
         {
             _connectedPlugs = new Dictionary<CablePlug, CableSlot>();
             
-            _inputActions = new GameInputActions();
-            _inputActions.Enable();
-            _inputActions.UI.Click.performed += OnClick;
-            _inputActions.UI.Point.performed += OnPointerMove;
-            _inputActions.Player.Interaction.performed += StartWeld;
-            _inputActions.Player.Interaction.canceled += StopWeld;
+            _rightHumanHand.eventPressed.AddListener(OnRightHandPressed);
+            _rightHumanHand.eventReleased.AddListener(OnRightHandReleased);
+            _rightHumanHand.eventMoved.AddListener(OnRightHandMoved);
+            _leftRobotHand.eventPressed.AddListener(StartWeld);
+            _leftRobotHand.eventReleased.AddListener(StopWeld);
 
             sparks.SetActive(false);
         }
 
         private void OnEnable()
         {
-            _inputActions?.Enable();
             Reset();
-        }
-
-        private void OnDisable()
-        {
-            _inputActions?.Disable();
         }
 
         private void Reset()
         {
             var position = Vector3.zero;
-            position.z = robotHand.localPosition.z;
-            robotHand.localPosition = position;
+            position.z = _leftRobotHand.Position.z;
+            _leftRobotHand.Position = position;
+            _rightHumanHand.Position = position;
             
             _clickIsDown = false;
             _currentDraggingPlug = null;
@@ -88,20 +78,17 @@ namespace Puzzles
             _currentWeldingPair = (default, default, false);
         }
 
-        private void OnClick(InputAction.CallbackContext context)
+        private void OnRightHandPressed()
         {
-            _clickIsDown = context.ReadValue<float>() > 0.5f;
+            _clickIsDown = true;
 
             bool plugClicked = false;
             
-            if (_clickIsDown)
+            var cablePlug = GetPlugAtPointer();
+            if (cablePlug)
             {
-                var cablePlug = GetPlugAtPointer();
-                if (cablePlug)
-                {
-                    _currentDraggingPlug = cablePlug;
-                    plugClicked = true;
-                }
+                _currentDraggingPlug = cablePlug;
+                plugClicked = true;
             }
             
             if (!plugClicked)
@@ -109,8 +96,14 @@ namespace Puzzles
                 _currentDraggingPlug = null;
             }
         }
+
+        private void OnRightHandReleased()
+        {
+            _clickIsDown = false;
+            _currentDraggingPlug = null;
+        }
         
-        private void OnPointerMove(InputAction.CallbackContext context)
+        private void OnRightHandMoved()
         {
             if (_clickIsDown && IsDragging)
             {
@@ -130,13 +123,13 @@ namespace Puzzles
             }
         }
         
-        private void StartWeld(InputAction.CallbackContext context)
+        private void StartWeld()
         {
             _isWelding = true;
             _weldSoundEmitter.Play();
         }
         
-        private void StopWeld(InputAction.CallbackContext context)
+        private void StopWeld()
         {
             _isWelding = false;
             _weldSoundEmitter.Stop();
@@ -149,7 +142,7 @@ namespace Puzzles
         {
             if (_isWelding)
             {
-                var position = robotHand.transform.position;
+                var position = _leftRobotHand.Position;
                 var (plug, slot, exists) = GetWeldablePairAtPosition(position);
                 bool isWeldingTheSame = false;
                 if (exists)
@@ -314,9 +307,7 @@ namespace Puzzles
         
         private Vector3 GetPointerToWorldPosition()
         {
-            var screenPosition = _inputActions.UI.Point.ReadValue<Vector2>();
-            var worldPosition = camera.ScreenToWorldPoint(screenPosition);
-            return worldPosition;
+            return _rightHumanHand.Position;
         }
 
         private (CablePlug, CableSlot, bool) GetWeldablePairAtPosition(Vector3 position)

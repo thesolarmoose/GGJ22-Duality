@@ -1,45 +1,62 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Puzzles
 {
-    public abstract class HandCursor : MonoBehaviour
+    public class HandCursor : MonoBehaviour
     {
         public UnityEvent eventPressed;
         public UnityEvent eventReleased;
+        public UnityEvent eventMoved;
         
         [SerializeField] private Sprite idleSprite;
         [SerializeField] private Sprite clickSprite;
 
         private SpriteRenderer _spriteRenderer;
 
-        protected void Initialize()
+        public Vector3 Position
+        {
+            get => transform.position;
+            set => transform.position = value;
+        }
+
+        private void Awake()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        private void Start()
+        {
+            Reset();
+        }
+
+        private void OnDisable()
+        {
+            Reset();
+        }
+
+        private void Reset()
+        {
             _spriteRenderer.sprite = idleSprite;
         }
 
-        protected void Reset()
-        {
-            if (_spriteRenderer)
-                _spriteRenderer.sprite = idleSprite;
-        }
-
-        protected void Press()
+        public void Press()
         {
             _spriteRenderer.sprite = clickSprite;
-            eventPressed?.Invoke();
+            eventPressed.Invoke();
         }
 
-        protected void Release()
+        public void Release()
         {
             _spriteRenderer.sprite = idleSprite;
-            eventReleased?.Invoke();
+            eventReleased.Invoke();
         }
 
-        public Vector3 GetPosition()
+        public void Move(Vector3 position)
         {
-            return transform.position;
+            Position = position;
+            eventMoved.Invoke();
         }
     }
 }

@@ -42,7 +42,7 @@ namespace Puzzles
             {
                 var trans = transform;
                 var position = trans.position;
-                var cursorPosition = _currentCursor.GetPosition();
+                var cursorPosition = _currentCursor.Position;
                 position.x = cursorPosition.x + _currentOffsetX;
                 trans.position = position;
                 var localPosition = trans.localPosition;
@@ -56,7 +56,7 @@ namespace Puzzles
             if (_currentCursor != null)
                 return;
 
-            var position = cursor.GetPosition();
+            var position = cursor.Position;
             if (!IsInsideHandle(position))
                 return;
             

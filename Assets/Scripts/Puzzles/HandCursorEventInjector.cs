@@ -10,10 +10,20 @@ namespace Puzzles
         [SerializeField] private new Camera camera;
         [SerializeField] private HandCursor cursor;
 
-        private void Start()
+        private GameObject _lastEntered;
+        
+        private void OnEnable()
         {
             cursor.eventPressed.AddListener(OnPressed);
             cursor.eventReleased.AddListener(OnReleased);
+            cursor.eventMoved.AddListener(OnMoved);
+        }
+
+        private void OnDisable()
+        {
+            cursor.eventPressed.RemoveListener(OnPressed);
+            cursor.eventReleased.RemoveListener(OnReleased);
+            cursor.eventMoved.RemoveListener(OnMoved);
         }
 
         private void OnPressed()
@@ -23,7 +33,6 @@ namespace Puzzles
             {
                 ExecuteEvents.Execute(interactable.gameObject, injectedEvent, ExecuteEvents.pointerDownHandler);
             }
-            
         }
 
         private void OnReleased()
@@ -34,12 +43,29 @@ namespace Puzzles
                 ExecuteEvents.Execute(interactable.gameObject, injectedEvent, ExecuteEvents.pointerClickHandler);
                 ExecuteEvents.Execute(interactable.gameObject, injectedEvent, ExecuteEvents.pointerUpHandler);
             }
-            
+        }
+        
+        private void OnMoved()
+        {
+            var (interactable, injectedEvent) = GetInteractable(typeof(IPointerEnterHandler));
+            if (interactable != _lastEntered)
+            {
+                if (interactable)
+                {
+                    ExecuteEvents.Execute(interactable, injectedEvent, ExecuteEvents.pointerEnterHandler);
+                }
+                
+                if (_lastEntered)
+                {
+                    ExecuteEvents.Execute(_lastEntered, injectedEvent, ExecuteEvents.pointerExitHandler);
+                }
+            }
+            _lastEntered = interactable;
         }
 
         private (GameObject, PointerEventData) GetInteractable(Type type)
         {
-            var position = cursor.GetPosition();
+            var position = cursor.Position;
             var screenPosition = camera.WorldToScreenPoint(position);
             var injectedEvent = new PointerEventData(EventSystem.current);
             injectedEvent.position = screenPosition;

@@ -26,17 +26,20 @@ namespace UI
             
             if (!_paused && allPuzzlesDisabled)
             {
+                Cursor.visible = true;
                 _paused = true;
                 _onBeforePause.Invoke();
                 var ct = _cts.Token;
                 await Popups.ShowPopup(_pauseMenuPopup, ct);    
                 _paused = false;
                 _onAfterPause.Invoke();
+                Cursor.visible = false;
             }
         }
 
         private void Start()
         {
+            Cursor.visible = false;
             _pauseAction.Enable();
             _pauseAction.performed += ShowPauseMenu;
         }
