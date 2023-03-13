@@ -13,6 +13,9 @@ scopes = {
 	"last_search.DA94955A" = ""
 	"OpenInspectorPreview.DA94955A" = "0"
 	"currentGroup.DA94955A" = "all"
+	"last_search.DD5CDDE4" = "t:Interactable"
+	"OpenInspectorPreview.DD5CDDE4" = "1"
+	"currentGroup.DD5CDDE4" = "scene"
 }
 providers = {
 	asset = {
@@ -70,10 +73,39 @@ providers = {
 		priority = 100
 		defaultAction = null
 	}
+	menu = {
+		active = true
+		priority = 80
+		defaultAction = null
+	}
+	settings = {
+		active = true
+		priority = 100
+		defaultAction = null
+	}
+	help = {
+		active = true
+		priority = -1
+		defaultAction = null
+	}
+	calculator = {
+		active = true
+		priority = 10
+		defaultAction = null
+	}
+	static_methods = {
+		active = true
+		priority = 85
+		defaultAction = null
+	}
 }
 objectSelectors = {
 }
 recentSearches = [
+	"t"
+	"h: *"
+	"?"
+	"CA"
 	"m: d"
 	"m: "
 ]

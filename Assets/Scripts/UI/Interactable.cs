@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using Utils.Extensions;
@@ -13,6 +14,12 @@ namespace UI
         [SerializeField] private LayerMask characterMask;
         [SerializeField] private Canvas interactableCanvas;
         [SerializeField] private InputAction action;
+
+        public Canvas InteractableCanvas
+        {
+            get => interactableCanvas;
+            set => interactableCanvas = value;
+        }
 
         private bool IsShowing => interactableCanvas.gameObject.activeSelf;
 
@@ -69,6 +76,29 @@ namespace UI
                 HideCanvas();
                 eventLeavedInteractionArea?.Invoke();
             }
+        }
+
+        [MenuItem("Tools/Set interactable hint")]
+        public static void SetInteractablesHint()
+        {
+            var hintPrefab = Selection.activeObject;
+
+            var interactables = FindObjectsOfType<Interactable>(true);
+            foreach (var interactable in interactables)
+            {
+                var tr = interactable.interactableCanvas.transform;
+                try
+                {
+                    tr.ClearChildren();
+                    var hint = PrefabUtility.InstantiatePrefab(hintPrefab, tr);
+                }
+                catch
+                {
+                    // ignored
+                }
+            }
+            
+            AssetDatabase.SaveAssets();
         }
     }
 }
