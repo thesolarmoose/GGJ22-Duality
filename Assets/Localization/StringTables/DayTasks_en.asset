@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 6255798352ccc824eaee14ed2356c317, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 3334506863042756635
   m_TableData:
   - m_Id: 118552748032
     m_Localized: 'Day 645
@@ -40,17 +41,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7100051447808
-    m_Localized: 'A: low beep.
+    m_Localized: '
 
-      D: high beep.'
+      <sprite="{vars.atlas.SchemeAtlas}" index=0>: low beep.
+
+
+      <sprite="{vars.atlas.SchemeAtlas}"
+      index=1>: high beep.'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 3334506863042756635
   - m_Id: 79491393871872
     m_Localized: 'Activate secondary colors.
 
-      Use spacebar to weld.'
+
+      <sprite="{vars.atlas.SchemeAtlas}"
+      index=2>: Weld.
+
+
+      <sprite="{vars.atlas.SchemeAtlas}" index=3>: Grab.'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 3334506863042756635
   - m_Id: 174750610186240
     m_Localized: 'Solar panels: Disconnected.
 
@@ -64,4 +76,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   references:
-    version: 1
+    version: 2
+    RefIds:
+    - rid: 3334506863042756635
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00600b1c7506000000604b084c480000

@@ -161,7 +161,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mouse None
+      name: desktop_0
       rect:
         serializedVersion: 2
         x: 0
@@ -175,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebe67e098134ea84f8c567f6bf45116e
-      internalID: 21300000
+      spriteID: baf09a54bf52cd248bc51e90354370a1
+      internalID: 920828191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mouse Left
+      name: desktop_1
       rect:
         serializedVersion: 2
         x: 128
@@ -196,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8285ddb4d50f5c84398756ca9210c1c8
-      internalID: 21300002
+      spriteID: d0baab668aacaba40a948d8ab6a1d063
+      internalID: -1284773342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mouse Middle
+      name: desktop_2
       rect:
         serializedVersion: 2
         x: 256
@@ -217,14 +217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ab0162700083b54b80108981b6d94b9
-      internalID: 21300004
+      spriteID: 651b06c9c3af74b42b400b8d12cf7e4f
+      internalID: 1312023177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mouse Right
+      name: desktop_3
       rect:
         serializedVersion: 2
         x: 384
@@ -238,17 +238,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd82d4aaaed3ee64f8cbdbdbf1474ea1
-      internalID: 21300006
+      spriteID: f1420ba893d8ccd4d832f5def39a72a1
+      internalID: -854292132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DKeys Empty 1
+      name: desktop_4
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 256
         width: 128
         height: 128
@@ -259,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0e7bda7cb8f1ad4ea02ec7668e865ad
-      internalID: 21300008
+      spriteID: 85a6de6ecc675f04e914f0b62d99fbdd
+      internalID: 440722336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AWSD 1
+      name: desktop_5
       rect:
         serializedVersion: 2
         x: 128
@@ -280,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0d20916cf2c074488f56a19faac63a5
-      internalID: 21300010
+      spriteID: 9c48a88eba61b87429d9c547c5334edf
+      internalID: -1431551400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrows 1
+      name: desktop_6
       rect:
         serializedVersion: 2
         x: 256
@@ -301,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6047f42faf282fa4a9ade158e481cdb3
-      internalID: 21300012
+      spriteID: 95cd23245f4836b498111450fdacbed4
+      internalID: -1724314822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Keyboard Key
+      name: desktop_7
       rect:
         serializedVersion: 2
         x: 384
@@ -322,14 +322,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82b32df2ff9d6dc4897699ee8c63ef24
-      internalID: 21300014
+      spriteID: 8144dc636288b044b9c2f3b8ac3881da
+      internalID: -1430543309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DKeys Empty 2
+      name: desktop_8
       rect:
         serializedVersion: 2
         x: 0
@@ -343,14 +343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af8bf62e6e760a04aaca43eaa2b2f3bf
-      internalID: 21300016
+      spriteID: c5b30133b314c8a4f983779347957943
+      internalID: -505371568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AWSD 2
+      name: desktop_9
       rect:
         serializedVersion: 2
         x: 128
@@ -364,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e875a8bb420e494ab25bad629070952
-      internalID: 21300018
+      spriteID: b80b9ab9faa7ea9469511e6f5f030c96
+      internalID: 1380947531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrows 2
+      name: desktop_10
       rect:
         serializedVersion: 2
         x: 256
@@ -385,8 +385,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 731d4e749f0040146919947043c8494c
-      internalID: 21300020
+      spriteID: 9aa1b8e357f374940b48fc00c78c54b5
+      internalID: 488801132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desktop_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4656aae24e5864e93b1040cb49ba36
+      internalID: -1577369420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desktop_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470e86a0a616f4b40b360dbdf398c6c8
+      internalID: 1208932849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desktop_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3aa1751c124d784f88afd609bffb5e6
+      internalID: 1531391228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desktop_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3661d8a2832df4b8578b71b16b76ac
+      internalID: 1059061698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desktop_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a38e4c49e9a7f48aa9b336178d31d4
+      internalID: -961883678
       vertices: []
       indices: 
       edges: []
@@ -402,17 +507,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mouse None: 21300000
-      Mouse Left: 21300002
-      Arrows 1: 21300012
-      Keyboard Key: 21300014
-      Mouse Right: 21300006
-      AWSD 1: 21300010
-      Mouse Middle: 21300004
-      DKeys Empty 1: 21300008
-      DKeys Empty 2: 21300016
-      AWSD 2: 21300018
-      Arrows 2: 21300020
+      desktop_2: 1312023177
+      desktop_4: 440722336
+      desktop_6: -1724314822
+      desktop_7: -1430543309
+      desktop_10: 488801132
+      desktop_8: -505371568
+      desktop_5: -1431551400
+      desktop_11: -1577369420
+      desktop_3: -854292132
+      desktop_12: 1208932849
+      desktop_9: 1380947531
+      desktop_0: 920828191
+      desktop_14: 1059061698
+      desktop_1: -1284773342
+      desktop_13: 1531391228
+      desktop_15: -961883678
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

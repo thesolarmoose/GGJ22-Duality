@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: es
   m_SharedData: {fileID: 11400000, guid: 6255798352ccc824eaee14ed2356c317, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 3334506863042756636
   m_TableData:
   - m_Id: 67050889216
     m_Localized: "D\xEDa 643\n\nMantener unidad de energ\xEDa y paneles solares en
@@ -34,18 +35,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7100051447808
-    m_Localized: 'A: pitido grave.
+    m_Localized: '
 
-      D: pitido agudo.'
+      <sprite="{vars.atlas.SchemeAtlas}" index=0>: pitido grave.
+
+
+      <sprite="{vars.atlas.SchemeAtlas}"
+      index=1>: pitido agudo.'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 3334506863042756636
   - m_Id: 79491393871872
     m_Localized: 'Activa los colores secundarios.
 
-      Usa la barra espaciadora
-      para soldar.'
+
+      <sprite="{vars.atlas.SchemeAtlas}"
+      index=2>: Soldar.
+
+
+      <sprite="{vars.atlas.SchemeAtlas}" index=3>: Agarrar.'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 3334506863042756636
   - m_Id: 174750610186240
     m_Localized: "Paneles Solares: Desconectados.\nC\xE9lulas de Energ\xEDa: Desconectadas."
     m_Metadata:
@@ -55,4 +66,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   references:
-    version: 1
+    version: 2
+    RefIds:
+    - rid: 3334506863042756636
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00600b1c7506000000604b084c480000
