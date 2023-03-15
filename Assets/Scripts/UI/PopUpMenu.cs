@@ -29,14 +29,23 @@ namespace UI
         [SerializeField] private InputActionReference _cancelAction;
         [SerializeField] private bool cancellable;
 
+
+        private InputAction _cancelActionInstance;
         private bool _moving;
 
         public bool IsShowing { get; private set; }
 
+        [ContextMenu("Debug")]
+        public void Debug()
+        {
+            print($"{name}: {_cancelAction.action.enabled}");
+        }
+        
         private void Start()
         {
-            _cancelAction.action.Enable();
-            _cancelAction.action.performed += OnCancel;
+            _cancelActionInstance = _cancelAction.action.Clone();
+            _cancelActionInstance.Enable();
+            _cancelActionInstance.performed += OnCancel;
             
             if (hideAtStart)
                 HideImmediately();
@@ -44,12 +53,12 @@ namespace UI
 
         private void OnEnable()
         {
-            _cancelAction.action?.Enable();
+            _cancelActionInstance?.Enable();
         }
 
         private void OnDisable()
         {
-            _cancelAction.action?.Disable();
+            _cancelActionInstance?.Disable();
         }
 
         private void OnCancel(InputAction.CallbackContext ctx)
