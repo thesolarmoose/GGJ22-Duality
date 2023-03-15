@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using AsyncUtils;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -16,6 +17,7 @@ namespace UI
 
         public override void Initialize()
         {
+            EventSystem.current.SetSelectedGameObject(_resumeButton.gameObject);
             _quitButton.onClick.AddListener(Application.Quit);
             _resumeAction.Enable();
         }
