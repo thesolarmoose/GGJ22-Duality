@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
 using AsyncUtils;
@@ -12,13 +12,11 @@ namespace UI
     {
         [SerializeField] private Button _resumeButton;
         [SerializeField] private Button _quitButton;
-
-        private InputAction _resumeAction;
+        [SerializeField] private InputAction _resumeAction;
 
         public override void Initialize()
         {
             _quitButton.onClick.AddListener(Application.Quit);
-            _resumeAction = Utils.Input.InputActionUtils.GetKeyAction(Key.Escape);
             _resumeAction.Enable();
         }
 

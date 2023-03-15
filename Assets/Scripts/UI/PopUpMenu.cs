@@ -34,12 +34,6 @@ namespace UI
         private bool _moving;
 
         public bool IsShowing { get; private set; }
-
-        [ContextMenu("Debug")]
-        public void Debug()
-        {
-            print($"{name}: {_cancelAction.action.enabled}");
-        }
         
         private void Start()
         {
