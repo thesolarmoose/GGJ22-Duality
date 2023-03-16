@@ -14363,14 +14363,6 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Pause
       m_Flags: 0
-    - m_Name: 
-      m_Id: 6951c680-610e-44ac-be57-48aea1b64a40
-      m_Path: <Gamepad>/start
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pause
-      m_Flags: 0
     m_Flags: 0
   _onBeforePause:
     m_PersistentCalls:

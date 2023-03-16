@@ -1221,23 +1221,7 @@ MonoBehaviour:
   relativeTo: {fileID: 0}
   timeToShow: 0.5
   timeToHide: 0.3
-  cancelAction:
-    m_Name: Cancel
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 588a0f70-784e-4bb5-bfdd-a49cce55aaaa
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 183974e6-2bf0-4913-8aea-018d95032dc0
-      m_Path: <Keyboard>/escape
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Cancel
-      m_Flags: 0
-    m_Flags: 0
+  _cancelAction: {fileID: 0}
   cancellable: 1
 --- !u!212 &8016511812307413338
 SpriteRenderer:
