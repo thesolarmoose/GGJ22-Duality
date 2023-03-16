@@ -77,28 +77,5 @@ namespace UI
                 eventLeavedInteractionArea?.Invoke();
             }
         }
-
-        [MenuItem("Tools/Set interactable hint")]
-        public static void SetInteractablesHint()
-        {
-            var hintPrefab = Selection.activeObject;
-
-            var interactables = FindObjectsOfType<Interactable>(true);
-            foreach (var interactable in interactables)
-            {
-                var tr = interactable.interactableCanvas.transform;
-                try
-                {
-                    tr.ClearChildren();
-                    var hint = PrefabUtility.InstantiatePrefab(hintPrefab, tr);
-                }
-                catch
-                {
-                    // ignored
-                }
-            }
-            
-            AssetDatabase.SaveAssets();
-        }
     }
 }
