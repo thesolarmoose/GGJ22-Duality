@@ -16,7 +16,53 @@ MonoBehaviour:
   m_Tables:
   - {fileID: 11400000, guid: c3e8c8b4f69ab6146aaf0e8068f9640e, type: 2}
   - {fileID: 11400000, guid: 6672374813b536d47ae483c503b963c1, type: 2}
-  m_Extensions: []
+  m_Extensions:
+  - rid: 3334506976685850624
   m_Group: String Table
   references:
-    version: 1
+    version: 2
+    RefIds:
+    - rid: 3334506976685850624
+      type: {class: GoogleSheetsExtension, ns: UnityEditor.Localization.Plugins.Google, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_SheetsServiceProvider: {fileID: 0}
+        m_SpreadsheetId: 106cpexLlF4vnBZyYqLWkTZj7SpRqmkHPazp62XtAGQE
+        m_SheetId: 118956199
+        m_Columns:
+        - rid: 3334506976685850630
+        - rid: 3334506976685850631
+        - rid: 3334506976685850633
+        - rid: 3334506976685850632
+        - rid: 3334506976685850634
+        m_RemoveMissingPulledKeys: 1
+    - rid: 3334506976685850630
+      type: {class: KeyColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: A
+    - rid: 3334506976685850631
+      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: B
+        m_LocaleIdentifier:
+          m_Code: en
+        m_IncludeComments: 1
+    - rid: 3334506976685850632
+      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: D
+        m_LocaleIdentifier:
+          m_Code: es
+        m_IncludeComments: 1
+    - rid: 3334506976685850633
+      type: {class: LocaleCommentColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: C
+        m_LocaleIdentifier:
+          m_Code: en
+    - rid: 3334506976685850634
+      type: {class: LocaleCommentColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: E
+        m_LocaleIdentifier:
+          m_Code: es

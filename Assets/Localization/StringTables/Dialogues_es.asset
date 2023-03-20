@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 9576393695232
-    m_Localized: "Aqu\uFFFD vamos de nuevo. Otro d\uFFFDa maravilloso en mi existencia
+    m_Localized: "Aqu\xED vamos de nuevo. Otro d\xEDa maravilloso en mi existencia
       de mierda. Reconectar los cables. Soldar las unidades de litio. \uFFFDEstar\uFFFD
       condenada a una suerte de castigo sisifiano?"
     m_Metadata:
@@ -237,4 +237,5 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
