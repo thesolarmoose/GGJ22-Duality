@@ -19,8 +19,8 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 9576393695232
-    m_Localized: Here we go again. Another wonderful day in my shitty existence.
-      Reconnect the cables. Weld the lithium units. Am I doomed to a Sisyphean fate?
+    m_Localized: Here I go again. Another fantastic day in my shitty existence. Reconnect
+      the cables. Weld the lithium units. Am I doomed to a Sisyphean fate?
     m_Metadata:
       m_Items: []
   - m_Id: 9576402083840
@@ -28,8 +28,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576402083841
-    m_Localized: 'There is not much to look for. I have checked this clunker hundreds
-      of times. '
+    m_Localized: There is little to look for. I have checked this clunker hundreds
+      of times.
     m_Metadata:
       m_Items: []
   - m_Id: 9576402083842
@@ -41,7 +41,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861056
-    m_Localized: I really hate that song.
+    m_Localized: I hate that song.
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861057
@@ -54,13 +54,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576418861059
-    m_Localized: Shit, my battery lasts less and less every day... Bad things could
+    m_Localized: Shit, my battery lasts less and less every day. Bad things could
       happen if I don't find a short-term solution.
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055360
     m_Localized: Luckily, the wires haven't been stolen. It's the same thing every
-      day. Why don't they just rip them out and end this once and for all?
+      day. Why don't they rip them out and end this once and for all?
     m_Metadata:
       m_Items: []
   - m_Id: 9576423055361
@@ -89,8 +89,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443968
-    m_Localized: Sometimes I feel like taking the parts of this device for my own
-      benefit... But it's better not to, who knows if it will be useful someday.
+    m_Localized: Sometimes I feel like taking the parts of this device for my benefit.
+      But it's better not to. Who knows if it will be helpful someday?
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443969
@@ -98,12 +98,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443970
-    m_Localized: "Mmmh\uFFFD it feels a little cooler."
+    m_Localized: "Mmmh\u2026 it feels a little cooler."
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443971
-    m_Localized: 'And now, a world premiere! A song never heard before: Whispering
-      by Paul Whiteman and His Ambassador Orchestra.'
+    m_Localized: 'And now, a world premiere! A song that no one has heard before:
+      "Whispering" by Paul Whiteman and His Orchestra.'
     m_Metadata:
       m_Items: []
   - m_Id: 9576431443972
@@ -112,22 +112,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638272
-    m_Localized: "Shit, my battery is getting even worse\uFFFD I must have\uFFFD
-      No, you better not do that calculation. "
+    m_Localized: "Shit, my battery is getting even worse. I must have\u2026 No. You
+      better not do that calculation."
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638273
-    m_Localized: "I could swear my welder is losing power\uFFFD Is my psyche affecting
-      my mechanical body?"
+    m_Localized: I could swear my welding machine was losing power. Could my psyche
+      be affecting my mechanical body??
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638274
-    m_Localized: Do your job my dear sun. Prolong the inevitable.
+    m_Localized: Do your job, my dear sun. Prolong the inevitable.
     m_Metadata:
       m_Items: []
   - m_Id: 9576435638275
     m_Localized: 33%. Wait, what is this? A floppy disc? How did this museum object
-      get here? Am I supposed to read this somewhere?
+      get here? Is there a way to view the information it contains?
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832576
@@ -135,18 +135,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832577
-    m_Localized: Will this clunker have a floppy disk input? Yes, it does! Who would
+    m_Localized: Will this clunker have a floppy disk drive? Yes, it does! Who would
       guess? Let's check what's on it.
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832578
-    m_Localized: "Wow\uFFFD this is hard to process. This planet is dying slowly,
-      and my existence, the energy I consume, accelerates that destruction."
+    m_Localized: Wow. This is hard to process. This planet is dying slowly. And my
+      existence, the energy I consume, is accelerating that destruction.
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832579
-    m_Localized: "And yet, they don't kill me\uFFFD they just... regulate my energy
-      consumption."
+    m_Localized: And yet, they don't kill me. They just regulate my energy consumption.
     m_Metadata:
       m_Items: []
   - m_Id: 9576439832580
@@ -154,28 +153,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576444026880
-    m_Localized: 'I''m going to get on the bed, the worst place to be alone with
-      your thoughts. Yes, tomorrow will be another day.
-
-      Or not.'
+    m_Localized: I'm going to get on the bed, the worst place to be alone with your
+      thoughts. Yes, tomorrow will be another day. Or not.
     m_Metadata:
       m_Items: []
   - m_Id: 9576444026881
     m_Localized: I don't want to do anything. It doesn't matter. Here I go. To live
-      and destroy the world.
+      and destroy the world
     m_Metadata:
       m_Items: []
   - m_Id: 9576452415488
-    m_Localized: I guess this is all I'll ever see of this world.
+    m_Localized: I guess this is all I will be able to see of this world.
     m_Metadata:
       m_Items: []
   - m_Id: 9576460804096
-    m_Localized: I should destroy you when I had the chance. At least I would have
-      died in ignorance.
+    m_Localized: I should have destroyed you when I had the chance. That way, I would
+      have died in ignorance.
     m_Metadata:
       m_Items: []
   - m_Id: 9576460804097
-    m_Localized: "Maybe\uFFFD Maybe it's a good idea to keep them disconnected."
+    m_Localized: "Maybe\u2026 maybe it's a good idea to keep them disconnected."
     m_Metadata:
       m_Items: []
   - m_Id: 9576460804098
@@ -183,27 +180,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576464998400
-    m_Localized: Today it doesn't seem like such a terrible song.
+    m_Localized: Today, the song doesn't seem so terrible to me.
     m_Metadata:
       m_Items: []
   - m_Id: 9576473387008
     m_Localized: Is it worth continuing with my life at the expense of this world?
-      Is my existence so significant?
+      Is my existence really that significant?
     m_Metadata:
       m_Items: []
   - m_Id: 9576473387009
-    m_Localized: Shit! It's not like my battery gives me many options to continue
-      living...
+    m_Localized: Damn! It's not like my battery gives me many options to keep living.
     m_Metadata:
       m_Items: []
   - m_Id: 9576477581312
     m_Localized: If they wanted me dead, they would have ripped these cables out
-      by now. So... why did they leave me that diskette with the information?
+      by now. So... why did they leave me that floppy disk with the information?
     m_Metadata:
       m_Items: []
   - m_Id: 9576477581313
-    m_Localized: If they wanted me dead, they would have ripped these cables out
-      by now. So... why did they leave me that diskette with the information?
+    m_Localized: Better not to overthink it. The simple and selfish answer is that
+      I want to live.
     m_Metadata:
       m_Items: []
   - m_Id: 9576477581314
@@ -211,12 +207,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9576481775617
-    m_Localized: And where did this come from? Another nasty treat from my late-night
+    m_Localized: And where did this come from? Another unpleasant gift from my nocturnal
       friends?
     m_Metadata:
       m_Items: []
   - m_Id: 9576485969920
-    m_Localized: It's... It's my core... my battery... a new battery... for me...
+    m_Localized: It's... it's my core... my battery... a new battery... for me!
     m_Metadata:
       m_Items: []
   - m_Id: 9576485969921
@@ -224,11 +220,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4586080654024704
-    m_Localized: I guess it's time to speak English.
+    m_Localized: It's time to speak English.
     m_Metadata:
       m_Items: []
   - m_Id: 125363751481143296
-    m_Localized: A Roman coin? Maybe it's a Caesar cipher.
+    m_Localized: A Roman coin? Maybe it's a Caesar cypher.
     m_Metadata:
       m_Items: []
   references:
