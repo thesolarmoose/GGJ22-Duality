@@ -1160,11 +1160,11 @@ MonoBehaviour:
     Path: event:/Efectos Sonoros/puzzle2_arrancar_cable
   _solvedSound:
     Guid:
-      Data1: 739049872
-      Data2: 1173730194
-      Data3: 1929134748
-      Data4: -1133014312
-    Path: event:/Efectos Sonoros/reiniciar_sistema_computadora
+      Data1: 1363088177
+      Data2: 1102958650
+      Data3: 41163954
+      Data4: -1324093841
+    Path: event:/Efectos Sonoros/puzzle2_fin
 --- !u!114 &8016511812307413339
 MonoBehaviour:
   m_ObjectHideFlags: 0
