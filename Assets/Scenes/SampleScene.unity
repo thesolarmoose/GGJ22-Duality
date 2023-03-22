@@ -5814,9 +5814,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0056603774
-    width: 0.99978775
-    height: 0.98742145
+    y: 0.0060459496
+    width: 1
+    height: 0.9875052
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -9604,6 +9604,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1528506847}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13890,6 +13902,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.87123847, y: 1.9010655}
   m_EdgeRadius: 0
+--- !u!1 &1528506847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1105652744, guid: 1a4ce1eb78cc22845852169694376bef, type: 3}
+  m_PrefabInstance: {fileID: 4712205976529376968}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1531966649
 GameObject:
   m_ObjectHideFlags: 0
@@ -19679,6 +19696,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853514532}
     m_Modifications:
+    - target: {fileID: 1105652744, guid: 1a4ce1eb78cc22845852169694376bef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4712205977973096230, guid: 1a4ce1eb78cc22845852169694376bef, type: 3}
       propertyPath: m_Name
       value: AmbientSounds

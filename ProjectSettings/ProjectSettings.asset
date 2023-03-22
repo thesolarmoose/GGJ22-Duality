@@ -42,6 +42,8 @@ PlayerSettings:
   m_SplashScreenLogos:
   - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
     duration: 2
+  - logo: {fileID: 21300000, guid: 8fb5445cf5f386340995060d53eb6876, type: 3}
+    duration: 3.5
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
@@ -136,7 +138,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.2.73
+  bundleVersion: 0.2.78
   preloadedAssets:
   - {fileID: 11400000, guid: 2a139319d742d53458c9f90b88645631, type: 2}
   - {fileID: 11400000, guid: 3e593a40be97dd6459fcb62ba0384cee, type: 2}
@@ -165,7 +167,7 @@ PlayerSettings:
   applicationIdentifier:
     Standalone: com.The-Solar-Moose.La-vida-de-Andrea
   buildNumber:
-    Standalone: 0.2.73
+    Standalone: 0.2.78
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
