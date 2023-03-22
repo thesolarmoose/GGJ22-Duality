@@ -2776,23 +2776,7 @@ MonoBehaviour:
   relativeTo: {fileID: 0}
   timeToShow: 0.5
   timeToHide: 0.3
-  cancelAction:
-    m_Name: Cancel
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 1c623d10-945d-4b70-85df-b1a803c4d32a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 3b2fbae5-772d-477f-a199-1b5cc27ea13d
-      m_Path: <Keyboard>/escape
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Cancel
-      m_Flags: 0
-    m_Flags: 0
+  _cancelAction: {fileID: 0}
   cancellable: 1
 --- !u!1 &7847252136149811560
 GameObject:
@@ -5239,6 +5223,10 @@ PrefabInstance:
     - target: {fileID: 4785076140215042790, guid: 19b0ce463023aea4fb464cd2fa82d0d5, type: 3}
       propertyPath: m_Name
       value: HandHuman
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791353011093247538, guid: 19b0ce463023aea4fb464cd2fa82d0d5, type: 3}
+      propertyPath: _triggerOnStart
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9203212313375961631, guid: 19b0ce463023aea4fb464cd2fa82d0d5, type: 3}
       propertyPath: idleSprite
