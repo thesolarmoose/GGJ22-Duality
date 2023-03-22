@@ -27,6 +27,8 @@ namespace Puzzles
         [SerializeField] private EventReference _puzzleSolved;
         [SerializeField] private EventReference _cablePluggedIn;
         [SerializeField] private EventReference _cablePluggedOut;
+        [SerializeField] private EventReference _cableGrab;
+        [SerializeField] private EventReference _cableDrop;
         
         private bool _clickIsDown;
         private CablePlug _currentDraggingPlug;
@@ -53,6 +55,7 @@ namespace Puzzles
             {
                 _currentDraggingPlug = cablePlug;
                 plugClicked = true;
+                _cableGrab.PlayEvent();
             }
             
             if (!plugClicked)
@@ -63,6 +66,10 @@ namespace Puzzles
 
         private void OnHandReleased()
         {
+            if (_currentDraggingPlug != null)  // if was grabbing a cable
+            {
+                _cableDrop.PlayEvent();
+            }
             _clickIsDown = false;
             _currentDraggingPlug = null;
         }

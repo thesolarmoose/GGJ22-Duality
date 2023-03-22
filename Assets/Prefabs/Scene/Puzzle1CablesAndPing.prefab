@@ -225,15 +225,7 @@ MonoBehaviour:
   relativeTo: {fileID: 0}
   timeToShow: 0.5
   timeToHide: 0.3
-  cancelAction:
-    m_Name: Cancel
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: d35181a1-599f-4974-b3fd-8543643a056a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
+  _cancelAction: {fileID: 0}
   cancellable: 0
 --- !u!1 &2007759849761802815
 GameObject:
@@ -512,23 +504,7 @@ MonoBehaviour:
   relativeTo: {fileID: 0}
   timeToShow: 0.5
   timeToHide: 0.3
-  cancelAction:
-    m_Name: Cancel
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 588a0f70-784e-4bb5-bfdd-a49cce55aaaa
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 183974e6-2bf0-4913-8aea-018d95032dc0
-      m_Path: <Keyboard>/escape
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Cancel
-      m_Flags: 0
-    m_Flags: 0
+  _cancelAction: {fileID: 0}
   cancellable: 1
 --- !u!212 &2732170939228890554
 SpriteRenderer:
@@ -1704,6 +1680,20 @@ MonoBehaviour:
       Data3: 1481727105
       Data4: -794022806
     Path: event:/Efectos Sonoros/puzzle1_desconectar_plug
+  _cableGrab:
+    Guid:
+      Data1: 1199033567
+      Data2: 1336532261
+      Data3: 921362844
+      Data4: -1233798157
+    Path: event:/Efectos Sonoros/puzzle1_coger_cable
+  _cableDrop:
+    Guid:
+      Data1: -1153923341
+      Data2: 1198426998
+      Data3: 935936139
+      Data4: -1506866557
+    Path: event:/Efectos Sonoros/puzzle1_soltar_cable
 --- !u!114 &6482354818353559693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1760,23 +1750,7 @@ MonoBehaviour:
   relativeTo: {fileID: 0}
   timeToShow: 0.5
   timeToHide: 0.3
-  cancelAction:
-    m_Name: Cancel
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 588a0f70-784e-4bb5-bfdd-a49cce55aaaa
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 183974e6-2bf0-4913-8aea-018d95032dc0
-      m_Path: <Keyboard>/escape
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Cancel
-      m_Flags: 0
-    m_Flags: 0
+  _cancelAction: {fileID: 0}
   cancellable: 1
 --- !u!212 &6482354818353559692
 SpriteRenderer:
