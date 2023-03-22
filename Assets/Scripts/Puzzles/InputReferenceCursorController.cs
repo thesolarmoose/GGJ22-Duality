@@ -11,29 +11,35 @@ namespace Puzzles
         [SerializeField] private InputActionReference _interactionAction;
         [SerializeField] private HandCursor _cursor;
 
+        private InputAction _moveActionClone;
+        private InputAction _interactionActionClone;
+        
+        
         private void Start()
         {
-            _moveAction.action.Enable();
-            _interactionAction.action.Enable();
-            _interactionAction.action.performed += ctxt => _cursor.Press();
-            _interactionAction.action.canceled += ctxt => _cursor.Release();
+            _moveActionClone = _moveAction.action.Clone();
+            _interactionActionClone = _interactionAction.action.Clone();
+            _moveActionClone.Enable();
+            _interactionActionClone.Enable();
+            _interactionActionClone.performed += ctxt => _cursor.Press();
+            _interactionActionClone.canceled += ctxt => _cursor.Release();
         }
 
         private void OnEnable()
         {
-            _moveAction.action.Enable();
-            _interactionAction.action.Enable();
+            _moveActionClone?.Enable();
+            _interactionActionClone?.Enable();
         }
 
         private void OnDisable()
         {
-            _moveAction.action.Disable();
-            _interactionAction.action.Disable();
+            _moveActionClone.Disable();
+            _interactionActionClone.Disable();
         }
 
         private void Update()
         {
-            var moveDir = _moveAction.action.ReadValue<Vector2>();
+            var moveDir = _moveActionClone.ReadValue<Vector2>();
             var position = transform.position + (Vector3) (moveSpeed * Time.deltaTime * moveDir.normalized);
             _cursor.Move(position);
         }

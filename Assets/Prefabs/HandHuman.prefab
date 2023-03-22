@@ -203,6 +203,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+  _triggerOnStart: 1
 --- !u!212 &4785076140215042788
 SpriteRenderer:
   m_ObjectHideFlags: 0

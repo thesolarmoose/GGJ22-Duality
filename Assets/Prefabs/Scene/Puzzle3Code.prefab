@@ -5224,10 +5224,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HandHuman
       objectReference: {fileID: 0}
-    - target: {fileID: 6791353011093247538, guid: 19b0ce463023aea4fb464cd2fa82d0d5, type: 3}
-      propertyPath: _triggerOnStart
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9203212313375961631, guid: 19b0ce463023aea4fb464cd2fa82d0d5, type: 3}
       propertyPath: idleSprite
       value: 
