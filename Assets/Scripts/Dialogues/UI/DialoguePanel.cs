@@ -180,7 +180,7 @@ namespace Dialogues.UI
         private void NextDialogue()
         {
             bool isPaused = _pausedVariable.Value;
-            if (!isPaused)
+            if (!isPaused && _showingDialogue)
             {
                 if (dialogueText.IsRunning)
                 {
