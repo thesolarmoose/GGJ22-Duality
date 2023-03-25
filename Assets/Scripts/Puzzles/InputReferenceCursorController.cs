@@ -33,8 +33,8 @@ namespace Puzzles
 
         private void OnDisable()
         {
-            _moveActionClone.Disable();
-            _interactionActionClone.Disable();
+            _moveActionClone?.Disable();
+            _interactionActionClone?.Disable();
         }
 
         private void Update()

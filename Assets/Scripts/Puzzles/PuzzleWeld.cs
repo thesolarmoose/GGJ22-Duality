@@ -68,8 +68,8 @@ namespace Puzzles
         {
             var position = Vector3.zero;
             position.z = _leftRobotHand.Position.z;
-            _leftRobotHand.Position = position;
-            _rightHumanHand.Position = position;
+            _leftRobotHand.Move(position);
+            _rightHumanHand.Move(position);
             
             _clickIsDown = false;
             _currentDraggingPlug = null;
