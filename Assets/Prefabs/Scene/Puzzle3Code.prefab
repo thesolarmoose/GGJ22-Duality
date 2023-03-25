@@ -901,7 +901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.381, y: 0.402}
+  m_AnchoredPosition: {x: -0.51, y: 0.07}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7847252135267244282
@@ -2618,6 +2618,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 5bdcd474ace8095459f10267af36a5a1, type: 2}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTriggerAsset,
+          com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 0af8be5e195c1e74ba4e2af2c7df9bec, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   codePanel: {fileID: 7847252136170458005}
   resetTime: 3
   puzzleCode: 968035
@@ -2647,10 +2660,34 @@ MonoBehaviour:
   pushOnStart: 0
   eventOnDialogueStarts:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Narrative.FinalcinematicStarter, com.thesolarmoose.ggj22
         m_MethodName: StartCinematic
@@ -2776,7 +2813,7 @@ MonoBehaviour:
   relativeTo: {fileID: 0}
   timeToShow: 0.5
   timeToHide: 0.3
-  _cancelAction: {fileID: 0}
+  _cancelAction: {fileID: -1024998205953179285, guid: c076d815ae415b04f9dca0a8e41615da, type: 3}
   cancellable: 1
 --- !u!1 &7847252136149811560
 GameObject:
@@ -4555,6 +4592,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 5bdcd474ace8095459f10267af36a5a1, type: 2}
+        m_TargetAssemblyTypeName: Services.Analytics.AnalyticsEventTriggerAsset,
+          com.thesolarmoose.ggj22
+        m_MethodName: TriggerAnalyticsEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 2c88bdf19fe9a4e4e998fb5bfc3bbd69, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   eventLeavedInteractionArea:
     m_PersistentCalls:
       m_Calls: []
@@ -4573,6 +4623,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: b3804502-ec5b-4345-9339-f77495e26969
       m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 0d6b2eb9-4518-4d92-9164-079bbfb3ac15
+      m_Path: <Gamepad>/buttonSouth
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -4665,10 +4723,34 @@ MonoBehaviour:
   pushOnStart: 0
   eventOnDialogueStarts:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   eventOnDialogueEnds:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fc7b994c17b96bd4ab1b6a893a7eed17, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   references:
     version: 2
     RefIds: []
