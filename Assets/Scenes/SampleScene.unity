@@ -5813,10 +5813,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.08683341
+    x: 0
     y: 0
-    width: 0.82567245
-    height: 0.9989723
+    width: 0
+    height: 0
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -19783,10 +19783,6 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -1306408435326295676, guid: af6c355970013da4a8cf7d47efbe80ef, type: 2}
-    - target: {fileID: 4879881891507054970, guid: 6f573ec1877e2094593f97792152c0b8, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4879881891507054973, guid: 6f573ec1877e2094593f97792152c0b8, type: 3}
       propertyPath: m_SizeDelta.x
       value: -31.999998

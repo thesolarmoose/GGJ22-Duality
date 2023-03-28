@@ -38,7 +38,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "38756befda1591b33810095b670b70b2f56e947d"
+      "hash": "e7968ee61558f23eee1411586e2cb36c8284c352"
     },
     "com.lms.version_mand": {
       "version": "https://github.com/mnicolas94/LMS.Version.git?path=/Assets/Version",
